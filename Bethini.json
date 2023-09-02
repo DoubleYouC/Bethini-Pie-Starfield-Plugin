@@ -1,0 +1,1026 @@
+{
+  "valueTypes": [ "default", "fixedDefault", "Vanilla Low", "Vanilla Medium", "Vanilla High", "Vanilla Ultra" ],
+  "presetsIgnoreTheseSettings": [
+    "sResourceArchiveList",
+    "sResourceIndexFileList",
+    "SResourceArchiveMemoryCacheList",
+    "sResourceStartUpArchiveList",
+    "sResourceEnglishVoiceList",
+    "sResourceLocaleVoiceList",
+    "sLanguage",
+    "sInvalidationFile",
+    "sLocalMasterPath",
+    "sLocalSavePath",
+    "sTestFile1",
+    "sTestFile2",
+    "sTestFile3",
+    "sTestFile4",
+    "sTestFile5",
+    "sTestFile6",
+    "sTestFile7",
+    "sTestFile8",
+    "sTestFile9",
+    "sTestFile10",
+    "fAudioVolumeVoice",
+    "fAudioVolumeFootsteps",
+    "fAudioVolumeFootstepsNPC",
+    "fAudioVolumeMaster",
+    "fAudioVolumeMusic",
+    "uPersistentUuidData0_Steam",
+    "uPersistentUuidData1_Steam",
+    "uPersistentUuidData2_Steam",
+    "uPersistentUuidData3_Steam",
+    "fGamepadHeadingSensitivity",
+    "fMouseHeadingSensitivity",
+    "bBorderless",
+    "bEnableVsync",
+    "bFull Screen",
+    "bHasRunAutoQualitySettings",
+    "iSize H",
+    "iSize W",
+    "uiUpscaleTech",
+    "bTopMostWindow",
+    "uDifficulty",
+    "bGamepadEnable",
+    "bDialogueSubtitles",
+    "bGeneralSubtitles",
+    "bLargeMenuFonts",
+    "bHasUserAccepted"
+  ],
+  "Default": "",
+  "INIs": {
+    "Bethini.ini": "",
+    "theme.ini": "sTheme",
+    "StarfieldCustom.ini": "sStarfieldINIPath",
+    "StarfieldPrefs.ini": "sStarfieldINIPath"
+  },
+  "customFunctions": {
+    "FUNCBackups": "{}",
+    "FUNCBackupsFormat": "getBackups",
+    "FUNCCurrentResolution": "{}",
+    "FUNCCurrentResolutionFormat": "getCurrentResolution",
+    "FUNCINIPath": "{}",
+    "FUNCINIPathFormat": "getINILocations",
+    "FUNCThemes": "{}",
+    "FUNCThemesFormat": "getThemes"
+  },
+  "displayTabs": {
+    "Setup": {
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "6",
+        "Settings": {
+          "Game Path": {
+            "browse": [ "directory", "Starfield.exe", "file" ],
+            "choices": [ "Browse...", "Manual..." ],
+            "customWidth": "18",
+            "forceSelect": "1",
+            "settings": [ "sStarfieldPath" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "Directories" ],
+            "tooltip": "Specifies the path to the game directory.",
+            "type": "Dropdown"
+          },
+          "INI Path": {
+            "browse": [ "directory", "StarfieldCustom.ini", "file" ],
+            "choices": "FUNCINIPath",
+            "customWidth": "18",
+            "forceSelect": "1",
+            "settings": [ "sStarfieldINIPath" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "Directories" ],
+            "tooltip": "Specifies the path to the INI files.",
+            "type": "Dropdown"
+          },
+          "Restore Backup": {
+            "choices": "FUNCBackups",
+            "custom_function": "restore_backup",
+            "customWidth": "18",
+            "tooltip": "Select the backup you wish to restore.",
+            "type": "Dropdown"
+          }
+        }
+      }
+    },
+    "Preferences": {
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Note: ": {
+            "Description": "These changes require a restart to take effect.",
+            "type": "description"
+          }
+        }
+      },
+      "Interface": {
+        "Pack": {
+          "Side": "Left"
+        },
+        "NumberOfVerticallyStackedSettings": "8",
+        "Settings": {
+          "Theme": {
+            "choices": "FUNCThemes",
+            "customWidth": "20",
+            "settings": [ "sTheme" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Select the theme.",
+            "type": "Dropdown"
+          },
+          "Font": {
+            "customWidth": "20",
+            "type": "Entry",
+            "settings": [ "sSmallFontName" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Fonts" ],
+            "tooltip": "Sets the font family.",
+            "entryWidth": "20"
+          },
+          "Font Size": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "from": "8",
+            "increment": "1",
+            "settings": [ "iSmallFontSize" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Fonts" ],
+            "to": "36",
+            "tooltip": "Sets the font size.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "7"
+          },
+          "Base Color": {
+            "colorValueType": "hex",
+            "customWidth": "20",
+            "settings": [ "sSubContainerColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the base color.",
+            "type": "Color"
+          },
+          "Canvas Color": {
+            "colorValueType": "hex",
+            "customWidth": "20",
+            "settings": [ "sContainerColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the background canvas color.",
+            "type": "Color"
+          },
+          "Text Color": {
+            "colorValueType": "hex",
+            "customWidth": "20",
+            "settings": [ "sTextColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the text color.",
+            "type": "Color"
+          },
+          "Disabled Text Color": {
+            "colorValueType": "hex",
+            "customWidth": "20",
+            "settings": [ "sTextColorDisabled" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the disabled text color.",
+            "type": "Color"
+          },
+          "Pressed Text Color": {
+            "colorValueType": "hex",
+            "customWidth": "20",
+            "settings": [ "sTextColorPressed" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the pressed text color.",
+            "type": "Color"
+          },
+          "Active Text Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sTextColorActive" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the active text color.",
+            "type": "Color"
+          },
+          "Disabled Background Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sBackgroundColorDisabled" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the disabled background color.",
+            "type": "Color"
+          },
+          "Pressed Background Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sBackgroundColorPressed" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the pressed background color.",
+            "type": "Color"
+          },
+          "Active Background Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sBackgroundColorActive" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the active background color.",
+            "type": "Color"
+          },
+          "Tab Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sButtonBarColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the tab color.",
+            "type": "Color"
+          },
+          "Dropdown Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sDropDownColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the dropdown color.",
+            "type": "Color"
+          },
+          "Field Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sFieldColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the field color.",
+            "type": "Color"
+          },
+          "Checkbox Color": {
+            "colorValueType": "hex",
+            "customWidth": "25",
+            "settings": [ "sIndicatorColor" ],
+            "targetINIs": [ "theme.ini" ],
+            "targetSections": [ "Colors" ],
+            "tooltip": "Sets the checkbox color.",
+            "type": "Color"
+          }
+        }
+      },
+      "General": {
+        "NumberOfVerticallyStackedSettings": "6",
+        "Settings": {
+          "Max Backups to Keep": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "from": "-1",
+            "increment": "1",
+            "settings": [ "iMaxBackups" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "General" ],
+            "to": "10",
+            "tooltip": "Select the maximum number of backups to be kept.",
+            "type": "Spinbox",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Max Logs to Keep": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "from": "-1",
+            "increment": "1",
+            "settings": [ "iMaxLogs" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "General" ],
+            "to": "10",
+            "tooltip": "Select the maximum number of log files to be kept.",
+            "type": "Spinbox",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Always Select Game": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAlwaysSelectGame" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles whether or not you must always select the game at startup.",
+            "type": "Checkbutton"
+          }
+        }
+      }
+    },
+    "Basic": {
+      "Display": {
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "4",
+        "Settings": {
+          "Resolution": {
+            "choices": [ "FUNCCurrentResolution", "1280x720", "1366x768", "1440x900", "1600x900", "1680x1050", "1920x1200", "1920x1080", "2560x1080", "2560x1440", "2560x1600", "3440x1440", "3840x2160", "Manual..." ],
+            "customWidth": "12",
+            "delimiter": "x",
+            "settings": [ "iSize W", "iSize H" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Changes the resolution.",
+            "type": "Dropdown"
+          },
+          "Aspect Ratio": {
+            "choices": [ "4:3", "16:9", "16:10", "21:9", "32:9" ],
+            "customWidth": "12",
+            "settingChoices": {
+              "4:3": [ "1.3333", "2.3889" ],
+              "16:9": [ "1.6", "2.3889" ],
+              "16:10": [ "1.6", "2.3888" ],
+              "21:9": [ "1.7778", "2.3889" ],
+              "32:9": [ "1.6", "3.5556" ]
+            },
+            "settings": [ "fNarrowAspectLimit", "fWideAspectLimit" ],
+            "targetINIs": [ "StarfieldCustom.ini", "StarfieldCustom.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Sets the aspect ratio limits.",
+            "type": "Dropdown"
+          },
+
+          "Display Mode": {
+            "choices": [ "Fullscreen", "Borderless Windowed", "Windowed" ],
+            "customWidth": "12",
+            "settingChoices": {
+              "Fullscreen": [ "1", "0" ],
+              "Borderless Windowed": [ "0", "1" ],
+              "Windowed": [ "0", "0" ]
+            },
+            "settings": [ "bFull Screen", "bBorderless" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Sets the display mode.",
+            "type": "Dropdown"
+          },
+          "Upscaling": {
+            "choices": [ "Off", "CAS", "FSR2" ],
+            "customWidth": "12",
+            "settingChoices": {
+              "Off": [ "0", "0" ],
+              "CAS": [ "1", "1" ],
+              "FSR2": [ "1", "3" ]
+            },
+            "settings": [ "bDynamicResolutionEnabled", "uiUpscaleTech" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "tooltip": "Sets the dynamic resolution and upscaling technology method used.",
+            "type": "Dropdown"
+          },
+          "Render Resolution Scale": {
+            "customWidth": "22",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0.5",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fRenderResolutionScaleFactor" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "1",
+            "tooltip": "Sets the internal render resolution scale that will then be upscaled using the Upscaling method set above.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Upscaling": {
+                "operator": "not-equal",
+                "value": "Off"
+              }
+            }
+          },
+          "First Person FOV": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "40",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fFPWorldFOV" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Camera" ],
+            "to": "120",
+            "tooltip": "Sets the field of view in first person mode.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Third Person FOV": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "40",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fTPWorldFOV" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Camera" ],
+            "to": "120",
+            "tooltip": "Sets the field of view in third person mode.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "": "",
+          "Always Active": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAlwaysActive" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the ability of the game to remain active when it is out of focus (i.e. if in a windowed mode setup, if one clicks outside the game window with this enabled, the game will not pause).",
+            "type": "Checkbutton"
+          },
+          "Always On Top": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bTopMostWindow" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability for the game window to always be the top-most window.",
+            "type": "Checkbutton"
+          },
+          "VSync": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableVsync" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
+            "type": "Checkbutton"
+          }
+        }
+      },
+      "Presets": {
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Reset to Default": {
+            "preset id": "Default",
+            "tooltip": "Resets your INI files to their default values.\n\nNote that not all settings will be set to their default values, as you probably don't want us to touch your screen resolution and mouse look sensitivity... that sorta thing ;)",
+            "tooltip_wrap_length": 250,
+            "type": "preset"
+          },
+          "Apply Recommended Tweaks": {
+            "preset id": "recommended",
+            "tooltip": "This sets certain recommended tweaks for all users.",
+            "type": "preset"
+          },
+          "": "",
+          "EmptyLabel1": "",
+          "Bethini Presets": {
+            "type": "radioPreset",
+            "tooltip": "Changes the preset buttons to use Bethini Presets.\n\nHint: These presets are better ;)",
+            "value": "Bethini"
+          },
+          "Poor": {
+            "preset id": "Poor",
+            "tooltip": "Sets the Poor preset.",
+            "type": "preset",
+            "dependentSettings": {
+              "Bethini Presets": {
+                "operator": "equal",
+                "value": "Bethini"
+              }
+            }
+          },
+          "Vanilla Presets": {
+            "type": "radioPreset",
+            "tooltip": "Changes the preset buttons to use the vanilla presets.",
+            "value": "Vanilla"
+          },
+          "Low": {
+            "preset id": "Low",
+            "tooltip": "Sets the Low preset.",
+            "type": "preset"
+          },
+          "EmptyLabel6": "",
+          "Medium": {
+            "preset id": "Medium",
+            "tooltip": "Sets the Medium preset.",
+            "type": "preset"
+          },
+          "EmptyLabel9": "",
+          "High": {
+            "preset id": "High",
+            "tooltip": "Sets the High preset.",
+            "type": "preset"
+          },
+          "EmptyLabel11": "",
+          "Ultra": {
+            "preset id": "Ultra",
+            "tooltip": "Sets the Ultra preset.",
+            "type": "preset"
+          }
+        }
+      }
+    },
+    "General": {
+      "NoLabelFrame": {
+        "Pack": {
+          "Fill": "X",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Intro Logos": {
+            "Offvalue": [ [ "" ] ],
+            "Onvalue": [ [ "BGS_LOGO_1080p_BinkVersion.bk2" ] ],
+            "settings": [ "sIntroSequence" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the game intro logos.",
+            "type": "Checkbutton"
+          },
+          "Main Menu Delay": {
+            "Offvalue": [
+              [ "0" ]
+            ],
+            "Onvalue": [
+              [ "5000" ]
+            ],
+            "settings": [ "uMainMenuDelayBeforeAllowSkip" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the 5 second delay loading the main menu.",
+            "type": "Checkbutton"
+          },
+          "Intro Music": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bPlayMainMenuMusic" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the game intro music.",
+            "type": "Checkbutton"
+          }
+        }
+      },
+      "Saved Games": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "7",
+        "Settings": {
+          "Save on Travel": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnTravel" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Toggles autosaves made after traveling to different locations.",
+            "type": "Checkbutton"
+          },
+          "Save on Rest": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnRest" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Toggles autosaves made after sleeping.",
+            "type": "Checkbutton"
+          },
+          "Save on Wait": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnWait" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Toggles autosaves made after waiting.",
+            "type": "Checkbutton"
+          },
+          "Save on Pause Timer": {
+            "decimal places": "0",
+            "from": "1",
+            "increment": "1",
+            "settings": [ "fAutosaveEveryXMins" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "to": "100",
+            "tooltip": "Sets the timer to make a new autosave upon closing a menu.",
+            "type": "Spinbox",
+            "validate": "float",
+            "width": "5"
+          }
+        }
+      },
+      "Gameplay": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "X",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Difficulty": {
+            "choices": [ "Very Easy", "Easy", "Normal", "Hard", "Very Hard" ],
+            "settingChoices": {
+              "Very Easy": [ "0" ],
+              "Easy": [ "1" ],
+              "Normal": [ "2" ],
+              "Hard": [ "3" ],
+              "Very Hard": [ "4" ]
+            },
+            "settings": [ "uDifficulty" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Sets the difficulty level.",
+            "type": "Dropdown"
+          },
+          "Always Run by Default": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAlwaysRunByDefault" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
+            "type": "Checkbutton"
+          }
+        }
+      }
+    },
+    "Interface": {
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Dialogue Subtitles": {
+            "tooltip": "Toggles subtitles for NPCs who are directly talking to you.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bDialogueSubtitles" ]
+          },
+          "General Subtitles": {
+            "tooltip": "Toggles subtitles for NPCs who are not directly talking to you.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bGeneralSubtitles" ]
+          },
+          "Show Quest Markers": {
+            "tooltip": "Toggles quest markers.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bShowQuestMarkers" ]
+          },
+          "Show Floating Quest Markers": {
+            "tooltip": "Toggles floating quest markers on items and characters.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bShowFloatingQuestMarkers" ]
+          }
+        }
+      },
+      "Console": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "Y"
+        },
+        "NumberOfVerticallyStackedSettings": "4",
+        "Settings": {
+          "Screen Percentage": {
+            "customWidth": "16",
+            "decimal places": "0",
+            "from": "0",
+            "settings": [ "iConsoleSizeScreenPercent" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "100",
+            "tooltip": "Sets the percentage of the screen that the in-game console can fill.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "Text Size": {
+            "customWidth": "16",
+            "decimal places": "0",
+            "from": "0",
+            "settings": [ "iConsoleTextSize" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "100",
+            "tooltip": "Sets the size for text in the in-game console.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "Text Input Color": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "settings": [ "rConsoleTextColor" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color of text typed into the console.",
+            "type": "Color"
+          },
+          "Text Output Color": {
+            "colorValueType": "rgb",
+            "customWidth": "16",
+            "settings": [ "rConsoleHistoryTextColor" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color of the text output in the console.",
+            "type": "Color"
+          }
+        }
+      },
+      "Mouse Settings": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "Y"
+        },
+        "NumberOfVerticallyStackedSettings": "3",
+        "Settings": {
+          "Look Sensitivity": {
+            "customWidth": "15",
+            "digits": "4",
+            "decimal places": "4",
+            "from": "0.0100",
+            "increment": "0.0001",
+            "length": "110",
+            "resolution": "0.0025",
+            "settings": [ "fMouseHeadingSensitivity" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "to": "0.1000",
+            "tooltip": "Sets the look sensitivity (how fast the camera moves in response to the mouse).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "X Scale": {
+            "customWidth": "19",
+            "entryWidth": "7",
+            "settings": [ "fMouseHeadingXScale" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Sets the mouse horizontal scale value (how much the camera moves when moving the mouse horizontally).",
+            "type": "Entry",
+            "validate": "float"
+          },
+          "Y Scale": {
+            "customWidth": "19",
+            "entryWidth": "7",
+            "settings": [ "fMouseHeadingYScale" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Sets the mouse vertical scale value (how much the camera moves when moving the mouse vertically).",
+            "type": "Entry",
+            "validate": "float"
+          }
+        }
+      }
+    },
+    "Visuals": {
+      "Quality": {
+        "Pack": {
+          "Fill": "None"
+        },
+        "NumberOfVerticallyStackedSettings": "4",
+        "Settings": {
+          "Preset Quality": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uGlobalRendererQuality" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the base quality preset. Any other quality setting will use this quality if they are set to \"Preset.\"",
+            "type": "Dropdown"
+          },
+          "Shadows": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uShadows" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality of shadows.",
+            "type": "Dropdown"
+          },
+          "Indirect Lighting": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uGlobalIllumination" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality of indirect lighting.",
+            "type": "Dropdown"
+          },
+          "Reflections": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uReflections" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality of Reflections.",
+            "type": "Dropdown"
+          },
+          "Particles": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uParticle" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality of particle lighting.",
+            "type": "Dropdown"
+          },
+          "Volumetric Lighting": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "1", "0" ],
+              "Medium": [ "1", "1" ],
+              "High": [ "1", "2" ],
+              "Ultra": [ "1", "3" ],
+              "Preset": [ "1", "5" ]
+            },
+            "settings": [ "bVolumetricLightingEnable", "uVolumetricLighting" ],
+            "targetINIs": [ "StarfieldCustom.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display", "Quality" ],
+            "tooltip": "Sets the volumetric lighting quality.",
+            "type": "Dropdown"
+          },
+          "Crowd Density": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uCrowd" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the density of crowds.",
+            "type": "Dropdown"
+          },
+          "Motion Blur": {
+            "customWidth": "16",
+            "choices": [ "None", "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "None": [ "0", "0" ],
+              "Low": [ "1", "0" ],
+              "Medium": [ "1", "1" ],
+              "High": [ "1", "2" ],
+              "Ultra": [ "1", "3" ],
+              "Preset": [ "1", "5" ]
+            },
+            "settings": [ "bEnableMotionBlur", "uMotionBlur" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "MotionBlur", "Quality" ],
+            "tooltip": "Sets the motion blur quality.",
+            "type": "Dropdown"
+          },
+          "GTAO": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uSAO" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality of Ground Truth Ambient Occlusion.",
+            "type": "Dropdown"
+          },
+          "Grass": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uGrass" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality and lushness of grass.",
+            "type": "Dropdown"
+          },
+          "Contact Shadows": {
+            "customWidth": "16",
+            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ],
+              "Ultra": [ "3" ],
+              "Preset": [ "5" ]
+            },
+            "settings": [ "uContactShadows" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Quality" ],
+            "tooltip": "Sets the quality of Contact Shadows.",
+            "type": "Dropdown"
+          }
+        }
+      },
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "5",
+        "Settings": {
+          "Film Grain": {
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fFilmGrainIntensity" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "1",
+            "tooltip": "Sets the intensity of the film grain effect.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Depth of Field": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDepthOfFieldEnable" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
+            "type": "Checkbutton"
+          },
+          "Variable Rate Shading": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseReducedShadingRate" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles variable rate shading.",
+            "type": "Checkbutton"
+          }
+        }
+      }
+    }
+  }
+}
