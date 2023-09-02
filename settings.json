@@ -1529,6 +1529,8 @@
       "name": "bAlwaysRunByDefault",
       "type": "boolean",
       "section": "Controls",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 1
       }
@@ -6859,6 +6861,7 @@
       "name": "bInvalidateOlderFiles",
       "type": "boolean",
       "section": "Archive",
+      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -9621,6 +9624,8 @@
       "name": "bShowQuestMarkers",
       "type": "boolean",
       "section": "GamePlay",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 1
       }
@@ -30599,6 +30604,7 @@
       "name": "iDefaultExternalCodecID",
       "type": "number",
       "section": "Wwise",
+      "alwaysPrint": true,
       "value": {
         "default": 4
       }
@@ -33661,6 +33667,7 @@
       "name": "sGPUDefaultQualitySettingsJSON",
       "type": "string",
       "section": "General",
+      "alwaysPrint": true,
       "value": {
         "default": "DefaultGlobalGraphicsSettings.json"
       }
@@ -33762,6 +33769,7 @@
       "name": "sLanguage",
       "type": "string",
       "section": "General",
+      "alwaysPrint": true,
       "value": {
         "default": "en",
         "de": "de",
@@ -34004,6 +34012,7 @@
       "name": "sResourceDataDirsFinal",
       "type": "string",
       "section": "Archive",
+      "alwaysPrint": true,
       "value": {
         "default": "STRINGS\\"
       }
@@ -34012,6 +34021,7 @@
       "name": "sResourceEnglishVoiceList",
       "type": "string",
       "section": "Archive",
+      "alwaysPrint": true,
       "value": {
         "default": "Starfield - Voices01.ba2, Starfield - Voices02.ba2, Starfield - VoicesPatch.ba2"
       }
@@ -34029,6 +34039,7 @@
       "name": "sResourceLocaleVoiceList",
       "type": "string",
       "section": "Archive",
+      "alwaysPrint": true,
       "value": {
         "default": "",
         "de": "Starfield - Voices_de01.ba2, Starfield - Voices_de02.ba2, Starfield - Voices_de_Patch.ba2",
@@ -34522,6 +34533,8 @@
       "name": "uAtmosphericScattering",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -34800,6 +34813,8 @@
       "name": "uDecals",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -35258,6 +35273,8 @@
       "name": "uDynamicResolution",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -35394,6 +35411,7 @@
       "name": "uExterior Cell Buffer",
       "type": "number",
       "section": "General",
+      "alwaysPrint": true,
       "value": {
         "default": 47,
         "fixedDefault": 36
@@ -35469,6 +35487,8 @@
       "name": "uGeometry",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -36653,6 +36673,8 @@
       "name": "uPostEffects",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -37198,6 +37220,8 @@
       "name": "uTerrain",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -37246,6 +37270,8 @@
       "name": "uTransparency",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -37278,6 +37304,8 @@
       "name": "uVariableRateShading",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }
@@ -37286,6 +37314,8 @@
       "name": "uViewDistance",
       "type": "number",
       "section": "Quality",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
       "value": {
         "default": 5
       }

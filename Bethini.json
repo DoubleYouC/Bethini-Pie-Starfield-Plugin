@@ -41,10 +41,6 @@
     "uiUpscaleTech",
     "bTopMostWindow",
     "uDifficulty",
-    "bGamepadEnable",
-    "bDialogueSubtitles",
-    "bGeneralSubtitles",
-    "bLargeMenuFonts",
     "bHasUserAccepted"
   ],
   "Default": "",
@@ -321,7 +317,7 @@
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1280x720", "1366x768", "1440x900", "1600x900", "1680x1050", "1920x1200", "1920x1080", "2560x1080", "2560x1440", "2560x1600", "3440x1440", "3840x2160", "Manual..." ],
-            "customWidth": "12",
+            "customWidth": "14",
             "delimiter": "x",
             "settings": [ "iSize W", "iSize H" ],
             "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
@@ -331,7 +327,7 @@
           },
           "Aspect Ratio": {
             "choices": [ "4:3", "16:9", "16:10", "21:9", "32:9" ],
-            "customWidth": "12",
+            "customWidth": "14",
             "settingChoices": {
               "4:3": [ "1.3333", "2.3889" ],
               "16:9": [ "1.6", "2.3889" ],
@@ -348,7 +344,7 @@
 
           "Display Mode": {
             "choices": [ "Fullscreen", "Borderless Windowed", "Windowed" ],
-            "customWidth": "12",
+            "customWidth": "14",
             "settingChoices": {
               "Fullscreen": [ "1", "0" ],
               "Borderless Windowed": [ "0", "1" ],
@@ -360,42 +356,36 @@
             "tooltip": "Sets the display mode.",
             "type": "Dropdown"
           },
-          "Upscaling": {
-            "choices": [ "Off", "CAS", "FSR2" ],
-            "customWidth": "12",
+          "Upscaling Method": {
+            "choices": [ "None", "CAS", "FSR2" ],
+            "customWidth": "14",
             "settingChoices": {
-              "Off": [ "0", "0" ],
-              "CAS": [ "1", "1" ],
-              "FSR2": [ "1", "3" ]
+              "None": [ "0" ],
+              "CAS": [ "1" ],
+              "FSR2": [ "3" ]
             },
-            "settings": [ "bDynamicResolutionEnabled", "uiUpscaleTech" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display", "Display" ],
-            "tooltip": "Sets the dynamic resolution and upscaling technology method used.",
+            "settings": [ "uiUpscaleTech" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the upscaling technology method used.",
             "type": "Dropdown"
           },
           "Render Resolution Scale": {
             "customWidth": "22",
             "decimal places": "2",
             "digits": "3",
-            "from": "0.5",
+            "from": "0.1",
             "increment": "0.01",
             "length": "100",
             "resolution": "0.01",
-            "settings": [ "fRenderResolutionScaleFactor" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display" ],
+            "settings": [ "fRenderResolutionScaleFactor", "fMinRenderResolutionScaleFactor", "fMinDynamicResolutionScale" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldCustom.ini", "StarfieldCustom.ini" ],
+            "targetSections": [ "Display", "Display", "Display" ],
             "to": "1",
-            "tooltip": "Sets the internal render resolution scale that will then be upscaled using the Upscaling method set above.",
+            "tooltip": "Sets the internal render resolution scale that will then be upscaled to your resolution. This slider is bigger than the in-game slider, and will very much improve performance if set lower, at the expense of visuals.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Upscaling": {
-                "operator": "not-equal",
-                "value": "Off"
-              }
-            }
+            "width": "7"
           },
           "First Person FOV": {
             "customWidth": "22",
@@ -432,6 +422,15 @@
             "width": "7"
           },
           "": "",
+          "Dynamic Resolution": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDynamicResolutionEnabled" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles dynamic resolution.",
+            "type": "Checkbutton"
+          },
           "Always Active": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -524,6 +523,30 @@
             "preset id": "Ultra",
             "tooltip": "Sets the Ultra preset.",
             "type": "preset"
+          }
+        }
+      },
+      "NoLabelFrame": {
+        "Pack": {
+          "Fill": "X",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Load Loose Files": {
+            "Offvalue": [
+              [ "0" ],
+              [ "STRINGS\\" ]
+            ],
+            "Onvalue": [
+              [ "1" ],
+              [ "" ]
+            ],
+            "settings": [ "bInvalidateOlderFiles", "sResourceDataDirsFinal" ],
+            "targetINIs": [ "StarfieldCustom.ini", "StarfieldCustom.ini" ],
+            "targetSections": [ "Archive", "Archive" ],
+            "tooltip": "Toggles the ability of the game to load unarchived data files.",
+            "type": "Checkbutton"
           }
         }
       }
@@ -676,7 +699,7 @@
             "targetSections": [ "Interface" ],
             "settings": [ "bGeneralSubtitles" ]
           },
-          "Show Quest Markers": {
+          "Quest Markers": {
             "tooltip": "Toggles quest markers.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
@@ -685,7 +708,7 @@
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowQuestMarkers" ]
           },
-          "Show Floating Quest Markers": {
+          "Floating Quest Markers": {
             "tooltip": "Toggles floating quest markers on items and characters.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
@@ -693,6 +716,33 @@
             "targetINIs": [ "StarfieldPrefs.ini" ],
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowFloatingQuestMarkers" ]
+          },
+          "Damage Numbers": {
+            "tooltip": "Toggles floating damage numbers.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bDamageNumbersEnabled" ]
+          },
+          "Stealth Meter": {
+            "tooltip": "Toggles the stealth meter.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "0" ] ],
+            "Offvalue": [ [ "1" ] ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bHideStealthMeter" ]
+          },
+          "Letterboxed Photo Mode": {
+            "tooltip": "Toggles if photo mode will be letterboxed.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bPhotoModeLetterBoxed" ]
           }
         }
       },
