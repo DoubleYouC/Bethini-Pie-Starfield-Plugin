@@ -17,7 +17,7 @@
       "type": "string",
       "section": "Menu",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -6863,7 +6863,8 @@
       "section": "Archive",
       "alwaysPrint": true,
       "value": {
-        "default": 0
+        "default": 0,
+        "recommended": 1
       }
     },
     {
@@ -34014,7 +34015,8 @@
       "section": "Archive",
       "alwaysPrint": true,
       "value": {
-        "default": "STRINGS\\"
+        "default": "STRINGS\\",
+        "recommended": ""
       }
     },
     {

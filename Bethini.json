@@ -317,7 +317,7 @@
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1280x720", "1366x768", "1440x900", "1600x900", "1680x1050", "1920x1200", "1920x1080", "2560x1080", "2560x1440", "2560x1600", "3440x1440", "3840x2160", "Manual..." ],
-            "customWidth": "14",
+            "customWidth": "16",
             "delimiter": "x",
             "settings": [ "iSize W", "iSize H" ],
             "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
@@ -327,7 +327,7 @@
           },
           "Aspect Ratio": {
             "choices": [ "4:3", "16:9", "16:10", "21:9", "32:9" ],
-            "customWidth": "14",
+            "customWidth": "16",
             "settingChoices": {
               "4:3": [ "1.3333", "2.3889" ],
               "16:9": [ "1.6", "2.3889" ],
@@ -344,7 +344,7 @@
 
           "Display Mode": {
             "choices": [ "Fullscreen", "Borderless Windowed", "Windowed" ],
-            "customWidth": "14",
+            "customWidth": "16",
             "settingChoices": {
               "Fullscreen": [ "1", "0" ],
               "Borderless Windowed": [ "0", "1" ],
@@ -358,7 +358,7 @@
           },
           "Upscaling Method": {
             "choices": [ "None", "CAS", "FSR2" ],
-            "customWidth": "14",
+            "customWidth": "16",
             "settingChoices": {
               "None": [ "0" ],
               "CAS": [ "1" ],
@@ -796,6 +796,15 @@
             "targetSections": [ "Menu" ],
             "tooltip": "Sets the color of the text output in the console.",
             "type": "Color"
+          },
+          "Selection Color": {
+            "colorValueType": "rgba",
+            "customWidth": "16",
+            "settings": [ "aConsoleSelectedRefColor" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the color items selected while in the console.",
+            "type": "Color"
           }
         }
       },
@@ -918,7 +927,7 @@
             "type": "Dropdown"
           },
           "Particles": {
-            "customWidth": "16",
+            "customWidth": "18",
             "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
             "settingChoices": {
               "Low": [ "0" ],
@@ -934,7 +943,7 @@
             "type": "Dropdown"
           },
           "Volumetric Lighting": {
-            "customWidth": "16",
+            "customWidth": "18",
             "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
             "settingChoices": {
               "Low": [ "1", "0" ],
@@ -950,7 +959,7 @@
             "type": "Dropdown"
           },
           "Crowd Density": {
-            "customWidth": "16",
+            "customWidth": "18",
             "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
             "settingChoices": {
               "Low": [ "0" ],
@@ -966,7 +975,7 @@
             "type": "Dropdown"
           },
           "Motion Blur": {
-            "customWidth": "16",
+            "customWidth": "18",
             "choices": [ "None", "Low", "Medium", "High", "Ultra", "Preset" ],
             "settingChoices": {
               "None": [ "0", "0" ],
