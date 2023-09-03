@@ -6580,7 +6580,7 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 1
+        "default": 0
       }
     },
     {
@@ -20452,9 +20452,18 @@
       "type": "float",
       "section": "Display",
       "ini": "StarfieldPrefs.ini",
-      "notes": "Believed to be unused.",
+      "notes": "Not really sure this is used or not.",
       "value": {
-        "default": 4.0000
+        "default": 4,
+        "Vanilla Low": 4,
+        "Vanilla Medium": 4,
+        "Vanilla High": 4,
+        "Vanilla Ultra": 4,
+        "Bethini Poor": 4,
+        "Bethini Low": 4,
+        "Bethini Medium": 16,
+        "Bethini High": 16,
+        "Bethini Ultra": 16
       }
     },
     {
@@ -34538,7 +34547,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -34818,7 +34836,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -35278,7 +35305,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -35492,7 +35528,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -36678,7 +36723,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -37225,7 +37279,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -37275,7 +37338,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -37309,7 +37381,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -37319,7 +37400,16 @@
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true,
       "value": {
-        "default": 5
+        "default": 5,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
