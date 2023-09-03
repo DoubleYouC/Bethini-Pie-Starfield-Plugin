@@ -559,17 +559,6 @@
             "targetSections": [ "Archive", "Archive" ],
             "tooltip": "Toggles the ability of the game to load unarchived data files.",
             "type": "Checkbutton"
-          },
-          "Photo Mode Directory": {
-            "browse": [ "directory", "directory", "directory" ],
-            "choices": [ "Browse...", "Manual..." ],
-            "customWidth": "30",
-            "fileFormat": "directory",
-            "settings": [ "sPhotoModeFolder" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Sets the location of the photo mode folder. Default goes to Documents\\My Games\\Starfield\\Data\\Textures\\",
-            "type": "Dropdown"
           }
         }
       }
