@@ -32788,7 +32788,7 @@
       "type": "string",
       "section": "Menu",
       "value": {
-        "default": "fffffb"
+        "default": "255,255,251"
       }
     },
     {
@@ -32796,7 +32796,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0000"
+        "default": "255,0,0"
       }
     },
     {
@@ -32804,7 +32804,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0000"
+        "default": "255,0,0"
       }
     },
     {
@@ -32812,7 +32812,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff00"
+        "default": "255,255,0"
       }
     },
     {
@@ -32820,7 +32820,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0000"
+        "default": "255,0,0"
       }
     },
     {
@@ -32828,7 +32828,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff00"
+        "default": "255,255,0"
       }
     },
     {
@@ -32836,7 +32836,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffc0"
+        "default": "255,255,192"
       }
     },
     {
@@ -32844,7 +32844,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
@@ -32852,7 +32852,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff00ff"
+        "default": "255,0,255"
       }
     },
     {
@@ -32860,7 +32860,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "78c961"
+        "default": "120,201,97"
       }
     },
     {
@@ -32868,7 +32868,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "78c961"
+        "default": "120,201,97"
       }
     },
     {
@@ -32876,7 +32876,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "78c9b5"
+        "default": "120,201,181"
       }
     },
     {
@@ -32884,7 +32884,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "000000"
+        "default": "0,0,0"
       }
     },
     {
@@ -32892,7 +32892,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0000"
+        "default": "255,0,0"
       }
     },
     {
@@ -32900,7 +32900,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
@@ -32908,7 +32908,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "78c9b5"
+        "default": "120,201,181"
       }
     },
     {
@@ -32916,7 +32916,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "3c143f"
+        "default": "60,20,63"
       }
     },
     {
@@ -32924,7 +32924,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "3c4455"
+        "default": "60,68,85"
       }
     },
     {
@@ -32932,7 +32932,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "1e1e1e"
+        "default": "30,30,30"
       }
     },
     {
@@ -32940,7 +32940,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff00ff"
+        "default": "255,0,255"
       }
     },
     {
@@ -32948,7 +32948,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "8000c8"
+        "default": "128,0,200"
       }
     },
     {
@@ -32956,7 +32956,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "000000"
+        "default": "0,0,0"
       }
     },
     {
@@ -32964,7 +32964,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffc000"
+        "default": "255,192,0"
       }
     },
     {
@@ -32972,7 +32972,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff3200"
+        "default": "255,50,0"
       }
     },
     {
@@ -32980,7 +32980,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
@@ -32988,7 +32988,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff00ff"
+        "default": "255,0,255"
       }
     },
     {
@@ -32996,7 +32996,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff3280"
+        "default": "255,50,128"
       }
     },
     {
@@ -33004,7 +33004,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffc0"
+        "default": "255,255,192"
       }
     },
     {
@@ -33012,7 +33012,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
@@ -33020,7 +33020,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff80"
+        "default": "255,255,128"
       }
     },
     {
@@ -33028,7 +33028,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff00"
+        "default": "255,255,0"
       }
     },
     {
@@ -33036,7 +33036,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffc020"
+        "default": "255,192,32"
       }
     },
     {
@@ -33044,7 +33044,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff00"
+        "default": "255,255,0"
       }
     },
     {
@@ -33052,7 +33052,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff00ff"
+        "default": "255,0,255"
       }
     },
     {
@@ -33060,7 +33060,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff80"
+        "default": "255,255,128"
       }
     },
     {
@@ -33068,7 +33068,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0099"
+        "default": "255,0,153"
       }
     },
     {
@@ -33076,7 +33076,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff8b45"
+        "default": "255,139,69"
       }
     },
     {
@@ -33084,7 +33084,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0000"
+        "default": "255,0,0"
       }
     },
     {
@@ -33092,7 +33092,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
@@ -33100,7 +33100,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff80"
+        "default": "255,255,128"
       }
     },
     {
@@ -33108,7 +33108,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff00"
+        "default": "255,255,0"
       }
     },
     {
@@ -33116,7 +33116,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffff00"
+        "default": "255,255,0"
       }
     },
     {
@@ -33124,7 +33124,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff00ff"
+        "default": "255,0,255"
       }
     },
     {
@@ -33132,7 +33132,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
@@ -33140,7 +33140,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff00ff"
+        "default": "255,0,255"
       }
     },
     {
@@ -33148,7 +33148,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ff0000"
+        "default": "255,0,0"
       }
     },
     {
@@ -33156,7 +33156,7 @@
       "type": "string",
       "section": " NavMesh",
       "value": {
-        "default": "ffffff"
+        "default": "255,255,255"
       }
     },
     {
