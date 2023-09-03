@@ -25,7 +25,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ff95997b"
+        "default": "255,149,153,123"
       }
     },
     {
@@ -33,7 +33,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ff95997b"
+        "default": "255,149,153,123"
       }
     },
     {
@@ -41,7 +41,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "40aa0f0f"
+        "default": "64,170,15,15"
       }
     },
     {
@@ -49,7 +49,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffaa0f0f"
+        "default": "255,170,15,15"
       }
     },
     {
@@ -57,7 +57,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "24ed5637"
+        "default": "36,237,86,55"
       }
     },
     {
@@ -65,7 +65,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffed5637"
+        "default": "255,237,86,55"
       }
     },
     {
@@ -73,7 +73,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "40c8b946"
+        "default": "64,200,185,70"
       }
     },
     {
@@ -81,7 +81,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffc8b946"
+        "default": "255,200,185,70"
       }
     },
     {
@@ -89,7 +89,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "24ff0000"
+        "default": "36,255,0,0"
       }
     },
     {
@@ -97,7 +97,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffff0000"
+        "default": "255,255,0,0"
       }
     },
     {
@@ -105,7 +105,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "0fe6e6e6"
+        "default": "15,230,230,230"
       }
     },
     {
@@ -113,7 +113,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffe6e6e6"
+        "default": "255,230,230,230"
       }
     },
     {
@@ -121,7 +121,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "00aa0f0f"
+        "default": "0,170,15,15"
       }
     },
     {
@@ -129,7 +129,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffaa0f0f"
+        "default": "255,170,15,15"
       }
     },
     {
@@ -137,7 +137,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "124c4c4c"
+        "default": "18,76,76,76"
       }
     },
     {
@@ -145,7 +145,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ff4c4c4c"
+        "default": "255,76,76,76"
       }
     },
     {
@@ -153,7 +153,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ffb7b7b7"
+        "default": "255,183,183,183"
       }
     },
     {
@@ -161,7 +161,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ffb7b7b7"
+        "default": "255,183,183,183"
       }
     },
     {
@@ -169,7 +169,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "40c8b946"
+        "default": "64,200,185,70"
       }
     },
     {
@@ -177,7 +177,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffc8b946"
+        "default": "255,200,185,70"
       }
     },
     {
@@ -185,7 +185,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "00e6e6e6"
+        "default": "0,230,230,230"
       }
     },
     {
@@ -193,7 +193,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ff409056"
+        "default": "255,64,144,86"
       }
     },
     {
@@ -201,7 +201,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ff409056"
+        "default": "255,64,144,86"
       }
     },
     {
@@ -209,7 +209,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "0f2198b0"
+        "default": "15,33,152,176"
       }
     },
     {
@@ -217,7 +217,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -225,7 +225,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "40aa0f0f"
+        "default": "64,170,15,15"
       }
     },
     {
@@ -233,7 +233,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffaa0f0f"
+        "default": "255,170,15,15"
       }
     },
     {
@@ -241,7 +241,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffe6e6e6"
+        "default": "255,230,230,230"
       }
     },
     {
@@ -249,7 +249,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "003eadf2"
+        "default": "0,62,173,242"
       }
     },
     {
@@ -257,7 +257,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "2027c684"
+        "default": "32,39,198,132"
       }
     },
     {
@@ -265,7 +265,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -273,7 +273,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "201f8ee2"
+        "default": "32,31,142,226"
       }
     },
     {
@@ -281,7 +281,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "221f8ee2"
+        "default": "34,31,142,226"
       }
     },
     {
@@ -289,7 +289,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "4027c684"
+        "default": "64,39,198,132"
       }
     },
     {
@@ -297,7 +297,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -305,7 +305,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "00b3c1ef"
+        "default": "0,179,193,239"
       }
     },
     {
@@ -313,7 +313,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "401f8ee2"
+        "default": "64,31,142,226"
       }
     },
     {
@@ -321,7 +321,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "01ffaa00"
+        "default": "1,255,170,0"
       }
     },
     {
@@ -329,7 +329,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff3eadf2"
+        "default": "255,62,173,242"
       }
     },
     {
@@ -337,7 +337,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff27c684"
+        "default": "255,39,198,132"
       }
     },
     {
@@ -345,7 +345,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff72e8ff"
+        "default": "255,114,232,255"
       }
     },
     {
@@ -353,7 +353,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff1f8ee2"
+        "default": "255,31,142,226"
       }
     },
     {
@@ -361,7 +361,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff72e8ff"
+        "default": "255,114,232,255"
       }
     },
     {
@@ -369,7 +369,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff27c684"
+        "default": "255,39,198,132"
       }
     },
     {
@@ -377,7 +377,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff72e8ff"
+        "default": "255,114,232,255"
       }
     },
     {
@@ -385,7 +385,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff72e8ff"
+        "default": "255,114,232,255"
       }
     },
     {
@@ -393,7 +393,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff1f8ee2"
+        "default": "255,31,142,226"
       }
     },
     {
@@ -401,7 +401,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ffffaa00"
+        "default": "255,255,170,0"
       }
     },
     {
@@ -409,7 +409,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "803eadf2"
+        "default": "128,62,173,242"
       }
     },
     {
@@ -417,7 +417,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "8027c684"
+        "default": "128,39,198,132"
       }
     },
     {
@@ -425,7 +425,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff115b69"
+        "default": "255,17,91,105"
       }
     },
     {
@@ -433,7 +433,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "801f8ee2"
+        "default": "128,31,142,226"
       }
     },
     {
@@ -441,7 +441,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff115b69"
+        "default": "255,17,91,105"
       }
     },
     {
@@ -449,7 +449,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "8027c684"
+        "default": "128,39,198,132"
       }
     },
     {
@@ -457,7 +457,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff115b69"
+        "default": "255,17,91,105"
       }
     },
     {
@@ -465,7 +465,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "ff115b69"
+        "default": "255,17,91,105"
       }
     },
     {
@@ -473,7 +473,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "801f8ee2"
+        "default": "128,31,142,226"
       }
     },
     {
@@ -481,7 +481,7 @@
       "type": "string",
       "section": "Monocle",
       "value": {
-        "default": "80ffaa00"
+        "default": "128,255,170,0"
       }
     },
     {
@@ -489,7 +489,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "24ffa500"
+        "default": "36,255,165,0"
       }
     },
     {
@@ -497,7 +497,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffffa500"
+        "default": "255,255,165,0"
       }
     },
     {
@@ -505,7 +505,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "20c8b946"
+        "default": "32,200,185,70"
       }
     },
     {
@@ -513,7 +513,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffc8b946"
+        "default": "255,200,185,70"
       }
     },
     {
@@ -521,7 +521,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "40b3552c"
+        "default": "64,179,85,44"
       }
     },
     {
@@ -529,7 +529,7 @@
       "type": "string",
       "section": "Crafting",
       "value": {
-        "default": "ffb3552c"
+        "default": "255,179,85,44"
       }
     },
     {
@@ -537,7 +537,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "24b2b2cc"
+        "default": "36,178,178,204"
       }
     },
     {
@@ -545,7 +545,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffb2b2cc"
+        "default": "255,178,178,204"
       }
     },
     {
@@ -553,7 +553,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "00e6e6e6"
+        "default": "0,230,230,230"
       }
     },
     {
@@ -561,7 +561,7 @@
       "type": "string",
       "section": "Workshop",
       "value": {
-        "default": "ffe6e6e6"
+        "default": "255,230,230,230"
       }
     },
     {
@@ -569,7 +569,7 @@
       "type": "string",
       "section": "Display",
       "value": {
-        "default": "19ff0000"
+        "default": "25,255,0,0"
       }
     },
     {
@@ -577,7 +577,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "002198b0"
+        "default": "0,33,152,176"
       }
     },
     {
@@ -585,7 +585,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -593,7 +593,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "4d808080"
+        "default": "77,128,128,128"
       }
     },
     {
@@ -601,7 +601,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "002198b0"
+        "default": "0,33,152,176"
       }
     },
     {
@@ -609,7 +609,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "322198b0"
+        "default": "50,33,152,176"
       }
     },
     {
@@ -617,7 +617,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "192198b0"
+        "default": "25,33,152,176"
       }
     },
     {
@@ -625,7 +625,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ff9980"
+        "default": "0,255,153,128"
       }
     },
     {
@@ -633,7 +633,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "19ff6000"
+        "default": "25,255,96,0"
       }
     },
     {
@@ -641,7 +641,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "1900ff32"
+        "default": "25,0,255,50"
       }
     },
     {
@@ -649,7 +649,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "322198b0"
+        "default": "50,33,152,176"
       }
     },
     {
@@ -657,7 +657,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "64810000"
+        "default": "100,129,0,0"
       }
     },
     {
@@ -665,7 +665,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -673,7 +673,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -681,7 +681,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -689,7 +689,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00000000"
+        "default": "0,0,0,0"
       }
     },
     {
@@ -697,7 +697,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -705,7 +705,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -713,7 +713,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ffff0000"
+        "default": "255,255,0,0"
       }
     },
     {
@@ -721,7 +721,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -729,7 +729,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -737,7 +737,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -745,7 +745,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ffff4000"
+        "default": "255,255,64,0"
       }
     },
     {
@@ -753,7 +753,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ffff4000"
+        "default": "255,255,64,0"
       }
     },
     {
@@ -761,7 +761,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff00ff32"
+        "default": "255,0,255,50"
       }
     },
     {
@@ -769,7 +769,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff2198b0"
+        "default": "255,33,152,176"
       }
     },
     {
@@ -777,7 +777,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "ff810000"
+        "default": "255,129,0,0"
       }
     },
     {
@@ -785,7 +785,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -793,7 +793,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -801,7 +801,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -809,7 +809,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -817,7 +817,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -825,7 +825,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -833,7 +833,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -841,7 +841,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -849,7 +849,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -857,7 +857,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -865,7 +865,7 @@
       "type": "string",
       "section": "Spaceship",
       "value": {
-        "default": "00ffff00"
+        "default": "0,255,255,0"
       }
     },
     {
@@ -873,7 +873,7 @@
       "type": "string",
       "section": "StarMap",
       "value": {
-        "default": "fffdf4db"
+        "default": "255,253,244,219"
       }
     },
     {
@@ -881,7 +881,7 @@
       "type": "string",
       "section": "StarMap",
       "value": {
-        "default": "ffe25f57"
+        "default": "255,226,95,87"
       }
     },
     {
@@ -889,7 +889,7 @@
       "type": "string",
       "section": "StarMap",
       "value": {
-        "default": "ff4281ff"
+        "default": "255,66,129,255"
       }
     },
     {
@@ -897,7 +897,7 @@
       "type": "string",
       "section": "StarMap",
       "value": {
-        "default": "ff1b2528"
+        "default": "255,27,37,40"
       }
     },
     {
