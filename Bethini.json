@@ -47,7 +47,8 @@
     "Bethini.ini": "",
     "theme.ini": "sTheme",
     "StarfieldCustom.ini": "sStarfieldINIPath",
-    "StarfieldPrefs.ini": "sStarfieldINIPath"
+    "StarfieldPrefs.ini": "sStarfieldINIPath",
+    "Ultra.ini": "sStarfieldPath"
   },
   "customFunctions": {
     "FUNCBackups": "{}",
@@ -65,7 +66,7 @@
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
           "Game Path": {
-            "browse": [ "directory", "Starfield.exe", "file" ],
+            "browse": [ "directory", "directory", "directory" ],
             "choices": [ "Browse...", "Manual..." ],
             "customWidth": "18",
             "forceSelect": "1",
@@ -76,7 +77,7 @@
             "type": "Dropdown"
           },
           "INI Path": {
-            "browse": [ "directory", "StarfieldCustom.ini", "file" ],
+            "browse": [ "directory", "StarfieldPrefs.ini", "file" ],
             "choices": "FUNCINIPath",
             "customWidth": "18",
             "forceSelect": "1",
@@ -692,7 +693,7 @@
             "settings": [ "bPilotCameraShakerEnabled" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Display" ],
-            "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
+            "tooltip": "Toggles the camera shaking when boosting your ship.",
             "type": "Checkbutton"
           }
         }
