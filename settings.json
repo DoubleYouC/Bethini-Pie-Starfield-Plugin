@@ -3510,7 +3510,16 @@
       "type": "boolean",
       "section": "Shadows",
       "value": {
-        "default": 0
+        "default": 0,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -33494,7 +33503,7 @@
       "value": {
         "default": "FIXME",
         "type": "string",
-      "section": " EMPTY NAME"
+        "section": " EMPTY NAME"
       }
     },
     {
@@ -33762,7 +33771,7 @@
       "value": {
         "default": "ipc",
         "type": "string",
-      "section": "///editor"
+        "section": "///editor"
       }
     },
     {
@@ -33772,7 +33781,7 @@
       "value": {
         "default": "ipc",
         "type": "string",
-      "section": "///game"
+        "section": "///game"
       }
     },
     {
@@ -37959,6 +37968,7112 @@
       "section": "Workshop",
       "value": {
         "default": 8600
+      }
+    },
+    {
+      "name": "aPlanetPreviewLightColor",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "aStarMapClearColor",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "aStarMapMobileFillLightDefaultColor",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "aStarMapMobileStarLightDefaultColor",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "b3rdPersonAimUseWeaponFOV",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "ThirdPersonCam",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bAimModelCrippledLimbsAffectPlayer",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bBoostpackInitialThrustOnlyOnTakeoff",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bContactShadowHalfResolution",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "ContactShadows",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "0",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "0"
+      }
+    },
+    {
+      "name": "bContactShadowsEnabled",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "ContactShadows",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "1",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "bCrowdStopForPlayerConversations",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bDecals",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bEnableHalfResGeometries",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Geometry",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bEnableHalfResParticles",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Particle",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "0",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "0"
+      }
+    },
+    {
+      "name": "bEnableStochasticTiling",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Terrain",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "1",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "bEnableStochasticTilingDominantPlane",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Terrain",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "0",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "0",
+        "Bethini High": "1",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "bEnableTerrainPlanarMapping",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Terrain",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "1",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "bFogMapBlurHalfRes",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "VolumetricLighting",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "0",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "0"
+      }
+    },
+    {
+      "name": "bHalfResIndirect",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "GlobalIllumination",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "0",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "0"
+      }
+    },
+    {
+      "name": "bHalfResMoments",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Geometry",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bPlanetContentVirtualLandingBlockReduceBlockRequests",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bShadowCSMStabilizeCascades",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bSkinnedDecals",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bStarMapGalaxyLinearizeDiscoveredColor",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bStarMapGalaxySystemAccumulateBackground",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bThrottleDecreasesToMaxTurnRate",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bThrottleIncreasesToMaxTurnRate",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "bVolumetricIndirectForceFallback",
+      "type": "boolean",
+      "ini": "Ultra.ini",
+      "section": "VolumetricLighting",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "1",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "0",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "1",
+        "Bethini High": "1",
+        "Bethini Ultra": "0"
+      }
+    },
+    {
+      "name": "f3rdPersonAimDist",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ThirdPersonCam",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "f3rdPersonAimDollySpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ThirdPersonCam",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "f3rdPersonAimFOV",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ThirdPersonCam",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "f3rdPersonAimFOVAnimateSec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ThirdPersonCam",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelAIAccuracyConeMaxExtentOffsetMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelAIAccuracyConeMaxExtentOffsetMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelAIAccuracyConeMinExtentOffsetMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelAIAccuracyConeMinExtentOffsetMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelAIIronSightsConeMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelAIWeaponScopeConeMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelConeIronSightsSingleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelConeIronsightsMultipleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelConePerceptionCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelContinuousShotBreakSec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelFireConeAngleLimitMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelFireConeAngleLimitMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelMaxConeMultipleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelMaxConeSingleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelMinConeMultipleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelMinConeSingleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelPlayer3rdSightsConeMultMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelPlayerMovementIronSightsConeMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilArcDegMultipleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilArcDegSingleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilDecreaseDelaySec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilMaxDegMultipleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilMaxDegSingleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilMaxYawDeg",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilMinDegMultipleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilMinDegSingleCrippledLimbMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilRunawayExp",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fAimModelRecoilSpringForce",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "AimModel",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBaseCloudCardPivotEndAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBaseCloudCardPivotStartAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBaseCritChance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResearchProject",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBiomePlacementPositionsMinDistanceBetweenPositions",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBiomePlacementPositionsMinDistanceFromOverlays",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBlockLevel0Distance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ViewDistance",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBlockLevel1Distance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ViewDistance",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBlockLevel2Distance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ViewDistance",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBlockMaximumDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ViewDistance",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBonusCritChance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResearchProject",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBonusCritMultiplier",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResearchProject",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostPackMinVelocityMultForFallingInWater",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackDrainInitial",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackDrainSustained",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackFallingThrustMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackHighGravityDampeningMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackHorizontalDragCoefficient",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackHorizontalInputTrigger",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackHorizontalPercentage",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackHorizontalVelocityTrigger",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackHoverDelaySeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackLowGravityDampeningMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackMaximumHeight",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackMinFuelRequired",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackThrustInitial",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackThrustSustained",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fBoostpackTimeToSustained",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "BoostPack",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCASSharpnessSetting",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PostEffects",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "0.7",
+        "Vanilla High": "0.7",
+        "Vanilla Ultra": "0.7",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "0.7",
+        "Bethini High": "0.7",
+        "Bethini Ultra": "0.7"
+      }
+    },
+    {
+      "name": "fCloudBackScatter",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudCardBackScatter",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudCardForwardScatter",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudCardMaxPivotAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudCardPhaseInfluence",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudCardScatterBlend",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudForwardScatter",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudPrewarmTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudScatterBlend",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCloudShadowFadeStartAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCombatRangedGunFireWaitTimeThresholdPriorityLow",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Combat",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdActorPlatformSpecificSpawnScalar",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Vanilla Low": "0.4",
+        "Vanilla Medium": "0.6",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "0.4",
+        "Bethini Low": "0.4",
+        "Bethini Medium": "0.6",
+        "Bethini High": "1",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "fCrowdAngleTolerance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdCloseEnoughToDestination",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDefaultPathGoalRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDependentTargetDistanceOffset",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDespawnMaxDistFromPlayerForNotVisibleCheck",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDespawnNotVisibleSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDetectionPlayerProximity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDetectionUpdateTimeMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDetectionUpdateTimeMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDoorDespawnerBlocksSpawningDist",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDoorFleeDespawnRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDoorLocRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDoorSecondsBetweenUses",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdDoorSideOffset",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdExtraTargetDensity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeAudioCooldownMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeAudioCooldownMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeCloseEnoughToDoorDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeDoorObstructedRepathTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeFastRunProbability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeJogProbability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleePickDoorProbability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleePreferredDoorDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeThreatTooCloseToDoorDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeWarnDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeWarnMaxTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFleeWarnMinTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdFractionOfFurnitureToUse",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdHighPriorityPathingDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdLeaveLoopProbability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdLoopNodeRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMaxDependencyExitWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMaxDependencyParentWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMaxExtraTargetsPerCell",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMaxFurnitureWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMaxRepathWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMaxStandingWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMinConversationWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMinDependencyExitWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMinDependencyParentWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMinFurnitureWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMinRepathWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdMinStandingWaitSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdPickDoorProbability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdPickLoopProbability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdPlayerBecomeFarAwayDist",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdPlayerBecomeNearDist",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdPlayerConverseDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdPopulationGoalAllowedOverage",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdRegionConditionRecheckTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdSpawnFrustumCheckHeight",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdSpawnFrustumCheckRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdSpawnMaxDistFromPlayerForFrustumCheck",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdStayNearPlayerDist",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdTargetDesiredAngleWhileMoving",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdTargetTooCloseDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdTargetTooFarWhileMovingDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdTargetTooFarWithDependenciesDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdThreatAvoidNodeCost",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdThreatAvoidNodeHighCost",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdThreatAvoidNodeLargeBufferRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdThreatAvoidNodeSmallBufferRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdVeryHighPriorityFleePathingDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fCrowdWillRepathGoalRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fDisplacement",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "OceanTerrain",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fDistantAOFarBetaThicknessCorrection",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "default": "0.15",
+        "Vanilla Low": "0.15",
+        "Vanilla Medium": "0.15",
+        "Vanilla High": "0.15",
+        "Vanilla Ultra": "0.15",
+        "Bethini Poor": "0.15",
+        "Bethini Low": "0.15",
+        "Bethini Medium": "0.15",
+        "Bethini High": "0.15",
+        "Bethini Ultra": "0.15"
+      }
+    },
+    {
+      "name": "fDistantAOFarMaxAttenuationDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "default": "3000",
+        "Vanilla Low": "3000",
+        "Vanilla Medium": "3000",
+        "Vanilla High": "3000",
+        "Vanilla Ultra": "3000",
+        "Bethini Poor": "3000",
+        "Bethini Low": "3000",
+        "Bethini Medium": "3000",
+        "Bethini High": "3000",
+        "Bethini Ultra": "3000"
+      }
+    },
+    {
+      "name": "fDistantAOFarPower",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "Vanilla Low": "2.5",
+        "Vanilla Medium": "2",
+        "Vanilla High": "1.45",
+        "Vanilla Ultra": "1.25",
+        "Bethini Poor": "3",
+        "Bethini Low": "2.5",
+        "Bethini Medium": "2",
+        "Bethini High": "1.45",
+        "Bethini Ultra": "1.25"
+      }
+    },
+    {
+      "name": "fDistantAOFarSAORadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "Vanilla Low": "8",
+        "Vanilla Medium": "7",
+        "Vanilla High": "6",
+        "Vanilla Ultra": "5",
+        "Bethini Poor": "9",
+        "Bethini Low": "8",
+        "Bethini Medium": "7",
+        "Bethini High": "6",
+        "Bethini Ultra": "5"
+      }
+    },
+    {
+      "name": "fDistantAOMidBetaThicknessCorrection",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "default": "0.2",
+        "Vanilla Low": "0.2",
+        "Vanilla Medium": "0.2",
+        "Vanilla High": "0.2",
+        "Vanilla Ultra": "0.2",
+        "Bethini Poor": "0.2",
+        "Bethini Low": "0.2",
+        "Bethini Medium": "0.2",
+        "Bethini High": "0.2",
+        "Bethini Ultra": "0.2"
+      }
+    },
+    {
+      "name": "fDistantAOMidMaxAttenuationDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "Vanilla Low": "600",
+        "Vanilla Medium": "600",
+        "Vanilla High": "500",
+        "Vanilla Ultra": "400",
+        "Bethini Poor": "600",
+        "Bethini Low": "600",
+        "Bethini Medium": "600",
+        "Bethini High": "500",
+        "Bethini Ultra": "400"
+      }
+    },
+    {
+      "name": "fDistantAOMidPower",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "Vanilla Low": "2",
+        "Vanilla Medium": "1.3",
+        "Vanilla High": "1.1",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "2",
+        "Bethini Low": "2",
+        "Bethini Medium": "1.3",
+        "Bethini High": "1.1",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "fDistantAOMidSAORadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "default": "2.5",
+        "Vanilla Low": "3",
+        "Vanilla Medium": "2.5",
+        "Vanilla High": "2.5",
+        "Vanilla Ultra": "2.5",
+        "Bethini Poor": "3",
+        "Bethini Low": "3",
+        "Bethini Medium": "2.5",
+        "Bethini High": "2.5",
+        "Bethini Ultra": "2.5"
+      }
+    },
+    {
+      "name": "fEffectsAlphaThresholdFadeFar",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Transparency",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fEffectsAlphaThresholdFadeNear",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Transparency",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fEffectsHighMinAlphaThreshold",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Transparency",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fEffectsLowMinAlphaThreshold",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Transparency",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fExternalEmittanceMaxLinkedLightLuminance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "General",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFarDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ViewDistance",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCamPadlockMaxDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraFOV",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraFocusDist",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraFreeLookSensitivity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraFreeLookSpring",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraMaxSpeedOffsetInterpolationValue",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraOffsetBaseX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraOffsetBaseY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraOffsetBaseZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraOffsetMaxLandedDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraOffsetMaxLandingHeightOffset",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraPOVDelay",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraPosOffsetSpring",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraRotSpringsX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraRotSpringsY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraRotSpringsZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraSpeedOffsetMaxX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraSpeedOffsetMaxY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraSpeedOffsetMaxZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraSpeedOffsetMinX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraSpeedOffsetMinY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraSpeedOffsetMinZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraVanityDockedMaxHorizontalAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraVanityDockedMaxVerticalAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraVanityLandedMaxAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFlightCameraVanityLandedMinAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fFollowerTeleportOffsetFudge",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Pathfinding",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fGTAOMaxAttenuationDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "default": "50",
+        "Vanilla Low": "50",
+        "Vanilla Medium": "50",
+        "Vanilla High": "50",
+        "Vanilla Ultra": "50",
+        "Bethini Poor": "50",
+        "Bethini Low": "50",
+        "Bethini Medium": "50",
+        "Bethini High": "50",
+        "Bethini Ultra": "50"
+      }
+    },
+    {
+      "name": "fGTAOPower",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "Vanilla Low": "1.5",
+        "Vanilla Medium": "1.4",
+        "Vanilla High": "1.2",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "1.6",
+        "Bethini Low": "1.5",
+        "Bethini Medium": "1.4",
+        "Bethini High": "1.2",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "fGTAORadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "SAO",
+      "value": {
+        "default": "0.3",
+        "Vanilla Low": "0.3",
+        "Vanilla Medium": "0.3",
+        "Vanilla High": "0.3",
+        "Vanilla Ultra": "0.3",
+        "Bethini Poor": "0.3",
+        "Bethini Low": "0.3",
+        "Bethini Medium": "0.3",
+        "Bethini High": "0.3",
+        "Bethini Ultra": "0.3"
+      }
+    },
+    {
+      "name": "fGrassFadeDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Grass",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fGrassRandomCullFactor",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Grass",
+      "value": {
+        "Vanilla Low": "2.5",
+        "Vanilla Medium": "2.2",
+        "Vanilla High": "1.5",
+        "Vanilla Ultra": "0.5",
+        "Bethini Poor": "3",
+        "Bethini Low": "2.5",
+        "Bethini Medium": "2.2",
+        "Bethini High": "1.5",
+        "Bethini Ultra": "0.5"
+      }
+    },
+    {
+      "name": "fGrassStartFadeDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Grass",
+      "value": {
+        "Vanilla Low": "100",
+        "Vanilla Medium": "140",
+        "Vanilla High": "200",
+        "Vanilla Ultra": "200",
+        "Bethini Poor": "",
+        "Bethini Low": "",
+        "Bethini Medium": "",
+        "Bethini High": "",
+        "Bethini Ultra": ""
+      }
+    },
+    {
+      "name": "fGrassStartRandomCullDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Grass",
+      "value": {
+        "Vanilla Low": "10",
+        "Vanilla Medium": "25",
+        "Vanilla High": "30",
+        "Vanilla Ultra": "50",
+        "Bethini Poor": "5",
+        "Bethini Low": "10",
+        "Bethini Medium": "25",
+        "Bethini High": "30",
+        "Bethini Ultra": "50"
+      }
+    },
+    {
+      "name": "fImageSpaceMaxBrightness",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ImageSpace",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fImageSpaceMaxContrast",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ImageSpace",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fImageSpaceMaxSaturation",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ImageSpace",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fMaxCloudContrast",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fMaxTrackingTargetDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fMinimumMapMarkerTargetDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetContentMaxNewWorldspacesPerScan",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetContentOverlayWaterDepthTreshold",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetOceanHeight",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewCameraLocationX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewCameraLocationY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewCameraLocationZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewLightAtmosphereScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewLightEulerXDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewLightEulerYDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewLightEulerZDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewLightIntensity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetEulerXDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetEulerYDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetEulerZDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetLocationX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetLocationY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetLocationZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlanetPreviewPlanetScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DataMenu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerHealthAudioEffectsStateCriticalPercent",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlayerHealthAudio",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerHealthAudioEffectsStateLowPercent",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlayerHealthAudio",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerHealthAudioEffectsStateSustainSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "PlayerHealthAudio",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerTargetReticleMovementScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGAccelerationDampenTimeRank0",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGAccelerationDampenTimeRank1",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGAccelerationDampenTimeRank2",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGAccelerationDampenTimeRank3",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGAccelerationDampenTimeRank4",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGDecelerationDampenTimeRank0",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGDecelerationDampenTimeRank1",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGDecelerationDampenTimeRank2",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGDecelerationDampenTimeRank3",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPlayerZeroGDecelerationDampenTimeRank4",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Controls",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmoTransientModCount",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmofColorRemappingIndex",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmofWeight",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmouiHealth",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmouiValue",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmousIndex",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleArmousRating",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAccuracyBonus",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSMultiplierFriction",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSMultiplierInnerConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSMultiplierInnerSteeringRing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSMultiplierOuterConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSMultiplierOuterSteeringRing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSMultiplierSteeringDegPerSec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSSnapConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSSnapSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSSnapSteeringMultiplier",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSSnapSteeringMultiplierInnerRing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataADSSnapSteeringMultiplierOuterRing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataBulletBendingConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataEnabled",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataFriction",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataInnerConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataInnerSteeringRing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataMoveFollowDegPerSec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataNoSteering",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataOuterConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataOuterSteeringRing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataPitchScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistDataSteeringDegPerSec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimAssistTemplate",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataFPGeometryFOVOffset",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataFPGeometryOffsetX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataFPGeometryOffsetY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataFPGeometryOffsetZ",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataImageSpaceMod",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataOverlay",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightDataWorldFOVMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimDownSightTemplate",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataBaseStability",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeDecreaseDelay",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeDecreasePerSec",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeIncreasePerShot",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeIronSightsMultiplier",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeMaxDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeMinDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataConeSneakMultiplier",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilArcDeg",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilArcRotateDeg",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilDiminishSightsMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilDiminishSpringForce",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilHipMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilMaxDegPerShot",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilMinDegPerShot",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelDataRecoilShotsForRunaway",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimModelTemplate",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimAimOpticalSightModel",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimEnableMarkingTargets",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimHasScope",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimReticleType",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAimSightedTransitionSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionAddAmmoList",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionAmmo",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionAmmoCapacity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionNPCsUseAmmo",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionNumProjectiles",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionOverrideProjectile",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAmmunitionOverrideShellCasing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAudioSoundLevel",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapAudioSoundLevelMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapChargeCriticalChargeBonus",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapChargeEnabled",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapChargeFullPowerSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapChargeHoldInput",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapChargeMinPowerPerShot",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageAttackDamage",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageCriticalChanceIncMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageCriticalDamageMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageCriticalEffect",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageCriticalEffectOnDeathOnly",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageHitBehavior",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageMaxRange",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageMinRange",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageOutOfRangeDamageMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageResistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapDamageSkill",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringAttackDelaySeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringAttackSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringBoltAction",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringBoltChargeSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringBurstDelaySeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringBurstShots",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringDisableShellCaseEject",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringFireSeconds",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringFiringType",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringHasDualTrigger",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringHasStagedTrigger",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringOverrideRateOfFire",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringRepeatableFire",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFiringShotsPerSecond",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsBound",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsCantDrop",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsIsSecondary",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsMinorCrime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsNonHostile",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsNonPlayable",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsPlayerOnly",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapFlagsPreventUseInNormalCombat",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralAttackActionPointCost",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralEquipSlot",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralItemValue",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralRank",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralType",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapGeneralWeight",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapMeleeAttackSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapMeleeBashDamage",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapMeleeReach",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapMeleeStaggerValue",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapPowerConsumeAmmo",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapPowerEnabled",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapPowerFullRechargeTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapPowerPowerAVIF",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapPowerPowerBonusAVIF",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapPowerRechargeDelay",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapReloadChargingReload",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapReloadReloadSingle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapReloadReloadSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapTransientModCount",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeApertureAcceleration",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeApertureDeceleration",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeApertureInputRangeMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeApertureInputRangeMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeApertureValueRangeMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeApertureValueRangeMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeDistanceAcceleration",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeDistanceDeceleration",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeDistanceInputRangeMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeDistanceInputRangeMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeDistanceValueRangeMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeDistanceValueRangeMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVariableRangeEnabled",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVisualsColorRemappingIndex",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fPropModScaleWeapVisualsImpactDataSet",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fReflectionProbeLocalToGlobalBlendDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Reflections",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fReflectionProbeLocalToGlobalBlendStart",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Reflections",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fRenderResolutionSetting",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "DynamicResolution",
+      "value": {
+        "Vanilla Low": "0.5",
+        "Vanilla Medium": "0.5",
+        "Vanilla High": "0.62",
+        "Vanilla Ultra": "0.75",
+        "Bethini Poor": "0.5",
+        "Bethini Low": "0.5",
+        "Bethini Medium": "0.5",
+        "Bethini High": "0.62",
+        "Bethini Ultra": "0.75"
+      }
+    },
+    {
+      "name": "fResourceVeinAlpha",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResourceVeins",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fResourceVeinMoveRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResourceVeins",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fResourceVeinOutlineThickness",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResourceVeins",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fResourceVeinUpdateRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "ResourceVeins",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSecondarySunTimeOfDayPosition",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Weather",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShadowCascadeSplitDistance0",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "6",
+        "Vanilla Medium": "7",
+        "Vanilla High": "9",
+        "Vanilla Ultra": "10",
+        "Bethini Poor": "3",
+        "Bethini Low": "5.5",
+        "Bethini Medium": "7",
+        "Bethini High": "8.5",
+        "Bethini Ultra": "10"
+      }
+    },
+    {
+      "name": "fShadowCascadeSplitDistance1",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "12",
+        "Vanilla Medium": "25",
+        "Vanilla High": "25",
+        "Vanilla Ultra": "30",
+        "Bethini Poor": "6",
+        "Bethini Low": "12",
+        "Bethini Medium": "18",
+        "Bethini High": "24",
+        "Bethini Ultra": "30"
+      }
+    },
+    {
+      "name": "fShadowCascadeSplitDistance2",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "50",
+        "Vanilla Medium": "60",
+        "Vanilla High": "70",
+        "Vanilla Ultra": "100",
+        "Bethini Poor": "24",
+        "Bethini Low": "50",
+        "Bethini Medium": "60",
+        "Bethini High": "70",
+        "Bethini Ultra": "100"
+      }
+    },
+    {
+      "name": "fShadowCascadeSplitDistance3",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "400",
+        "Vanilla Medium": "400",
+        "Vanilla High": "500",
+        "Vanilla Ultra": "600",
+        "Bethini Poor": "150",
+        "Bethini Low": "300",
+        "Bethini Medium": "400",
+        "Bethini High": "500",
+        "Bethini Ultra": "600"
+      }
+    },
+    {
+      "name": "fShipBuilderSelectionMaxDistanceSqr",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFFarOpacity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFFarPlaneOffset",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFFarStart",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFNearEnd",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFNearOpacity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFNearStart",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraDOFStrength",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraFreeLookFOVChangeSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraFreeLookFOVMaxMultiplier",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fShipFlightCameraFreeLookFOVMinMultiplier",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipAimAssistAccuracyThreshold",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipAimAssistFireSpreadAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipAimAssistMaxDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipAimAssistTargetSize",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipInnerConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipMinimumWeaponMaxRange",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerMaxPitch",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerMaxZoomFactor",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerMinPitch",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerMinZoomFactor",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerStartPitch",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerStartYaw",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerStartZoomFactor",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerZoomSpeedGamepad",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipModelViewerZoomSpeedMouse",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipOuterConeAngleDegrees",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSpaceshipReverseThrottleRTPCMult",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "MAIN",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyPanSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarScaleRange",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldBackgroundRotationPitch",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldBackgroundRotationRoll",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldBackgroundRotationYaw",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldBackgroundScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldSpaceGlowBackgroundScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldStarBrightnessScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyStarfieldTransitionBlackDurationAsPercent",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapGalaxyZoomSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectAutoZoomOutThresholdDefault",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectAutoZoomOutThresholdMoon",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectCameraDistanceScaleDefault",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectCameraDistanceScaleMoonDefault",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectCameraDistanceScaleZoomMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectCameraDistanceScaleZoomMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapInspectCameraDistanceScaleZoomMinMoon",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobileFillLightDefaultIntensity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobileMoonMaxRenderRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobileMoonMinRenderRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobilePlanetMaxRenderRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobilePlanetMinRenderRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobileStarLightDefaultIntensity",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobileStarLightDefaultRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapMobileStarRenderRadius",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapInitialZoomPercent",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapMaxZoomLevel",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapMinZoomLevel",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapPanDeltaX",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapPanDeltaY",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapPanSpeedGamepadMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapPanSpeedGamepadMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapPanSpeedMouseMax",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapPanSpeedMouseMin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSurfaceMapZoomDelta",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemAtmosphereHeightScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemAtmosphereSunScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemAutoZoomInThresholdDefault",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemAutoZoomInThresholdMoon",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemBodySpacing",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemFirstBodyDistFromStarScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemInfoPlanetScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemMobileStarfieldBackgroundScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemMobileStarfieldSpaceGlowBackgroundScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemMobileStarfieldStarBrightnessScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemMobileStarfieldTransitionBlackDurationAsPercent",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemUIMaxMoonSize",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemUIMaxPlanetSize",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemUIMinMoonSize",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fStarMapSystemUIMinPlanetSize",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSurfaceMapGamepadMaxCursorSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSurfaceMapGamepadMinCursorSpeed",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fSweepingBeamImpactDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTargetLockFalloffTime",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTargetLockTargetAngle",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTargetingModeMaxCameraDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTargetingModeMaxDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTargetingModeMinDistance",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Spaceship",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTargetingModeTimeScale",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Interface",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fTerrainDisplacementErrorThreshold",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Terrain",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "1",
+        "Vanilla High": "0.5",
+        "Vanilla Ultra": "0.5",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "1",
+        "Bethini High": "0.5",
+        "Bethini Ultra": "0.5"
+      }
+    },
+    {
+      "name": "fVariableRateShadingVarianceCutoff",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "VariableRateShading",
+      "value": {
+        "Vanilla Low": "0.15",
+        "Vanilla Medium": "0.1",
+        "Vanilla High": "0.075",
+        "Vanilla Ultra": "0.075",
+        "Bethini Poor": "0.15",
+        "Bethini Low": "0.15",
+        "Bethini Medium": "0.1",
+        "Bethini High": "0.075",
+        "Bethini Ultra": "0.075"
+      }
+    },
+    {
+      "name": "fVerticalCloudBlendBegin",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "fVerticalCloudBlendRange",
+      "type": "float",
+      "ini": "Ultra.ini",
+      "section": "Clouds",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iBlurRadius",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "ContactShadows",
+      "value": {
+        "default": "2",
+        "Vanilla Low": "2",
+        "Vanilla Medium": "2",
+        "Vanilla High": "2",
+        "Vanilla Ultra": "2",
+        "Bethini Poor": "2",
+        "Bethini Low": "2",
+        "Bethini Medium": "2",
+        "Bethini High": "2",
+        "Bethini Ultra": "2"
+      }
+    },
+    {
+      "name": "iCellBlendCount",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "OceanTerrain",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iCellBlendStart",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "OceanTerrain",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iContactShadowsQuality",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "ContactShadows",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "2",
+        "Vanilla Ultra": "3",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "2",
+        "Bethini Ultra": "3"
+      }
+    },
+    {
+      "name": "iCrowdDoorMaxToDespawnBeforeSpawning",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iLegendaryEnemyMinLevel",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Legendary",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iLevelChallengeThresholdAverage",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iLevelChallengeThresholdChallenging",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iLevelChallengeThresholdDeadly",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iLevelChallengeThresholdEasy",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iMaxDecalsPerFrame",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Vanilla Low": "3",
+        "Vanilla Medium": "5",
+        "Vanilla High": "10",
+        "Vanilla Ultra": "16",
+        "Bethini Poor": "3",
+        "Bethini Low": "10",
+        "Bethini Medium": "60",
+        "Bethini High": "120",
+        "Bethini Ultra": "250"
+      }
+    },
+    {
+      "name": "iMaxSkinDecalsPerFrame",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "3",
+        "Vanilla High": "10",
+        "Vanilla Ultra": "10",
+        "Bethini Poor": "3",
+        "Bethini Low": "10",
+        "Bethini Medium": "60",
+        "Bethini High": "120",
+        "Bethini Ultra": "250"
+      }
+    },
+    {
+      "name": "iPlanetContentBlockOverlaySafeZoneBufferSize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetContentCellContentSafeZoneBufferSize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetContentRemotePlanetOverlaySafeZoneBufferSize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceInorganicAbundance00",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceInorganicAbundance01",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceInorganicAbundance02",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceInorganicAbundance03",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceOrganicAbundance00",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceOrganicAbundance01",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceOrganicAbundance02",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iPlanetResourceOrganicAbundance03",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "iShipFlightCameraDOFMode",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "FlightCamera",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sAbort",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sBack",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sCameraShotDynamicEvent",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "CameraShot",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sCameraShotGraphName",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "CameraShot",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sCameraShotRigName",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "CameraShot",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sCancel",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sContinue",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sIgnore",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sNo",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sOK",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceInorganicAbundance00",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceInorganicAbundance01",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceInorganicAbundance02",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceInorganicAbundance03",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceOrganicAbundance00",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceOrganicAbundance01",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceOrganicAbundance02",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlanetResourceOrganicAbundance03",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Planet",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPlayerVoiceStateOverride",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Audio",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmoEnchantment",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmoTransientModCount",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmofColorRemappingIndex",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmofWeight",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmouiHealth",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmouiValue",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmousIndex",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameArmousRating",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAccuracyBonus",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSMultiplierFriction",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSMultiplierInnerConeAngleDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSMultiplierInnerSteeringRing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSMultiplierOuterConeAngleDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSMultiplierOuterSteeringRing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSMultiplierSteeringDegPerSec",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSSnapConeAngleDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSSnapSeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSSnapSteeringMultiplier",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSSnapSteeringMultiplierInnerRing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataADSSnapSteeringMultiplierOuterRing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataBulletBendingConeAngleDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataEnabled",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataFriction",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataInnerConeAngleDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataInnerSteeringRing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataMoveFollowDegPerSec",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataNoSteering",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataOuterConeAngleDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataOuterSteeringRing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataPitchScale",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistDataSteeringDegPerSec",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimAssistTemplate",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataFPGeometryFOVOffset",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataFPGeometryOffsetX",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataFPGeometryOffsetY",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataFPGeometryOffsetZ",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataImageSpaceMod",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataOverlay",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightDataWorldFOVMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimDownSightTemplate",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataBaseStability",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeDecreaseDelay",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeDecreasePerSec",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeIncreasePerShot",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeIronSightsMultiplier",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeMaxDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeMinDegrees",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataConeSneakMultiplier",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilArcDeg",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilArcRotateDeg",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilDiminishSightsMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilDiminishSpringForce",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilHipMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilMaxDegPerShot",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilMinDegPerShot",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelDataRecoilShotsForRunaway",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimModelTemplate",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimAimOpticalSightModel",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimEnableMarkingTargets",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimHasScope",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimReticleType",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAimSightedTransitionSeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionAddAmmoList",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionAmmo",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionAmmoCapacity",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionNPCsUseAmmo",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionNumProjectiles",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionOverrideProjectile",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAmmunitionOverrideShellCasing",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAudioSoundLevel",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapAudioSoundLevelMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapChargeCriticalChargeBonus",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapChargeEnabled",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapChargeFullPowerSeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapChargeHoldInput",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapChargeMinPowerPerShot",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageAttackDamage",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageCriticalChanceIncMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageCriticalDamageMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageCriticalEffect",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageCriticalEffectOnDeathOnly",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageHitBehavior",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageMaxRange",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageMinRange",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageOutOfRangeDamageMult",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageResistance",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapDamageSkill",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapEnchantment",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringAttackDelaySeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringAttackSeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringBoltAction",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringBoltChargeSeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringBurstDelaySeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringBurstShots",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringDisableShellCaseEject",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringFireSeconds",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringFiringType",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringHasDualTrigger",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringHasStagedTrigger",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringOverrideRateOfFire",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringRepeatableFire",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFiringShotsPerSecond",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsBound",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsCantDrop",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsIsSecondary",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsMinorCrime",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsNonHostile",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsNonPlayable",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsPlayerOnly",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapFlagsPreventUseInNormalCombat",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralAttackActionPointCost",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralEquipSlot",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralItemValue",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralRank",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralSpeed",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralType",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapGeneralWeight",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapMeleeAttackSpeed",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapMeleeBashDamage",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapMeleeReach",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapMeleeStaggerValue",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapPowerConsumeAmmo",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapPowerEnabled",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapPowerFullRechargeTime",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapPowerPowerAVIF",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapPowerPowerBonusAVIF",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapPowerRechargeDelay",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapReloadChargingReload",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapReloadReloadSingle",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapReloadReloadSpeed",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapTransientModCount",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeApertureAcceleration",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeApertureDeceleration",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeApertureInputRangeMax",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeApertureInputRangeMin",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeApertureValueRangeMax",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeApertureValueRangeMin",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeDistanceAcceleration",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeDistanceDeceleration",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeDistanceInputRangeMax",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeDistanceInputRangeMin",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeDistanceValueRangeMax",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeDistanceValueRangeMin",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVariableRangeEnabled",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVisualsColorRemappingIndex",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sPropModNameWeapVisualsImpactDataSet",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Mods",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sRetry",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sYes",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "sYesToAll",
+      "type": "string",
+      "ini": "Ultra.ini",
+      "section": "Menu",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uAdditionalDynamicOnlyLightsBudget",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "3",
+        "Vanilla Ultra": "3",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "2",
+        "Bethini Ultra": "3"
+      }
+    },
+    {
+      "name": "uBiomePlacementPositionsMaxCount",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uCrowdFleeDoorsToConsider",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uDirectionalLightShadowMapResolution",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "1024",
+        "Vanilla Medium": "2048",
+        "Vanilla High": "2048",
+        "Vanilla Ultra": "4096",
+        "Bethini Poor": "256",
+        "Bethini Low": "512",
+        "Bethini Medium": "1024",
+        "Bethini High": "2048",
+        "Bethini Ultra": "4096"
+      }
+    },
+    {
+      "name": "uFocusShadowResolution",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "1024",
+        "Vanilla Medium": "1024",
+        "Vanilla High": "2048",
+        "Vanilla Ultra": "4096",
+        "Bethini Poor": "256",
+        "Bethini Low": "512",
+        "Bethini Medium": "1024",
+        "Bethini High": "2048",
+        "Bethini Ultra": "4096"
+      }
+    },
+    {
+      "name": "uGIFallbackQuality",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "GlobalIllumination",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "0",
+        "Vanilla High": "2",
+        "Vanilla Ultra": "2",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "0",
+        "Bethini High": "2",
+        "Bethini Ultra": "2"
+      }
+    },
+    {
+      "name": "uGrassMeshInstanceCullingSSFootprint",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Grass",
+      "value": {
+        "Vanilla Low": 12,
+        "Vanilla Medium": 12,
+        "Vanilla High": 0,
+        "Vanilla Ultra": 0,
+        "Bethini Poor": 12,
+        "Bethini Low": 12,
+        "Bethini Medium": 12,
+        "Bethini High": 0,
+        "Bethini Ultra": 0
+      }
+    },
+    {
+      "name": "uLastCascadeIndexRenderingDynamicGeometries",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uLastCascadeIndexRenderingSkinnedGeometries",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uMaxCrowdActorCount",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Crowd",
+      "value": {
+        "Vanilla Low": "100",
+        "Vanilla Medium": "150",
+        "Vanilla High": "200",
+        "Vanilla Ultra": "200",
+        "Bethini Poor": "75",
+        "Bethini Low": "100",
+        "Bethini Medium": "150",
+        "Bethini High": "175",
+        "Bethini Ultra": "200"
+      }
+    },
+    {
+      "name": "uMaxDecals",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Vanilla Low": "25",
+        "Vanilla Medium": "50",
+        "Vanilla High": "100",
+        "Vanilla Ultra": "100",
+        "Bethini Poor": "10",
+        "Bethini Low": "20",
+        "Bethini Medium": "100",
+        "Bethini High": "200",
+        "Bethini Ultra": "1000"
+      }
+    },
+    {
+      "name": "uMaxSkinDecals",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Vanilla Low": "5",
+        "Vanilla Medium": "5",
+        "Vanilla High": "10",
+        "Vanilla Ultra": "10",
+        "Bethini Poor": "1",
+        "Bethini Low": "3",
+        "Bethini Medium": "35",
+        "Bethini High": "50",
+        "Bethini Ultra": "100"
+      }
+    },
+    {
+      "name": "uMaxSkinDecalsPerActor",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Decals",
+      "value": {
+        "Vanilla Low": "5",
+        "Vanilla Medium": "5",
+        "Vanilla High": "10",
+        "Vanilla Ultra": "10",
+        "Bethini Poor": "1",
+        "Bethini Low": "5",
+        "Bethini Medium": "20",
+        "Bethini High": "40",
+        "Bethini Ultra": "60"
+      }
+    },
+    {
+      "name": "uMotionBlurQuality",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "MotionBlur",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "1",
+        "Vanilla High": "2",
+        "Vanilla Ultra": "3",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "1",
+        "Bethini High": "2",
+        "Bethini Ultra": "3"
+      }
+    },
+    {
+      "name": "uParticleLightingParticleCountQuality",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Particle",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "2",
+        "Vanilla Ultra": "2",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "2",
+        "Bethini Ultra": "2"
+      }
+    },
+    {
+      "name": "uPlanetContentMaxRequestsPerBlock",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentMaxRequestsPerCell",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentMaxSavedOverlays",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentMaxWorldspaceRequestsPoints",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentMinRequestsPerBlock",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentMinRequestsPerCell",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentMinWorldspaceRequestsPoints",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentPlanetScanResolution",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentQuestWorldspaceRequestsPoints",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentVirtualLandingBlockMaxRequests",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentVirtualLandingBlockMaxSize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentVirtualLandingBlockMinRequests",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uPlanetContentVirtualLandingBlockMinSize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "PlanetContent",
+      "value": {
+        "Unknown Default": ""
+      }
+    },
+    {
+      "name": "uraVolumetricLightingPhaseFunction",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "VolumetricLighting",
+      "notes": "1 is Schlick. 0 is HG.",
+      "value": {
+        "Vanilla Low": "1",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "0",
+        "Bethini Poor": "1",
+        "Bethini Low": "1",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "0"
+      }
+    },
+    {
+      "name": "uraVolumetricQuality",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "VolumetricLighting",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "1",
+        "Vanilla High": "2",
+        "Vanilla Ultra": "3",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "1",
+        "Bethini High": "2",
+        "Bethini Ultra": "3"
+      }
+    },
+    {
+      "name": "uReflectionProbeArraySize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Reflections",
+      "value": {
+        "default": "24",
+        "Vanilla Low": "24",
+        "Vanilla Medium": "24",
+        "Vanilla High": "24",
+        "Vanilla Ultra": "32",
+        "Bethini Poor": "24",
+        "Bethini Low": "24",
+        "Bethini Medium": "24",
+        "Bethini High": "24",
+        "Bethini Ultra": "32"
+      }
+    },
+    {
+      "name": "uReflectionProbeFacesToRenderPerFrame",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Reflections",
+      "value": {
+        "Vanilla Low": "2",
+        "Vanilla Medium": "2",
+        "Vanilla High": "3",
+        "Vanilla Ultra": "6",
+        "Bethini Poor": "2",
+        "Bethini Low": "2",
+        "Bethini Medium": "2",
+        "Bethini High": "3",
+        "Bethini Ultra": "6"
+      }
+    },
+    {
+      "name": "uReflectionsResolution",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Reflections",
+      "value": {
+        "Vanilla Low": "64",
+        "Vanilla Medium": "128",
+        "Vanilla High": "256",
+        "Vanilla Ultra": "256",
+        "Bethini Poor": "32",
+        "Bethini Low": "64",
+        "Bethini Medium": "128",
+        "Bethini High": "256",
+        "Bethini Ultra": "256"
+      }
+    },
+    {
+      "name": "uShadowFilteringQuality",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "0",
+        "Vanilla High": "1",
+        "Vanilla Ultra": "2",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "0",
+        "Bethini High": "1",
+        "Bethini Ultra": "2"
+      }
+    },
+    {
+      "name": "uShadowFilteringTransparencies",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "default": "0",
+        "Vanilla Low": "0",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "1",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "1"
+      }
+    },
+    {
+      "name": "uShadowMapCount1024",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "default": "16",
+        "Vanilla Low": "16",
+        "Vanilla Medium": "16",
+        "Vanilla High": "16",
+        "Vanilla Ultra": "16",
+        "Bethini Poor": "16",
+        "Bethini Low": "16",
+        "Bethini Medium": "16",
+        "Bethini High": "16",
+        "Bethini Ultra": "16"
+      }
+    },
+    {
+      "name": "uShadowMapCount128",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "default": "128",
+        "Vanilla Low": "128",
+        "Vanilla Medium": "128",
+        "Vanilla High": "128",
+        "Vanilla Ultra": "128",
+        "Bethini Poor": "128",
+        "Bethini Low": "128",
+        "Bethini Medium": "128",
+        "Bethini High": "128",
+        "Bethini Ultra": "128"
+      }
+    },
+    {
+      "name": "uShadowMapCount2048",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "4",
+        "Vanilla High": "8",
+        "Vanilla Ultra": "10",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "4",
+        "Bethini High": "8",
+        "Bethini Ultra": "10"
+      }
+    },
+    {
+      "name": "uShadowMapCount256",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "default": "128",
+        "Vanilla Low": "128",
+        "Vanilla Medium": "128",
+        "Vanilla High": "128",
+        "Vanilla Ultra": "128",
+        "Bethini Poor": "128",
+        "Bethini Low": "128",
+        "Bethini Medium": "128",
+        "Bethini High": "128",
+        "Bethini Ultra": "128"
+      }
+    },
+    {
+      "name": "uShadowMapCount4096",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "0",
+        "Vanilla Medium": "0",
+        "Vanilla High": "0",
+        "Vanilla Ultra": "4",
+        "Bethini Poor": "0",
+        "Bethini Low": "0",
+        "Bethini Medium": "0",
+        "Bethini High": "0",
+        "Bethini Ultra": "4"
+      }
+    },
+    {
+      "name": "uShadowMapCount512",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "44",
+        "Vanilla Medium": "36",
+        "Vanilla High": "32",
+        "Vanilla Ultra": "32",
+        "Bethini Poor": "44",
+        "Bethini Low": "44",
+        "Bethini Medium": "36",
+        "Bethini High": "32",
+        "Bethini Ultra": "32"
+      }
+    },
+    {
+      "name": "uStarMapGalaxySystemPointRenderMethod",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "StarMap",
+      "value": {
+        
+      }
+    },
+    {
+      "name": "uTerrainShadowMapSize",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "256",
+        "Vanilla Medium": "512",
+        "Vanilla High": "1024",
+        "Vanilla Ultra": "2048",
+        "Bethini Poor": "128",
+        "Bethini Low": "256",
+        "Bethini Medium": "512",
+        "Bethini High": "1024",
+        "Bethini Ultra": "2048"
+      }
+    },
+    {
+      "name": "uTotalDynamicShadowMapRenderCount",
+      "type": "number",
+      "ini": "Ultra.ini",
+      "section": "Shadows",
+      "value": {
+        "Vanilla Low": "12",
+        "Vanilla Medium": "16",
+        "Vanilla High": "22",
+        "Vanilla Ultra": "32",
+        "Bethini Poor": "6",
+        "Bethini Low": "12",
+        "Bethini Medium": "16",
+        "Bethini High": "22",
+        "Bethini Ultra": "32"
       }
     }
   ]
