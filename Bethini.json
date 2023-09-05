@@ -399,6 +399,29 @@
             "validate": "integer",
             "width": "7"
           },
+          "Dynamic Resolution Scale": {
+            "customWidth": "22",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0.1",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fRenderResolutionSetting", "fMinDynamicResolutionScale" ],
+            "targetINIs": [ "Ultra.ini", "StarfieldCustom.ini" ],
+            "targetSections": [ "Display", "Display" ],
+            "to": "1",
+            "tooltip": "Sets the minimum dynamic render resolution scale, where the game automatically adjusts resolution in performance-heavy scenes.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Dynamic Resolution": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
           "First Person FOV": {
             "customWidth": "22",
             "decimal places": "0",
@@ -433,7 +456,6 @@
             "validate": "integer",
             "width": "7"
           },
-          "": "",
           "EmptyLabel1": "",
           "Dynamic Resolution": {
             "Offvalue": [ [ "0" ] ],
@@ -560,6 +582,15 @@
             "targetSections": [ "Archive", "Archive" ],
             "tooltip": "Toggles the ability of the game to load unarchived data files.",
             "type": "Checkbutton"
+          },
+          "Message of the Day": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableMessageOfTheDay" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the message of the day.",
+            "type": "Checkbutton"
           }
         }
       }
@@ -572,6 +603,34 @@
         },
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
+          "Language": {
+            "choices": [ "English", "French", "German", "Spanish", "Japanese", "Italian", "Polish", "Portuguese", "Simplified Chinese" ],
+            "settingChoices": {
+              "English": [ "en", "" ],
+              "French": [ "fr", "Starfield - Voices_fr01.ba2, Starfield - Voices_fr02.ba2, Starfield - Voices_fr_Patch.ba2" ],
+              "German": [ "de", "Starfield - Voices_de01.ba2, Starfield - Voices_de02.ba2, Starfield - Voices_de_Patch.ba2" ],
+              "Spanish": [ "es", "Starfield - Voices_es01.ba2, Starfield - Voices_es02.ba2, Starfield - Voices_es_Patch.ba2" ],
+              "Japanese": [ "ja", "Starfield - Voices_ja01.ba2, Starfield - Voices_ja02.ba2, Starfield - Voices_ja_Patch.ba2" ],
+              "Italian": [ "it", "" ],
+              "Polish": [ "pl", "" ],
+              "Portuguese": [ "ptbr", "" ],
+              "Simplified Chinese": [ "zhhans", "" ]
+            },
+            "settings": [ "sLanguage", "sResourceLocaleVoiceList" ],
+            "targetINIs": [ "StarfieldCustom.ini", "StarfieldCustom.ini" ],
+            "targetSections": [ "General", "Archive" ],
+            "tooltip": "Sets the game language.",
+            "type": "Dropdown"
+          },
+          "English Voices": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bUseLocaleVoices" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Toggles the game intro music.",
+            "type": "Checkbutton"
+          },
           "Intro Logos": {
             "Offvalue": [ [ "" ] ],
             "Onvalue": [ [ "BGS_LOGO_1080p_BinkVersion.bk2" ] ],
@@ -602,6 +661,24 @@
             "targetSections": [ "General" ],
             "tooltip": "Toggles the game intro music.",
             "type": "Checkbutton"
+          },
+          "Remove Borders": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bBorderRegionsEnabled" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles off the borders.",
+            "type": "Checkbutton"
+          },
+          "Sprint Fix": {
+            "Offvalue": [ [ "58.522" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "fPlayerDisableSprintingLoadingCellDistance" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "If enabled, sprinting will be allowed even when nearby cells are not fully loaded.",
+            "type": "Checkbutton"
           }
         }
       },
@@ -629,6 +706,15 @@
             "targetINIs": [ "StarfieldPrefs.ini" ],
             "targetSections": [ "GamePlay" ],
             "tooltip": "Toggles autosaves made after sleeping.",
+            "type": "Checkbutton"
+          },
+          "Save on Quit to Main Menu": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveGameOnQuitToMainMenu" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles autosaves made when quitting to the main menu. This does NOT disable exit saves made when quitting to desktop.",
             "type": "Checkbutton"
           },
           "Save on Wait": {
@@ -695,6 +781,41 @@
             "targetSections": [ "Display" ],
             "tooltip": "Toggles the camera shaking when boosting your ship.",
             "type": "Checkbutton"
+          },
+          "Disable Combat Dialogue": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisableCombatDialogue" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Combat" ],
+            "tooltip": "Toggles off those cheeky comments that enemies say while in combat.",
+            "type": "Checkbutton"
+          },
+          "NPCs Use Ammo": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bForceNPCsUseAmmo" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Combat" ],
+            "tooltip": "Toggles off unlimited NPC ammo. If enabled, NPCs will no longer have access to unlimited ammo, but shall be forced to only use the ammo they possess.",
+            "type": "Checkbutton"
+          },
+          "Tutorials": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bShowTutorials" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Toggles the in-game tutorial pop-ups.",
+            "type": "Checkbutton"
+          },
+          "Over-Encumbered Reminder": {
+            "settings": [ "fEncumberedReminderTimer" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the time interval between subsequent \"You are carrying too much to be able to run\" messages in seconds.",
+            "type": "Entry",
+            "validate": "float"
           }
         }
       }
@@ -878,338 +999,7 @@
       }
     },
     "Visuals": {
-      "Quality": {
-        "Pack": {
-          "Fill": "None"
-        },
-        "NumberOfVerticallyStackedSettings": "5",
-        "Settings": {
-          "Preset Quality": {
-            "customWidth": "18",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uGlobalRendererQuality" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the base quality preset. Any other quality setting will use this quality if they are set to \"Preset.\"",
-            "type": "Dropdown"
-          },
-          "Shadows": {
-            "customWidth": "18",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uShadows" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of shadows.",
-            "type": "Dropdown"
-          },
-          "Contact Shadows": {
-            "customWidth": "18",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uContactShadows" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of Contact Shadows.",
-            "type": "Dropdown"
-          },
-          "Indirect Lighting": {
-            "customWidth": "18",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uGlobalIllumination" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of indirect lighting.",
-            "type": "Dropdown"
-          },
-          "Volumetric Lighting": {
-            "customWidth": "18",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "1", "0" ],
-              "Medium": [ "1", "1" ],
-              "High": [ "1", "2" ],
-              "Ultra": [ "1", "3" ],
-              "Preset": [ "1", "5" ]
-            },
-            "settings": [ "bVolumetricLightingEnable", "uVolumetricLighting" ],
-            "targetINIs": [ "StarfieldCustom.ini", "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display", "Quality" ],
-            "tooltip": "Sets the volumetric lighting quality.",
-            "type": "Dropdown"
-          },
-
-          "Particles": {
-            "customWidth": "10",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uParticle" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of particle lighting.",
-            "type": "Dropdown"
-          },
-          "Reflections": {
-            "customWidth": "10",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uReflections" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of Reflections.",
-            "type": "Dropdown"
-          },
-          "Decals": {
-            "customWidth": "10",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uDecals" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of decals.",
-            "type": "Dropdown"
-          },
-          "GTAO": {
-            "customWidth": "10",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uSAO" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of Ground Truth Ambient Occlusion.",
-            "type": "Dropdown"
-          },
-          "Grass": {
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "customWidth": "10",
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uGrass" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality and lushness of grass.",
-            "type": "Dropdown"
-          },
-          "Geometry": {
-            "customWidth": "12",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uGeometry" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of geometry.",
-            "type": "Dropdown"
-          },
-          "Terrain": {
-            "customWidth": "12",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uTerrain" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of terrain.",
-            "type": "Dropdown"
-          },
-          "Transparency": {
-            "customWidth": "12",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uTransparency" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of transparency.",
-            "type": "Dropdown"
-          },
-          "View Distance": {
-            "customWidth": "12",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uViewDistance" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of variable rate shading (VRS).",
-            "type": "Dropdown"
-          },
-          "Crowd Density": {
-            "customWidth": "12",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uCrowd" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the density of crowds.",
-            "type": "Dropdown"
-          },
-          "Atmospheric Scattering": {
-            "customWidth": "20",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uAtmosphericScattering" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of atmospheric scattering.",
-            "type": "Dropdown"
-          },
-          "Dynamic Resolution": {
-            "customWidth": "20",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uDynamicResolution" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of dynamic resolution.",
-            "type": "Dropdown"
-          },
-          "Motion Blur": {
-            "customWidth": "20",
-            "choices": [ "None", "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "None": [ "0", "0" ],
-              "Low": [ "1", "0" ],
-              "Medium": [ "1", "1" ],
-              "High": [ "1", "2" ],
-              "Ultra": [ "1", "3" ],
-              "Preset": [ "1", "5" ]
-            },
-            "settings": [ "bEnableMotionBlur", "uMotionBlur" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
-            "targetSections": [ "MotionBlur", "Quality" ],
-            "tooltip": "Sets the motion blur quality.",
-            "type": "Dropdown"
-          },
-          "Post Effects": {
-            "customWidth": "20",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "Low": [ "0" ],
-              "Medium": [ "1" ],
-              "High": [ "2" ],
-              "Ultra": [ "3" ],
-              "Preset": [ "5" ]
-            },
-            "settings": [ "uPostEffects" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Quality" ],
-            "tooltip": "Sets the quality of geometry.",
-            "type": "Dropdown"
-          },
-          "Variable Rate Shading": {
-            "customWidth": "20",
-            "choices": [ "Low", "Medium", "High", "Ultra", "Preset" ],
-            "settingChoices": {
-              "None": [ "0", "0" ],
-              "Low": [ "1", "0" ],
-              "Medium": [ "1", "1" ],
-              "High": [ "1", "2" ],
-              "Ultra": [ "1", "3" ],
-              "Preset": [ "1", "5" ]
-            },
-            "settings": [ "bUseReducedShadingRate", "uVariableRateShading" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display", "Quality" ],
-            "tooltip": "Sets the quality of variable rate shading (VRS).",
-            "type": "Dropdown"
-          }
-        }
-      },
-      "NoLabelFrame": {
+      "Effects": {
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
           "Film Grain": {
