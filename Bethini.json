@@ -329,10 +329,10 @@
             "choices": [ "4:3", "16:9", "16:10", "21:9", "32:9" ],
             "customWidth": "18",
             "settingChoices": {
-              "4:3": [ "1.3333", "2.3889" ],
-              "16:9": [ "1.6", "2.3889" ],
-              "16:10": [ "1.6", "2.3888" ],
-              "21:9": [ "1.7778", "2.3889" ],
+              "4:3": [ "1.3333", "2.4" ],
+              "16:9": [ "1.6", "2.4" ],
+              "16:10": [ "1.6", "2.41" ],
+              "21:9": [ "1.7778", "2.42" ],
               "32:9": [ "1.6", "3.5556" ]
             },
             "settings": [ "fNarrowAspectLimit", "fWideAspectLimit" ],
@@ -426,7 +426,7 @@
             "customWidth": "22",
             "decimal places": "0",
             "digits": "3",
-            "from": "40",
+            "from": "1",
             "increment": "1",
             "length": "100",
             "resolution": "1",
@@ -443,7 +443,7 @@
             "customWidth": "22",
             "decimal places": "0",
             "digits": "3",
-            "from": "40",
+            "from": "1",
             "increment": "1",
             "length": "100",
             "resolution": "1",
@@ -628,7 +628,7 @@
             "settings": [ "bUseLocaleVoices" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Controls" ],
-            "tooltip": "Toggles the game intro music.",
+            "tooltip": "Toggles English voices.",
             "type": "Checkbutton"
           },
           "Intro Logos": {
@@ -818,10 +818,93 @@
             "validate": "float"
           }
         }
+      },
+      "Papyrus": {
+        "Pack": {
+          "Side": "Left",
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "7",
+        "Settings": {
+          "Background Load Scripting VM": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bBackgroundLoadVMData" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles loading the scripting data in the VM in the background. Skyrim and Skyrim Special Edition defaults it to off, while Fallout 4 and Starfield defaults it to on.",
+            "type": "Checkbutton"
+          },
+          "Post-Load Update Time": {
+            "choices": [ "500", "2000" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "fPostLoadUpdateTimeMS" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Sets time, in milliseconds, given to scripts to update after loading.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
+          },
+          "Max Allocated Memory": {
+            "choices": [ "153600", "300000", "500000" ],
+            "customWidth": "20",
+            "decimal places": "0",
+            "settings": [ "iMaxAllocatedMemoryBytes" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Sets the maximum memory that Papyrus can hold at a time.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
+          },
+          "Logging": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableLogging" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles Papyrus logs being written to disk.",
+            "type": "Checkbutton"
+          },
+          "Debug Info": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bLoadDebugInformation" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles additional debug information. If enabled, line number information will be available in error traces at the expense of higher memory usage.",
+            "type": "Checkbutton"
+          },
+          "Profiling": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableProfiling" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles script profiling, which enables profiling commands and allows profiling information to be logged, at the cost of some script performance.",
+            "type": "Checkbutton"
+          },
+          "Tracing": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableTrace" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Papyrus" ],
+            "tooltip": "Toggles script tracing.",
+            "type": "Checkbutton"
+          }
+        }
       }
     },
     "Interface": {
       "NoLabelFrame": {
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Dialogue Subtitles": {
@@ -891,10 +974,10 @@
       },
       "Console": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "Y"
+          "Fill": "None",
+          "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Screen Percentage": {
             "customWidth": "16",
@@ -953,18 +1036,17 @@
       },
       "Mouse Settings": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "Y"
+          "Fill": "None",
+          "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "3",
         "Settings": {
           "Look Sensitivity": {
-            "customWidth": "15",
             "digits": "4",
             "decimal places": "4",
-            "from": "0.0100",
+            "from": "0.0000",
             "increment": "0.0001",
-            "length": "110",
+            "length": "100",
             "resolution": "0.0025",
             "settings": [ "fMouseHeadingSensitivity" ],
             "targetINIs": [ "StarfieldPrefs.ini" ],
@@ -976,8 +1058,6 @@
             "width": "7"
           },
           "X Scale": {
-            "customWidth": "19",
-            "entryWidth": "7",
             "settings": [ "fMouseHeadingXScale" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Controls" ],
@@ -986,8 +1066,6 @@
             "validate": "float"
           },
           "Y Scale": {
-            "customWidth": "19",
-            "entryWidth": "7",
             "settings": [ "fMouseHeadingYScale" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Controls" ],
@@ -1000,8 +1078,26 @@
     },
     "Visuals": {
       "Effects": {
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
+          "Depth of Field": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDepthOfFieldEnable" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
+            "type": "Checkbutton"
+          },
+          "Volumetric Lighting": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bVolumetricLightingEnable" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles volumetric lighting.",
+            "type": "Checkbutton"
+          },
           "Film Grain": {
             "decimal places": "2",
             "digits": "3",
@@ -1018,13 +1114,581 @@
             "validate": "integer",
             "width": "7"
           },
-          "Depth of Field": {
+          "Motion Blur": {
+            "choices": [ "None", "Low", "Medium", "High" ],
+            "settingChoices": {
+              "None": [ "0", "1" ],
+              "Low": [ "1", "1" ],
+              "Medium": [ "1", "2" ],
+              "High": [ "1", "3" ]
+            },
+            "settings": [ "bEnableMotionBlur", "uMotionBlurQuality" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "Ultra.ini" ],
+            "targetSections": [ "MotionBlur", "MotionBlur" ],
+            "tooltip": "Controls motion blur quality.",
+            "type": "Dropdown"
+          }
+        }
+      },
+      "Decals": {
+        "Pack": {
+          "Side": "Left",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "9",
+        "Settings": {
+          "Decals": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDepthOfFieldEnable" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "settings": [ "bDecals" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "tooltip": "Toggles decals (mostly blood effects).",
+            "type": "Checkbutton"
+          },
+          "Disable Gore": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisableAllGore" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles gory effects, such as blood.",
+            "type": "Checkbutton"
+          },
+          "Max Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxDecalsPerFrame" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "250",
+            "tooltip": "Sets the maximum number of decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecals" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxSkinDecalsPerFrame" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Actor": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecalsPerActor" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "60",
+            "tooltip": "Sets the maximum number of skinned decals per actor.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Lifetime": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLifetime" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Display" ],
-            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
+            "to": "300",
+            "tooltip": "Sets the time in seconds that some decals will stay visible.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "0",
+            "settings": [ "fDecalLOD0" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Distance Space": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "0",
+            "settings": [ "fDecalLOD0Space" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts, in space.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "Shadows": {
+      "NoLabelFrame2": {
+        "Pack": {
+          "Side": "Left"
+        },
+        "NumberOfVerticallyStackedSettings": "12",
+        "Settings": {
+          "Shadow Cascade Split Distance 1": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fShadowCascadeSplitDistance0" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "35",
+            "tooltip": "Sets the distance for the first shadow cascade split in meters.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Cascade Split Distance 2": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fShadowCascadeSplitDistance1" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "100",
+            "tooltip": "Sets the distance for the second shadow cascade split in meters.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Cascade Split Distance 3": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fShadowCascadeSplitDistance2" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "300",
+            "tooltip": "Sets the distance for the third shadow cascade split in meters.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Cascade Split Distance 4": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "3",
+            "settings": [ "fShadowCascadeSplitDistance3" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "900",
+            "tooltip": "Sets the distance for the fourth shadow cascade split in meters.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Maximum Shadow Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "6",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "3",
+            "settings": [ "fMaxShadowDistance" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "120000",
+            "tooltip": "Sets the maximum shadow distance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Dynamic Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uTotalDynamicShadowMapRenderCount" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "40",
+            "tooltip": "Sets the maximum shadow distance.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "4096 Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uShadowMapCount4096" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "12",
+            "tooltip": "Sets the amount of 4096 resolution shadow maps.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "2048 Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uShadowMapCount2048" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "24",
+            "tooltip": "Sets the amount of 2048 resolution shadow maps.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "1024 Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uShadowMapCount1024" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "32",
+            "tooltip": "Sets the amount of 1024 resolution shadow maps.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "512 Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uShadowMapCount512" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "64",
+            "tooltip": "Sets the amount of 512 resolution shadow maps.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "256 Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uShadowMapCount256" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "128",
+            "tooltip": "Sets the amount of 256 resolution shadow maps.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "128 Shadow Map Count": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "1",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uShadowMapCount128" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "to": "128",
+            "tooltip": "Sets the amount of 128 resolution shadow maps.",
+            "type": "Slider",
+            "validate": "whole",
+            "width": "8"
+          }
+        }
+      },
+      "NoLabelFrame1": {
+        "NumberOfVerticallyStackedSettings": "12",
+        "Settings": {
+          "Focus Shadow Resolution": {
+            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "customWidth": "32",
+            "decimal places": "0",
+            "settings": [ "uFocusShadowResolution" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "tooltip": "Sets the resolution of focus shadows, which are typically high quality ones you are focusing on.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "12"
+          },
+          "Directional Light Shadow Resolution": {
+            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "customWidth": "32",
+            "decimal places": "0",
+            "settings": [ "uDirectionalLightShadowMapResolution" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "tooltip": "Sets the resolution of directional light shadows.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "12"
+          },
+          "Terrain Shadow Resolution": {
+            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "customWidth": "32",
+            "decimal places": "0",
+            "settings": [ "uTerrainShadowMapSize" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Shadows" ],
+            "tooltip": "Sets the resolution of terrain shadows.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "12"
+          },
+          "Shadow Filtering": {
+            "choices": [ "Low", "Medium", "High", "Ultra" ],
+            "settingChoices": {
+              "Low": [ "0", "0" ],
+              "Medium": [ "0", "1" ],
+              "High": [ "0", "2" ],
+              "Ultra": [ "1", "2" ]
+            },
+            "customWidth": "32",
+            "settings": [ "uShadowFilteringTransparencies", "uShadowFilteringQuality" ],
+            "targetINIs": [ "Ultra.ini", "Ultra.ini" ],
+            "targetSections": [ "Shadows", "Shadows" ],
+            "tooltip": "Sets the quality of shadow filtering.",
+            "type": "Dropdown"
+          },
+          "Contact Shadows": {
+            "choices": [ "None", "Low", "Medium", "High", "Ultra" ],
+            "settingChoices": {
+              "None": [ "0", "0" ],
+              "Low": [ "1", "0" ],
+              "Medium": [ "1", "1" ],
+              "High": [ "1", "2" ],
+              "Ultra": [ "1", "3" ]
+            },
+            "customWidth": "32",
+            "settings": [ "bContactShadowsEnabled", "iContactShadowsQuality" ],
+            "targetINIs": [ "Ultra.ini", "Ultra.ini" ],
+            "targetSections": [ "ContactShadows", "ContactShadows" ],
+            "tooltip": "Sets the quality of shadow filtering.",
+            "type": "Dropdown"
+          }
+        }
+      },
+      "NoLabelFrame3": {
+        "Pack": {
+          "Side": "Left"
+        },
+        "NumberOfVerticallyStackedSettings": "6",
+        "Settings": {
+          "Contact Shadows Half Resolution": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bContactShadowHalfResolution" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "ContactShadows" ],
+            "tooltip": "Toggles using half the resolution on any contact shadows.",
+            "type": "Checkbutton"
+          },
+          "Contact Shadow Blur": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bBlurGaussian" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "ContactShadows" ],
+            "tooltip": "Toggles contact shadow blur.",
+            "type": "Checkbutton"
+          },
+          "Cloud Shadows": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableCloudShadows" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles contact shadow blur.",
+            "type": "Checkbutton"
+          },
+          "Directional Shadow LOD": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDirectionalShadowmapsUseLODFade" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Shadows" ],
+            "tooltip": "Toggles LOD for directional shadows.",
+            "type": "Checkbutton"
+          },
+          "Distant Rock Shadows": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDrawDistantRocksShadows" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Shadows" ],
+            "tooltip": "Toggles distant rock shadows.",
+            "type": "Checkbutton"
+          },
+          "Distant Tree Shadows": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDrawDistantTreesShadows" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Shadows" ],
+            "tooltip": "Toggles distant tree shadows.",
+            "type": "Checkbutton"
+          },
+          "Terrain Shadows": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableTerrainShadows" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Terrain" ],
+            "tooltip": "Toggles terrain shadows.",
+            "type": "Checkbutton"
+          },
+          "Terrain Shadows In Reflections": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableTerrainShadowsInReflections" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles terrain shadows in reflections.",
+            "type": "Checkbutton"
+          },
+          "Space Station Focus Shadows": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAllowFocusShadowsForPlayerSpaceStation" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles focus shadows in the player space station.",
             "type": "Checkbutton"
           }
         }
