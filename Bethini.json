@@ -40,7 +40,8 @@
     "uiUpscaleTech",
     "bTopMostWindow",
     "uDifficulty",
-    "bHasUserAccepted"
+    "bHasUserAccepted",
+    "aConsoleSelectedRefColor"
   ],
   "Default": "",
   "INIs": {
@@ -409,7 +410,7 @@
             "resolution": "0.01",
             "settings": [ "fRenderResolutionSetting", "fMinDynamicResolutionScale" ],
             "targetINIs": [ "Ultra.ini", "StarfieldCustom.ini" ],
-            "targetSections": [ "Display", "Display" ],
+            "targetSections": [ "DynamicResolution", "Display" ],
             "to": "1",
             "tooltip": "Sets the minimum dynamic render resolution scale, where the game automatically adjusts resolution in performance-heavy scenes.",
             "type": "Slider",
@@ -626,7 +627,7 @@
             "Offvalue": [ [ "1" ] ],
             "Onvalue": [ [ "0" ] ],
             "settings": [ "bUseLocaleVoices" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
             "targetSections": [ "Controls" ],
             "tooltip": "Toggles English voices.",
             "type": "Checkbutton"

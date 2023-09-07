@@ -15566,7 +15566,16 @@
       "type": "float",
       "section": "Display",
       "value": {
-        "default": 25.0
+        "default": 25.0,
+        "Vanilla Low": 25.0,
+        "Vanilla Medium": 25.0,
+        "Vanilla High": 25.0,
+        "Vanilla Ultra": 25.0,
+        "Bethini Poor": 25.0,
+        "Bethini Low": 88.0,
+        "Bethini Medium": 117.0,
+        "Bethini High": 146.0,
+        "Bethini Ultra": 175.0
       }
     },
     {
@@ -15582,7 +15591,16 @@
       "type": "float",
       "section": "Display",
       "value": {
-        "default": 30.0
+        "default": 30.0,
+        "Vanilla Low": 30.0,
+        "Vanilla Medium": 30.0,
+        "Vanilla High": 30.0,
+        "Vanilla Ultra": 30.0,
+        "Bethini Poor": 20.0,
+        "Bethini Low": 30.0,
+        "Bethini Medium": 240.0,
+        "Bethini High": 300.0,
+        "Bethini Ultra": 300.0
       }
     },
     {
@@ -23278,7 +23296,8 @@
       "type": "float",
       "section": "GamePlay",
       "value": {
-        "default": 58.522
+        "default": 58.522,
+        "recommended": 0
       }
     },
     {
@@ -36692,7 +36711,27 @@
       }
     },
     {
+      "name": "uPersistentUuidData0",
+      "type": "number",
+      "section": "Bethesda.net",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uPersistentUuidData1_Steam",
+      "type": "number",
+      "section": "Bethesda.net",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uPersistentUuidData1",
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
@@ -36713,6 +36752,16 @@
     },
     {
       "name": "uPersistentUuidData3_Steam",
+      "type": "number",
+      "section": "Bethesda.net",
+      "ini": "StarfieldPrefs.ini",
+      "alwaysPrint": true,
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uPersistentUuidData3",
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
@@ -38044,7 +38093,7 @@
       "ini": "Ultra.ini",
       "section": "DataMenu",
       "value": {
-        "Unknown Default": ""
+        "default": "255,255,255,255"
       }
     },
     {
@@ -38053,7 +38102,7 @@
       "ini": "Ultra.ini",
       "section": "StarMap",
       "value": {
-        "Unknown Default": ""
+        "default": "255,4,6,10"
       }
     },
     {
@@ -38062,7 +38111,7 @@
       "ini": "Ultra.ini",
       "section": "StarMap",
       "value": {
-        "Unknown Default": ""
+        "default": "255,104,155,249"
       }
     },
     {
@@ -38071,7 +38120,7 @@
       "ini": "Ultra.ini",
       "section": "StarMap",
       "value": {
-        "Unknown Default": ""
+        "default": "255,255,255,255"
       }
     },
     {
@@ -38080,7 +38129,7 @@
       "ini": "Ultra.ini",
       "section": "ThirdPersonCam",
       "value": {
-        "Unknown Default": ""
+        "default": 1
       }
     },
     {
@@ -38089,7 +38138,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 1
       }
     },
     {
@@ -38098,7 +38147,7 @@
       "ini": "Ultra.ini",
       "section": "BoostPack",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38143,7 +38192,7 @@
       "ini": "Ultra.ini",
       "section": "Crowd",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38152,7 +38201,7 @@
       "ini": "Ultra.ini",
       "section": "Decals",
       "value": {
-        "default": "1"
+        "default": 1
       }
     },
     {
@@ -38305,7 +38354,7 @@
       "ini": "Ultra.ini",
       "section": "PlanetContent",
       "value": {
-        "Unknown Default": ""
+        "default": 1
       }
     },
     {
@@ -38314,7 +38363,7 @@
       "ini": "Ultra.ini",
       "section": "Shadows",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38332,7 +38381,7 @@
       "ini": "Ultra.ini",
       "section": "StarMap",
       "value": {
-        "Unknown Default": ""
+        "default": 1
       }
     },
     {
@@ -38341,7 +38390,7 @@
       "ini": "Ultra.ini",
       "section": "StarMap",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38350,7 +38399,7 @@
       "ini": "Ultra.ini",
       "section": "Controls",
       "value": {
-        "Unknown Default": ""
+        "default": 1
       }
     },
     {
@@ -38359,7 +38408,7 @@
       "ini": "Ultra.ini",
       "section": "Controls",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38368,16 +38417,16 @@
       "ini": "Ultra.ini",
       "section": "VolumetricLighting",
       "value": {
-        "default": 1,
-        "Vanilla Low": "1",
-        "Vanilla Medium": "1",
-        "Vanilla High": "1",
-        "Vanilla Ultra": "0",
-        "Bethini Poor": "1",
-        "Bethini Low": "1",
-        "Bethini Medium": "1",
-        "Bethini High": "1",
-        "Bethini Ultra": "0"
+        "default": 0,
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 0,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 1,
+        "Bethini Ultra": 0
       }
     },
     {
@@ -38386,7 +38435,7 @@
       "ini": "Ultra.ini",
       "section": "ThirdPersonCam",
       "value": {
-        "Unknown Default": ""
+        "default": 0.429
       }
     },
     {
@@ -38395,7 +38444,7 @@
       "ini": "Ultra.ini",
       "section": "ThirdPersonCam",
       "value": {
-        "Unknown Default": ""
+        "default": 6
       }
     },
     {
@@ -38404,7 +38453,7 @@
       "ini": "Ultra.ini",
       "section": "ThirdPersonCam",
       "value": {
-        "Unknown Default": ""
+        "default": 50
       }
     },
     {
@@ -38413,7 +38462,7 @@
       "ini": "Ultra.ini",
       "section": "ThirdPersonCam",
       "value": {
-        "Unknown Default": ""
+        "default": 0.15
       }
     },
     {
@@ -38422,7 +38471,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38431,7 +38480,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 10
       }
     },
     {
@@ -38440,7 +38489,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38449,7 +38498,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 5
       }
     },
     {
@@ -38458,7 +38507,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0.3
       }
     },
     {
@@ -38467,7 +38516,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0.05
       }
     },
     {
@@ -38476,7 +38525,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 2
       }
     },
     {
@@ -38485,7 +38534,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38494,7 +38543,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 1.5
       }
     },
     {
@@ -38503,7 +38552,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0.2
       }
     },
     {
@@ -38512,7 +38561,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 30
       }
     },
     {
@@ -38521,7 +38570,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 20
       }
     },
     {
@@ -38530,7 +38579,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38539,7 +38588,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 2
       }
     },
     {
@@ -38548,7 +38597,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38557,7 +38606,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 2
       }
     },
     {
@@ -38566,7 +38615,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0.2
       }
     },
     {
@@ -38575,7 +38624,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38584,7 +38633,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38593,7 +38642,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 2
       }
     },
     {
@@ -38602,7 +38651,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 0.2
       }
     },
     {
@@ -38611,7 +38660,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38620,7 +38669,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 2
       }
     },
     {
@@ -38629,7 +38678,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 5
       }
     },
     {
@@ -38638,7 +38687,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38647,7 +38696,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 2
       }
     },
     {
@@ -38656,7 +38705,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3
       }
     },
     {
@@ -38665,7 +38714,7 @@
       "ini": "Ultra.ini",
       "section": "AimModel",
       "value": {
-        "Unknown Default": ""
+        "default": 3000
       }
     },
     {
@@ -38674,7 +38723,7 @@
       "ini": "Ultra.ini",
       "section": "Clouds",
       "value": {
-        "Unknown Default": ""
+        "default": 45
       }
     },
     {
@@ -38683,7 +38732,7 @@
       "ini": "Ultra.ini",
       "section": "Clouds",
       "value": {
-        "Unknown Default": ""
+        "default": 0
       }
     },
     {
@@ -38692,7 +38741,7 @@
       "ini": "Ultra.ini",
       "section": "ResearchProject",
       "value": {
-        "Unknown Default": ""
+        "default": 0.1
       }
     },
     {
@@ -38701,7 +38750,7 @@
       "ini": "Ultra.ini",
       "section": "PlanetContent",
       "value": {
-        "Unknown Default": ""
+        "default": 5000
       }
     },
     {
@@ -38710,43 +38759,83 @@
       "ini": "Ultra.ini",
       "section": "PlanetContent",
       "value": {
-        "Unknown Default": ""
+        "default": 5000
       }
     },
     {
       "name": "fBlockLevel0Distance",
       "type": "float",
       "ini": "Ultra.ini",
+      "notes": "Now in meters, equal to 42017 units.",
       "section": "ViewDistance",
       "value": {
-        "Unknown Default": ""
+        "default": 600,
+        "Vanilla Low": 600,
+        "Vanilla Medium": 600,
+        "Vanilla High": 600,
+        "Vanilla Ultra": 600,
+        "Bethini Poor": 234,
+        "Bethini Low": 468,
+        "Bethini Medium": 468,
+        "Bethini High": 468,
+        "Bethini Ultra": 468
       }
     },
     {
       "name": "fBlockLevel1Distance",
       "type": "float",
       "ini": "Ultra.ini",
+      "notes": "Now in meters, equal to 84034 units.",
       "section": "ViewDistance",
       "value": {
-        "Unknown Default": ""
+        "default": 1200,
+        "Vanilla Low": 1200,
+        "Vanilla Medium": 1200,
+        "Vanilla High": 1200,
+        "Vanilla Ultra": 1200,
+        "Bethini Poor": 468,
+        "Bethini Low": 936,
+        "Bethini Medium": 936,
+        "Bethini High": 936,
+        "Bethini Ultra": 936
       }
     },
     {
       "name": "fBlockLevel2Distance",
       "type": "float",
       "ini": "Ultra.ini",
+      "notes": "Now in meters, equal to 154061 units.",
       "section": "ViewDistance",
       "value": {
-        "Unknown Default": ""
+        "default": 2200,
+        "Vanilla Low": 2200,
+        "Vanilla Medium": 2200,
+        "Vanilla High": 2200,
+        "Vanilla Ultra": 2200,
+        "Bethini Poor": 936,
+        "Bethini Low": 1872,
+        "Bethini Medium": 1872,
+        "Bethini High": 1872,
+        "Bethini Ultra": 1872
       }
     },
     {
       "name": "fBlockMaximumDistance",
       "type": "float",
       "ini": "Ultra.ini",
+      "notes": "Now in meters, equal to 700280 units.",
       "section": "ViewDistance",
       "value": {
-        "Unknown Default": ""
+        "default": 10000,
+        "Vanilla Low": 10000,
+        "Vanilla Medium": 10000,
+        "Vanilla High": 10000,
+        "Vanilla Ultra": 10000,
+        "Bethini Poor": 5615,
+        "Bethini Low": 5615,
+        "Bethini Medium": 5615,
+        "Bethini High": 5615,
+        "Bethini Ultra": 5615
       }
     },
     {
@@ -38755,7 +38844,7 @@
       "ini": "Ultra.ini",
       "section": "ResearchProject",
       "value": {
-        "Unknown Default": ""
+        "default": 0.5
       }
     },
     {
@@ -38917,16 +39006,16 @@
       "ini": "Ultra.ini",
       "section": "PostEffects",
       "value": {
-        "default": "0.7",
-        "Vanilla Low": "0",
-        "Vanilla Medium": "0.7",
-        "Vanilla High": "0.7",
-        "Vanilla Ultra": "0.7",
-        "Bethini Poor": "0",
-        "Bethini Low": "0",
-        "Bethini Medium": "0.7",
-        "Bethini High": "0.7",
-        "Bethini Ultra": "0.7"
+        "default": 0.7,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0.7,
+        "Vanilla High": 0.7,
+        "Vanilla Ultra": 0.7,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0.7,
+        "Bethini High": 0.7,
+        "Bethini Ultra": 0.7
       }
     },
     {
@@ -39037,13 +39126,13 @@
         "default": 1,
         "Vanilla Low": "0.4",
         "Vanilla Medium": "0.6",
-        "Vanilla High": "1",
-        "Vanilla Ultra": "1",
+        "Vanilla High": 1,
+        "Vanilla Ultra": 1,
         "Bethini Poor": "0.4",
         "Bethini Low": "0.4",
         "Bethini Medium": "0.6",
-        "Bethini High": "1",
-        "Bethini Ultra": "1"
+        "Bethini High": 1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -39637,16 +39726,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": "0.15",
-        "Vanilla Low": "0.15",
-        "Vanilla Medium": "0.15",
-        "Vanilla High": "0.15",
-        "Vanilla Ultra": "0.15",
-        "Bethini Poor": "0.15",
-        "Bethini Low": "0.15",
-        "Bethini Medium": "0.15",
-        "Bethini High": "0.15",
-        "Bethini Ultra": "0.15"
+        "default": 0.15,
+        "Vanilla Low": 0.15,
+        "Vanilla Medium": 0.15,
+        "Vanilla High": 0.15,
+        "Vanilla Ultra": 0.15,
+        "Bethini Poor": 0.15,
+        "Bethini Low": 0.15,
+        "Bethini Medium": 0.15,
+        "Bethini High": 0.15,
+        "Bethini Ultra": 0.15
       }
     },
     {
@@ -39655,16 +39744,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": "3000",
-        "Vanilla Low": "3000",
-        "Vanilla Medium": "3000",
-        "Vanilla High": "3000",
-        "Vanilla Ultra": "3000",
-        "Bethini Poor": "3000",
-        "Bethini Low": "3000",
-        "Bethini Medium": "3000",
-        "Bethini High": "3000",
-        "Bethini Ultra": "3000"
+        "default": 3000,
+        "Vanilla Low": 3000,
+        "Vanilla Medium": 3000,
+        "Vanilla High": 3000,
+        "Vanilla Ultra": 3000,
+        "Bethini Poor": 3000,
+        "Bethini Low": 3000,
+        "Bethini Medium": 3000,
+        "Bethini High": 3000,
+        "Bethini Ultra": 3000
       }
     },
     {
@@ -39673,16 +39762,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": 2,
-        "Vanilla Low": "2.5",
-        "Vanilla Medium": "2",
-        "Vanilla High": "1.45",
-        "Vanilla Ultra": "1.25",
-        "Bethini Poor": "2.5",
-        "Bethini Low": "2.5",
-        "Bethini Medium": "2",
-        "Bethini High": "1.45",
-        "Bethini Ultra": "1.25"
+        "default": 1.25,
+        "Vanilla Low": 2.5,
+        "Vanilla Medium": 2,
+        "Vanilla High": 1.45,
+        "Vanilla Ultra": 1.25,
+        "Bethini Poor": 2.5,
+        "Bethini Low": 2.5,
+        "Bethini Medium": 2,
+        "Bethini High": 1.45,
+        "Bethini Ultra": 1.25
       }
     },
     {
@@ -39691,16 +39780,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": 7,
-        "Vanilla Low": "8",
-        "Vanilla Medium": "7",
-        "Vanilla High": "6",
-        "Vanilla Ultra": "5",
-        "Bethini Poor": "8",
-        "Bethini Low": "8",
-        "Bethini Medium": "7",
-        "Bethini High": "6",
-        "Bethini Ultra": "5"
+        "default": 5,
+        "Vanilla Low": 8,
+        "Vanilla Medium": 7,
+        "Vanilla High": 6,
+        "Vanilla Ultra": 5,
+        "Bethini Poor": 8,
+        "Bethini Low": 8,
+        "Bethini Medium": 7,
+        "Bethini High": 6,
+        "Bethini Ultra": 5
       }
     },
     {
@@ -39709,16 +39798,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": "0.2",
-        "Vanilla Low": "0.2",
-        "Vanilla Medium": "0.2",
-        "Vanilla High": "0.2",
-        "Vanilla Ultra": "0.2",
-        "Bethini Poor": "0.2",
-        "Bethini Low": "0.2",
-        "Bethini Medium": "0.2",
-        "Bethini High": "0.2",
-        "Bethini Ultra": "0.2"
+        "default": 0.2,
+        "Vanilla Low": 0.2,
+        "Vanilla Medium": 0.2,
+        "Vanilla High": 0.2,
+        "Vanilla Ultra": 0.2,
+        "Bethini Poor": 0.2,
+        "Bethini Low": 0.2,
+        "Bethini Medium": 0.2,
+        "Bethini High": 0.2,
+        "Bethini Ultra": 0.2
       }
     },
     {
@@ -39727,16 +39816,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": 600,
-        "Vanilla Low": "600",
-        "Vanilla Medium": "600",
-        "Vanilla High": "500",
-        "Vanilla Ultra": "400",
-        "Bethini Poor": "600",
-        "Bethini Low": "600",
-        "Bethini Medium": "600",
-        "Bethini High": "500",
-        "Bethini Ultra": "400"
+        "default": 400,
+        "Vanilla Low": 600,
+        "Vanilla Medium": 600,
+        "Vanilla High": 500,
+        "Vanilla Ultra": 400,
+        "Bethini Poor": 600,
+        "Bethini Low": 600,
+        "Bethini Medium": 600,
+        "Bethini High": 500,
+        "Bethini Ultra": 400
       }
     },
     {
@@ -39745,16 +39834,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": 1.3,
-        "Vanilla Low": "2",
-        "Vanilla Medium": "1.3",
-        "Vanilla High": "1.1",
-        "Vanilla Ultra": "1",
-        "Bethini Poor": "2",
-        "Bethini Low": "2",
-        "Bethini Medium": "1.3",
-        "Bethini High": "1.1",
-        "Bethini Ultra": "1"
+        "default": 1,
+        "Vanilla Low": 2,
+        "Vanilla Medium": 1.3,
+        "Vanilla High": 1.1,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 2,
+        "Bethini Low": 2,
+        "Bethini Medium": 1.3,
+        "Bethini High": 1.1,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -39763,16 +39852,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": "2.5",
-        "Vanilla Low": "3",
-        "Vanilla Medium": "2.5",
-        "Vanilla High": "2.5",
-        "Vanilla Ultra": "2.5",
-        "Bethini Poor": "3",
-        "Bethini Low": "3",
-        "Bethini Medium": "2.5",
-        "Bethini High": "2.5",
-        "Bethini Ultra": "2.5"
+        "default": 2.5,
+        "Vanilla Low": 3,
+        "Vanilla Medium": 2.5,
+        "Vanilla High": 2.5,
+        "Vanilla Ultra": 2.5,
+        "Bethini Poor": 3,
+        "Bethini Low": 3,
+        "Bethini Medium": 2.5,
+        "Bethini High": 2.5,
+        "Bethini Ultra": 2.5
       }
     },
     {
@@ -39781,7 +39870,7 @@
       "ini": "Ultra.ini",
       "section": "Transparency",
       "value": {
-        "Unknown Default": ""
+        "Unknown Default": 25.17
       }
     },
     {
@@ -39790,7 +39879,7 @@
       "ini": "Ultra.ini",
       "section": "Transparency",
       "value": {
-        "Unknown Default": ""
+        "Unknown Default": 15.8
       }
     },
     {
@@ -39799,7 +39888,7 @@
       "ini": "Ultra.ini",
       "section": "Transparency",
       "value": {
-        "Unknown Default": ""
+        "Unknown Default": 2
       }
     },
     {
@@ -39808,7 +39897,7 @@
       "ini": "Ultra.ini",
       "section": "Transparency",
       "value": {
-        "Unknown Default": ""
+        "Unknown Default": 2
       }
     },
     {
@@ -39824,9 +39913,19 @@
       "name": "fFarDistance",
       "type": "float",
       "ini": "Ultra.ini",
+      "notes": "In meters, 420168 units",
       "section": "ViewDistance",
       "value": {
-        "Unknown Default": ""
+        "default": 6000,
+        "Vanilla Low": 6000,
+        "Vanilla Medium": 6000,
+        "Vanilla High": 6000,
+        "Vanilla Ultra": 6000,
+        "Bethini Poor": 1872,
+        "Bethini Low": 1872,
+        "Bethini Medium": 3743,
+        "Bethini High": 3743,
+        "Bethini Ultra": 3743
       }
     },
     {
@@ -40097,15 +40196,15 @@
       "section": "SAO",
       "value": {
         "default": 1.4,
-        "Vanilla Low": "1.5",
-        "Vanilla Medium": "1.4",
-        "Vanilla High": "1.2",
-        "Vanilla Ultra": "1",
-        "Bethini Poor": "1.5",
-        "Bethini Low": "1.5",
-        "Bethini Medium": "1.4",
-        "Bethini High": "1.2",
-        "Bethini Ultra": "1"
+        "Vanilla Low": 1.5,
+        "Vanilla Medium": 1.4,
+        "Vanilla High": 1.2,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 1.5,
+        "Bethini Low": 1.5,
+        "Bethini Medium": 1.4,
+        "Bethini High": 1.2,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -40114,16 +40213,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": "0.3",
-        "Vanilla Low": "0.3",
-        "Vanilla Medium": "0.3",
-        "Vanilla High": "0.3",
-        "Vanilla Ultra": "0.3",
-        "Bethini Poor": "0.3",
-        "Bethini Low": "0.3",
-        "Bethini Medium": "0.3",
-        "Bethini High": "0.3",
-        "Bethini Ultra": "0.3"
+        "default": 0.3,
+        "Vanilla Low": 0.3,
+        "Vanilla Medium": 0.3,
+        "Vanilla High": 0.3,
+        "Vanilla Ultra": 0.3,
+        "Bethini Poor": 0.3,
+        "Bethini Low": 0.3,
+        "Bethini Medium": 0.3,
+        "Bethini High": 0.3,
+        "Bethini Ultra": 0.3
       }
     },
     {
@@ -40151,15 +40250,15 @@
       "section": "Grass",
       "value": {
         "default": 2.2,
-        "Vanilla Low": "2.5",
-        "Vanilla Medium": "2.2",
-        "Vanilla High": "1.5",
-        "Vanilla Ultra": "0.5",
-        "Bethini Poor": "2.5",
-        "Bethini Low": "2.5",
-        "Bethini Medium": "2.2",
-        "Bethini High": "1.5",
-        "Bethini Ultra": "0.5"
+        "Vanilla Low": 2.5,
+        "Vanilla Medium": 2.2,
+        "Vanilla High": 1.5,
+        "Vanilla Ultra": 0.5,
+        "Bethini Poor": 2.5,
+        "Bethini Low": 2.5,
+        "Bethini Medium": 2.2,
+        "Bethini High": 1.5,
+        "Bethini Ultra": 0.5
       }
     },
     {
@@ -41860,9 +41959,9 @@
       "ini": "Ultra.ini",
       "section": "DynamicResolution",
       "value": {
-        "default": "0.5",
-        "Vanilla Low": "0.5",
-        "Vanilla Medium": "0.5",
+        "default": 0.5,
+        "Vanilla Low": 0.5,
+        "Vanilla Medium": 0.5,
         "Vanilla High": "0.62",
         "Vanilla Ultra": "0.75",
         "Bethini Poor": 0.5,
@@ -41924,13 +42023,13 @@
       "section": "Shadows",
       "value": {
         "default": 7,
-        "Vanilla Low": "6",
-        "Vanilla Medium": "7",
+        "Vanilla Low": 6,
+        "Vanilla Medium": 7,
         "Vanilla High": "9",
         "Vanilla Ultra": "10",
-        "Bethini Poor": "0",
+        "Bethini Poor": 0,
         "Bethini Low": "5.5",
-        "Bethini Medium": "7",
+        "Bethini Medium": 7,
         "Bethini High": "8.5",
         "Bethini Ultra": "10"
       }
@@ -41978,15 +42077,15 @@
       "section": "Shadows",
       "value": {
         "default": 400,
-        "Vanilla Low": "400",
-        "Vanilla Medium": "400",
-        "Vanilla High": "500",
-        "Vanilla Ultra": "600",
+        "Vanilla Low": 400,
+        "Vanilla Medium": 400,
+        "Vanilla High": 500,
+        "Vanilla Ultra": 600,
         "Bethini Poor": 0,
         "Bethini Low": "300",
-        "Bethini Medium": "400",
-        "Bethini High": "500",
-        "Bethini Ultra": "600"
+        "Bethini Medium": 400,
+        "Bethini High": 500,
+        "Bethini Ultra": 600
       }
     },
     {
@@ -42779,15 +42878,15 @@
       "section": "Terrain",
       "value": {
         "default": 1,
-        "Vanilla Low": "1",
-        "Vanilla Medium": "1",
-        "Vanilla High": "0.5",
-        "Vanilla Ultra": "0.5",
-        "Bethini Poor": "1",
-        "Bethini Low": "1",
-        "Bethini Medium": "1",
-        "Bethini High": "0.5",
-        "Bethini Ultra": "0.5"
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 0.5,
+        "Vanilla Ultra": 0.5,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 0.5,
+        "Bethini Ultra": 0.5
       }
     },
     {
@@ -42797,15 +42896,15 @@
       "section": "VariableRateShading",
       "value": {
         "default": 0.1,
-        "Vanilla Low": "0.15",
-        "Vanilla Medium": "0.1",
-        "Vanilla High": "0.075",
-        "Vanilla Ultra": "0.075",
-        "Bethini Poor": "0.15",
-        "Bethini Low": "0.15",
-        "Bethini Medium": "0.1",
-        "Bethini High": "0.075",
-        "Bethini Ultra": "0.075"
+        "Vanilla Low": 0.15,
+        "Vanilla Medium": 0.1,
+        "Vanilla High": 0.075,
+        "Vanilla Ultra": 0.075,
+        "Bethini Poor": 0.15,
+        "Bethini Low": 0.15,
+        "Bethini Medium": 0.1,
+        "Bethini High": 0.075,
+        "Bethini Ultra": 0.075
       }
     },
     {
@@ -42832,16 +42931,16 @@
       "ini": "Ultra.ini",
       "section": "ContactShadows",
       "value": {
-        "default": "2",
-        "Vanilla Low": "2",
-        "Vanilla Medium": "2",
-        "Vanilla High": "2",
-        "Vanilla Ultra": "2",
-        "Bethini Poor": "2",
-        "Bethini Low": "2",
-        "Bethini Medium": "2",
-        "Bethini High": "2",
-        "Bethini Ultra": "2"
+        "default": 2,
+        "Vanilla Low": 2,
+        "Vanilla Medium": 2,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 2,
+        "Bethini Poor": 2,
+        "Bethini Low": 2,
+        "Bethini Medium": 2,
+        "Bethini High": 2,
+        "Bethini Ultra": 2
       }
     },
     {
@@ -42941,11 +43040,11 @@
       "section": "Decals",
       "value": {
         "default": 5,
-        "Vanilla Low": "3",
-        "Vanilla Medium": "5",
+        "Vanilla Low": 3,
+        "Vanilla Medium": 5,
         "Vanilla High": "10",
         "Vanilla Ultra": "16",
-        "Bethini Poor": "3",
+        "Bethini Poor": 3,
         "Bethini Low": "10",
         "Bethini Medium": "60",
         "Bethini High": "120",
@@ -42959,11 +43058,11 @@
       "section": "Decals",
       "value": {
         "default": 3,
-        "Vanilla Low": "1",
-        "Vanilla Medium": "3",
+        "Vanilla Low": 1,
+        "Vanilla Medium": 3,
         "Vanilla High": "10",
         "Vanilla Ultra": "10",
-        "Bethini Poor": "3",
+        "Bethini Poor": 3,
         "Bethini Low": "10",
         "Bethini Medium": "60",
         "Bethini High": "120",
@@ -44597,15 +44696,15 @@
       "section": "Shadows",
       "value": {
         "default": 1,
-        "Vanilla Low": "0",
-        "Vanilla Medium": "1",
-        "Vanilla High": "3",
-        "Vanilla Ultra": "3",
-        "Bethini Poor": "0",
-        "Bethini Low": "0",
-        "Bethini Medium": "1",
-        "Bethini High": "2",
-        "Bethini Ultra": "3"
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 3,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -44669,15 +44768,15 @@
       "section": "GlobalIllumination",
       "value": {
         "default": 0,
-        "Vanilla Low": "0",
-        "Vanilla Medium": "0",
-        "Vanilla High": "2",
-        "Vanilla Ultra": "2",
-        "Bethini Poor": "0",
-        "Bethini Low": "0",
-        "Bethini Medium": "0",
-        "Bethini High": "2",
-        "Bethini Ultra": "2"
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 2,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 2,
+        "Bethini Ultra": 2
       }
     },
     {
@@ -44759,12 +44858,12 @@
       "section": "Decals",
       "value": {
         "default": 5,
-        "Vanilla Low": "5",
-        "Vanilla Medium": "5",
+        "Vanilla Low": 5,
+        "Vanilla Medium": 5,
         "Vanilla High": "10",
         "Vanilla Ultra": "10",
-        "Bethini Poor": "1",
-        "Bethini Low": "3",
+        "Bethini Poor": 1,
+        "Bethini Low": 3,
         "Bethini Medium": "35",
         "Bethini High": "50",
         "Bethini Ultra": "100"
@@ -44777,12 +44876,12 @@
       "section": "Decals",
       "value": {
         "default": 5,
-        "Vanilla Low": "5",
-        "Vanilla Medium": "5",
+        "Vanilla Low": 5,
+        "Vanilla Medium": 5,
         "Vanilla High": "10",
         "Vanilla Ultra": "10",
-        "Bethini Poor": "1",
-        "Bethini Low": "5",
+        "Bethini Poor": 1,
+        "Bethini Low": 5,
         "Bethini Medium": "20",
         "Bethini High": "40",
         "Bethini Ultra": "60"
@@ -44795,15 +44894,15 @@
       "section": "MotionBlur",
       "value": {
         "default": 1,
-        "Vanilla Low": "1",
-        "Vanilla Medium": "1",
-        "Vanilla High": "2",
-        "Vanilla Ultra": "3",
-        "Bethini Poor": "1",
-        "Bethini Low": "1",
-        "Bethini Medium": "1",
-        "Bethini High": "2",
-        "Bethini Ultra": "3"
+        "Vanilla Low": 1,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -44813,15 +44912,15 @@
       "section": "Particle",
       "value": {
         "default": 1,
-        "Vanilla Low": "0",
-        "Vanilla Medium": "1",
-        "Vanilla High": "2",
-        "Vanilla Ultra": "2",
-        "Bethini Poor": "0",
-        "Bethini Low": "0",
-        "Bethini Medium": "1",
-        "Bethini High": "2",
-        "Bethini Ultra": "2"
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 2,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 2
       }
     },
     {
@@ -44949,15 +45048,15 @@
       "notes": "1 is Schlick. 0 is HG.",
       "value": {
         "default": 0,
-        "Vanilla Low": "1",
-        "Vanilla Medium": "0",
-        "Vanilla High": "0",
-        "Vanilla Ultra": "0",
-        "Bethini Poor": "1",
-        "Bethini Low": "1",
-        "Bethini Medium": "0",
-        "Bethini High": "0",
-        "Bethini Ultra": "0"
+        "Vanilla Low": 1,
+        "Vanilla Medium": 0,
+        "Vanilla High": 0,
+        "Vanilla Ultra": 0,
+        "Bethini Poor": 1,
+        "Bethini Low": 1,
+        "Bethini Medium": 0,
+        "Bethini High": 0,
+        "Bethini Ultra": 0
       }
     },
     {
@@ -44967,15 +45066,15 @@
       "section": "VolumetricLighting",
       "value": {
         "default": 1,
-        "Vanilla Low": "0",
-        "Vanilla Medium": "1",
-        "Vanilla High": "2",
-        "Vanilla Ultra": "3",
-        "Bethini Poor": "0",
-        "Bethini Low": "0",
-        "Bethini Medium": "1",
-        "Bethini High": "2",
-        "Bethini Ultra": "3"
+        "Vanilla Low": 0,
+        "Vanilla Medium": 1,
+        "Vanilla High": 2,
+        "Vanilla Ultra": 3,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 1,
+        "Bethini High": 2,
+        "Bethini Ultra": 3
       }
     },
     {
@@ -45003,15 +45102,15 @@
       "section": "Reflections",
       "value": {
         "default": 2,
-        "Vanilla Low": "2",
-        "Vanilla Medium": "2",
-        "Vanilla High": "3",
-        "Vanilla Ultra": "6",
-        "Bethini Poor": "2",
-        "Bethini Low": "2",
-        "Bethini Medium": "2",
-        "Bethini High": "3",
-        "Bethini Ultra": "6"
+        "Vanilla Low": 2,
+        "Vanilla Medium": 2,
+        "Vanilla High": 3,
+        "Vanilla Ultra": 6,
+        "Bethini Poor": 2,
+        "Bethini Low": 2,
+        "Bethini Medium": 2,
+        "Bethini High": 3,
+        "Bethini Ultra": 6
       }
     },
     {
@@ -45040,10 +45139,10 @@
       "section": "Shadows",
       "value": {
         "default": 0,
-        "Vanilla Low": "0",
-        "Vanilla Medium": "0",
-        "Vanilla High": "1",
-        "Vanilla Ultra": "2",
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 1,
+        "Vanilla Ultra": 2,
         "Bethini Poor": 0,
         "Bethini Low": 0,
         "Bethini Medium": 0,
@@ -45057,16 +45156,16 @@
       "ini": "Ultra.ini",
       "section": "Shadows",
       "value": {
-        "default": "0",
-        "Vanilla Low": "0",
-        "Vanilla Medium": "0",
-        "Vanilla High": "0",
-        "Vanilla Ultra": "1",
-        "Bethini Poor": "0",
-        "Bethini Low": "0",
-        "Bethini Medium": "0",
-        "Bethini High": "0",
-        "Bethini Ultra": "1"
+        "default": 0,
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 0,
+        "Vanilla Ultra": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 0,
+        "Bethini Ultra": 1
       }
     },
     {
@@ -45113,14 +45212,14 @@
       "section": "Shadows",
       "value": {
         "default": 4,
-        "Vanilla Low": "0",
+        "Vanilla Low": 0,
         "Vanilla Medium": "4",
-        "Vanilla High": "8",
+        "Vanilla High": 8,
         "Vanilla Ultra": "10",
         "Bethini Poor": 0,
         "Bethini Low": 0,
         "Bethini Medium": "4",
-        "Bethini High": "8",
+        "Bethini High": 8,
         "Bethini Ultra": "10"
       }
     },
@@ -45149,14 +45248,14 @@
       "section": "Shadows",
       "value": {
         "default": 0,
-        "Vanilla Low": "0",
-        "Vanilla Medium": "0",
-        "Vanilla High": "0",
+        "Vanilla Low": 0,
+        "Vanilla Medium": 0,
+        "Vanilla High": 0,
         "Vanilla Ultra": "4",
         "Bethini Poor": 0,
-        "Bethini Low": "0",
-        "Bethini Medium": "0",
-        "Bethini High": "0",
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 0,
         "Bethini Ultra": "4"
       }
     },
