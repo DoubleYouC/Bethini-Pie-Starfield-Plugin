@@ -17907,6 +17907,7 @@
       "name": "fGamma",
       "type": "float",
       "section": "Display",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 2.4
       }
@@ -34644,15 +34645,15 @@
       "alwaysPrint": true,
       "value": {
         "default": 5,
-        "Vanilla Low": 0,
-        "Vanilla Medium": 1,
-        "Vanilla High": 2,
-        "Vanilla Ultra": 3,
-        "Bethini Poor": 0,
-        "Bethini Low": 0,
-        "Bethini Medium": 1,
-        "Bethini High": 2,
-        "Bethini Ultra": 3
+        "Vanilla Low": 5,
+        "Vanilla Medium": 5,
+        "Vanilla High": 5,
+        "Vanilla Ultra": 5,
+        "Bethini Poor": 5,
+        "Bethini Low": 5,
+        "Bethini Medium": 5,
+        "Bethini High": 5,
+        "Bethini Ultra": 5
       }
     },
     {
@@ -38215,8 +38216,8 @@
         "Vanilla Medium": 0,
         "Vanilla High": 0,
         "Vanilla Ultra": 0,
-        "Bethini Poor": 1,
-        "Bethini Low": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
         "Bethini Medium": 0,
         "Bethini High": 0,
         "Bethini Ultra": 0
@@ -38341,8 +38342,8 @@
         "Vanilla Medium": 0,
         "Vanilla High": 0,
         "Vanilla Ultra": 0,
-        "Bethini Poor": 1,
-        "Bethini Low": 1,
+        "Bethini Poor": 0,
+        "Bethini Low": 0,
         "Bethini Medium": 0,
         "Bethini High": 0,
         "Bethini Ultra": 0
@@ -39124,13 +39125,13 @@
       "section": "Crowd",
       "value": {
         "default": 1,
-        "Vanilla Low": "0.4",
-        "Vanilla Medium": "0.6",
+        "Vanilla Low": 0.4,
+        "Vanilla Medium": 0.6,
         "Vanilla High": 1,
         "Vanilla Ultra": 1,
-        "Bethini Poor": "0.4",
-        "Bethini Low": "0.4",
-        "Bethini Medium": "0.6",
+        "Bethini Poor": 0.4,
+        "Bethini Low": 0.4,
+        "Bethini Medium": 0.6,
         "Bethini High": 1,
         "Bethini Ultra": 1
       }
@@ -40177,16 +40178,16 @@
       "ini": "Ultra.ini",
       "section": "SAO",
       "value": {
-        "default": "50",
-        "Vanilla Low": "50",
-        "Vanilla Medium": "50",
-        "Vanilla High": "50",
-        "Vanilla Ultra": "50",
-        "Bethini Poor": "50",
-        "Bethini Low": "50",
-        "Bethini Medium": "50",
-        "Bethini High": "50",
-        "Bethini Ultra": "50"
+        "default": 50,
+        "Vanilla Low": 50,
+        "Vanilla Medium": 50,
+        "Vanilla High": 50,
+        "Vanilla Ultra": 50,
+        "Bethini Poor": 50,
+        "Bethini Low": 50,
+        "Bethini Medium": 50,
+        "Bethini High": 50,
+        "Bethini Ultra": 50
       }
     },
     {
@@ -40286,15 +40287,15 @@
       "section": "Grass",
       "value": {
         "default": 25,
-        "Vanilla Low": "10",
-        "Vanilla Medium": "25",
-        "Vanilla High": "30",
-        "Vanilla Ultra": "50",
-        "Bethini Poor": "10",
-        "Bethini Low": "10",
-        "Bethini Medium": "25",
-        "Bethini High": "30",
-        "Bethini Ultra": "50"
+        "Vanilla Low": 10,
+        "Vanilla Medium": 25,
+        "Vanilla High": 30,
+        "Vanilla Ultra": 50,
+        "Bethini Poor": 10,
+        "Bethini Low": 10,
+        "Bethini Medium": 25,
+        "Bethini High": 30,
+        "Bethini Ultra": 50
       }
     },
     {
@@ -41962,8 +41963,8 @@
         "default": 0.5,
         "Vanilla Low": 0.5,
         "Vanilla Medium": 0.5,
-        "Vanilla High": "0.62",
-        "Vanilla Ultra": "0.75",
+        "Vanilla High": 0.62,
+        "Vanilla Ultra": 0.75,
         "Bethini Poor": 0.5,
         "Bethini Low": 0.5,
         "Bethini Medium": 0.5,
@@ -42025,13 +42026,13 @@
         "default": 7,
         "Vanilla Low": 6,
         "Vanilla Medium": 7,
-        "Vanilla High": "9",
-        "Vanilla Ultra": "10",
+        "Vanilla High": 9,
+        "Vanilla Ultra": 10,
         "Bethini Poor": 0,
-        "Bethini Low": "5.5",
+        "Bethini Low": 5.5,
         "Bethini Medium": 7,
-        "Bethini High": "8.5",
-        "Bethini Ultra": "10"
+        "Bethini High": 8.5,
+        "Bethini Ultra": 10
       }
     },
     {
@@ -42041,15 +42042,15 @@
       "section": "Shadows",
       "value": {
         "default": 18,
-        "Vanilla Low": "12",
-        "Vanilla Medium": "25",
-        "Vanilla High": "25",
-        "Vanilla Ultra": "30",
+        "Vanilla Low": 12,
+        "Vanilla Medium": 25,
+        "Vanilla High": 25,
+        "Vanilla Ultra": 30,
         "Bethini Poor": 0,
-        "Bethini Low": "12",
-        "Bethini Medium": "18",
-        "Bethini High": "24",
-        "Bethini Ultra": "30"
+        "Bethini Low": 12,
+        "Bethini Medium": 18,
+        "Bethini High": 24,
+        "Bethini Ultra": 30
       }
     },
     {
@@ -42059,15 +42060,15 @@
       "section": "Shadows",
       "value": {
         "default": 60,
-        "Vanilla Low": "50",
-        "Vanilla Medium": "60",
-        "Vanilla High": "70",
-        "Vanilla Ultra": "100",
+        "Vanilla Low": 50,
+        "Vanilla Medium": 60,
+        "Vanilla High": 70,
+        "Vanilla Ultra": 100,
         "Bethini Poor": 0,
-        "Bethini Low": "50",
-        "Bethini Medium": "60",
-        "Bethini High": "70",
-        "Bethini Ultra": "100"
+        "Bethini Low": 50,
+        "Bethini Medium": 60,
+        "Bethini High": 70,
+        "Bethini Ultra": 100
       }
     },
     {
@@ -42082,7 +42083,7 @@
         "Vanilla High": 500,
         "Vanilla Ultra": 600,
         "Bethini Poor": 0,
-        "Bethini Low": "300",
+        "Bethini Low": 300,
         "Bethini Medium": 400,
         "Bethini High": 500,
         "Bethini Ultra": 600
@@ -43042,13 +43043,13 @@
         "default": 5,
         "Vanilla Low": 3,
         "Vanilla Medium": 5,
-        "Vanilla High": "10",
-        "Vanilla Ultra": "16",
+        "Vanilla High": 10,
+        "Vanilla Ultra": 16,
         "Bethini Poor": 3,
-        "Bethini Low": "10",
-        "Bethini Medium": "60",
-        "Bethini High": "120",
-        "Bethini Ultra": "250"
+        "Bethini Low": 10,
+        "Bethini Medium": 60,
+        "Bethini High": 120,
+        "Bethini Ultra": 250
       }
     },
     {
@@ -43060,13 +43061,13 @@
         "default": 3,
         "Vanilla Low": 1,
         "Vanilla Medium": 3,
-        "Vanilla High": "10",
-        "Vanilla Ultra": "10",
+        "Vanilla High": 10,
+        "Vanilla Ultra": 10,
         "Bethini Poor": 3,
-        "Bethini Low": "10",
-        "Bethini Medium": "60",
-        "Bethini High": "120",
-        "Bethini Ultra": "250"
+        "Bethini Low": 10,
+        "Bethini Medium": 60,
+        "Bethini High": 120,
+        "Bethini Ultra": 250
       }
     },
     {
@@ -44732,15 +44733,15 @@
       "section": "Shadows",
       "value": {
         "default": 2048,
-        "Vanilla Low": "1024",
-        "Vanilla Medium": "2048",
-        "Vanilla High": "2048",
-        "Vanilla Ultra": "4096",
-        "Bethini Poor": "4",
-        "Bethini Low": "512",
-        "Bethini Medium": "1024",
-        "Bethini High": "2048",
-        "Bethini Ultra": "2048"
+        "Vanilla Low": 1024,
+        "Vanilla Medium": 2048,
+        "Vanilla High": 2048,
+        "Vanilla Ultra": 4096,
+        "Bethini Poor": 4,
+        "Bethini Low": 512,
+        "Bethini Medium": 1024,
+        "Bethini High": 2048,
+        "Bethini Ultra": 3072
       }
     },
     {
@@ -44750,15 +44751,15 @@
       "section": "Shadows",
       "value": {
         "default": 1024,
-        "Vanilla Low": "1024",
-        "Vanilla Medium": "1024",
-        "Vanilla High": "2048",
-        "Vanilla Ultra": "4096",
-        "Bethini Poor": "4",
-        "Bethini Low": "512",
-        "Bethini Medium": "1024",
-        "Bethini High": "2048",
-        "Bethini Ultra": "2048"
+        "Vanilla Low": 1024,
+        "Vanilla Medium": 1024,
+        "Vanilla High": 2048,
+        "Vanilla Ultra": 4096,
+        "Bethini Poor": 4,
+        "Bethini Low": 512,
+        "Bethini Medium": 1024,
+        "Bethini High": 2048,
+        "Bethini Ultra": 3072
       }
     },
     {
@@ -44822,15 +44823,15 @@
       "section": "Crowd",
       "value": {
         "default": 150,
-        "Vanilla Low": "100",
-        "Vanilla Medium": "150",
-        "Vanilla High": "200",
-        "Vanilla Ultra": "200",
-        "Bethini Poor": "75",
-        "Bethini Low": "100",
-        "Bethini Medium": "150",
-        "Bethini High": "175",
-        "Bethini Ultra": "200"
+        "Vanilla Low": 100,
+        "Vanilla Medium": 150,
+        "Vanilla High": 200,
+        "Vanilla Ultra": 200,
+        "Bethini Poor": 75,
+        "Bethini Low": 100,
+        "Bethini Medium": 150,
+        "Bethini High": 175,
+        "Bethini Ultra": 200
       }
     },
     {
@@ -44840,15 +44841,15 @@
       "section": "Decals",
       "value": {
         "default": 50,
-        "Vanilla Low": "25",
-        "Vanilla Medium": "50",
-        "Vanilla High": "100",
-        "Vanilla Ultra": "100",
-        "Bethini Poor": "10",
-        "Bethini Low": "20",
-        "Bethini Medium": "100",
-        "Bethini High": "200",
-        "Bethini Ultra": "1000"
+        "Vanilla Low": 25,
+        "Vanilla Medium": 50,
+        "Vanilla High": 100,
+        "Vanilla Ultra": 100,
+        "Bethini Poor": 10,
+        "Bethini Low": 20,
+        "Bethini Medium": 100,
+        "Bethini High": 200,
+        "Bethini Ultra": 1000
       }
     },
     {
@@ -44860,13 +44861,13 @@
         "default": 5,
         "Vanilla Low": 5,
         "Vanilla Medium": 5,
-        "Vanilla High": "10",
-        "Vanilla Ultra": "10",
+        "Vanilla High": 10,
+        "Vanilla Ultra": 10,
         "Bethini Poor": 1,
         "Bethini Low": 3,
-        "Bethini Medium": "35",
-        "Bethini High": "50",
-        "Bethini Ultra": "100"
+        "Bethini Medium": 35,
+        "Bethini High": 50,
+        "Bethini Ultra": 100
       }
     },
     {
@@ -44878,13 +44879,13 @@
         "default": 5,
         "Vanilla Low": 5,
         "Vanilla Medium": 5,
-        "Vanilla High": "10",
-        "Vanilla Ultra": "10",
+        "Vanilla High": 10,
+        "Vanilla Ultra": 10,
         "Bethini Poor": 1,
         "Bethini Low": 5,
-        "Bethini Medium": "20",
-        "Bethini High": "40",
-        "Bethini Ultra": "60"
+        "Bethini Medium": 20,
+        "Bethini High": 40,
+        "Bethini Ultra": 60
       }
     },
     {
@@ -45083,16 +45084,16 @@
       "ini": "Ultra.ini",
       "section": "Reflections",
       "value": {
-        "default": "24",
-        "Vanilla Low": "24",
-        "Vanilla Medium": "24",
-        "Vanilla High": "24",
-        "Vanilla Ultra": "32",
-        "Bethini Poor": "24",
-        "Bethini Low": "24",
-        "Bethini Medium": "24",
-        "Bethini High": "24",
-        "Bethini Ultra": "32"
+        "default": 24,
+        "Vanilla Low": 24,
+        "Vanilla Medium": 24,
+        "Vanilla High": 24,
+        "Vanilla Ultra": 32,
+        "Bethini Poor": 24,
+        "Bethini Low": 24,
+        "Bethini Medium": 24,
+        "Bethini High": 24,
+        "Bethini Ultra": 32
       }
     },
     {
@@ -45121,15 +45122,15 @@
       "section": "Reflections",
       "value": {
         "default": 128,
-        "Vanilla Low": "64",
-        "Vanilla Medium": "128",
-        "Vanilla High": "256",
-        "Vanilla Ultra": "256",
-        "Bethini Poor": "64",
-        "Bethini Low": "64",
-        "Bethini Medium": "128",
-        "Bethini High": "256",
-        "Bethini Ultra": "256"
+        "Vanilla Low": 64,
+        "Vanilla Medium": 128,
+        "Vanilla High": 256,
+        "Vanilla Ultra": 256,
+        "Bethini Poor": 64,
+        "Bethini Low": 64,
+        "Bethini Medium": 128,
+        "Bethini High": 256,
+        "Bethini Ultra": 256
       }
     },
     {
@@ -45174,16 +45175,16 @@
       "ini": "Ultra.ini",
       "section": "Shadows",
       "value": {
-        "default": "16",
-        "Vanilla Low": "16",
-        "Vanilla Medium": "16",
-        "Vanilla High": "16",
-        "Vanilla Ultra": "16",
+        "default": 16,
+        "Vanilla Low": 16,
+        "Vanilla Medium": 16,
+        "Vanilla High": 16,
+        "Vanilla Ultra": 16,
         "Bethini Poor": 0,
-        "Bethini Low": "16",
-        "Bethini Medium": "16",
-        "Bethini High": "16",
-        "Bethini Ultra": "16"
+        "Bethini Low": 16,
+        "Bethini Medium": 16,
+        "Bethini High": 16,
+        "Bethini Ultra": 16
       }
     },
     {
@@ -45193,16 +45194,16 @@
       "section": "Shadows",
       "notes": "Anything below 1 crashes the game.",
       "value": {
-        "default": "128",
-        "Vanilla Low": "128",
-        "Vanilla Medium": "128",
-        "Vanilla High": "128",
-        "Vanilla Ultra": "128",
+        "default": 128,
+        "Vanilla Low": 128,
+        "Vanilla Medium": 128,
+        "Vanilla High": 128,
+        "Vanilla Ultra": 128,
         "Bethini Poor": 1,
-        "Bethini Low": "128",
-        "Bethini Medium": "128",
-        "Bethini High": "128",
-        "Bethini Ultra": "128"
+        "Bethini Low": 128,
+        "Bethini Medium": 128,
+        "Bethini High": 128,
+        "Bethini Ultra": 128
       }
     },
     {
@@ -45213,14 +45214,14 @@
       "value": {
         "default": 4,
         "Vanilla Low": 0,
-        "Vanilla Medium": "4",
+        "Vanilla Medium": 4,
         "Vanilla High": 8,
-        "Vanilla Ultra": "10",
+        "Vanilla Ultra": 10,
         "Bethini Poor": 0,
         "Bethini Low": 0,
-        "Bethini Medium": "4",
+        "Bethini Medium": 4,
         "Bethini High": 8,
-        "Bethini Ultra": "10"
+        "Bethini Ultra": 10
       }
     },
     {
@@ -45229,16 +45230,16 @@
       "ini": "Ultra.ini",
       "section": "Shadows",
       "value": {
-        "default": "128",
-        "Vanilla Low": "128",
-        "Vanilla Medium": "128",
-        "Vanilla High": "128",
-        "Vanilla Ultra": "128",
+        "default": 128,
+        "Vanilla Low": 128,
+        "Vanilla Medium": 128,
+        "Vanilla High": 128,
+        "Vanilla Ultra": 128,
         "Bethini Poor": 0,
-        "Bethini Low": "128",
-        "Bethini Medium": "128",
-        "Bethini High": "128",
-        "Bethini Ultra": "128"
+        "Bethini Low": 128,
+        "Bethini Medium": 128,
+        "Bethini High": 128,
+        "Bethini Ultra": 128
       }
     },
     {
@@ -45251,12 +45252,12 @@
         "Vanilla Low": 0,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
-        "Vanilla Ultra": "4",
+        "Vanilla Ultra": 4,
         "Bethini Poor": 0,
         "Bethini Low": 0,
         "Bethini Medium": 0,
         "Bethini High": 0,
-        "Bethini Ultra": "4"
+        "Bethini Ultra": 4
       }
     },
     {
@@ -45266,15 +45267,15 @@
       "section": "Shadows",
       "value": {
         "default": 36,
-        "Vanilla Low": "44",
-        "Vanilla Medium": "36",
-        "Vanilla High": "32",
-        "Vanilla Ultra": "32",
+        "Vanilla Low": 44,
+        "Vanilla Medium": 36,
+        "Vanilla High": 32,
+        "Vanilla Ultra": 32,
         "Bethini Poor": 0,
-        "Bethini Low": "44",
-        "Bethini Medium": "36",
-        "Bethini High": "32",
-        "Bethini Ultra": "32"
+        "Bethini Low": 44,
+        "Bethini Medium": 36,
+        "Bethini High": 32,
+        "Bethini Ultra": 32
       }
     },
     {
@@ -45293,15 +45294,15 @@
       "section": "Shadows",
       "value": {
         "default": 512,
-        "Vanilla Low": "256",
-        "Vanilla Medium": "512",
-        "Vanilla High": "1024",
-        "Vanilla Ultra": "2048",
-        "Bethini Poor": "4",
-        "Bethini Low": "256",
-        "Bethini Medium": "512",
-        "Bethini High": "1024",
-        "Bethini Ultra": "2048"
+        "Vanilla Low": 256,
+        "Vanilla Medium": 512,
+        "Vanilla High": 1024,
+        "Vanilla Ultra": 2048,
+        "Bethini Poor": 4,
+        "Bethini Low": 256,
+        "Bethini Medium": 512,
+        "Bethini High": 1024,
+        "Bethini Ultra": 2048
       }
     },
     {
@@ -45311,15 +45312,15 @@
       "section": "Shadows",
       "value": {
         "default": 16,
-        "Vanilla Low": "12",
-        "Vanilla Medium": "16",
-        "Vanilla High": "22",
-        "Vanilla Ultra": "32",
+        "Vanilla Low": 12,
+        "Vanilla Medium": 16,
+        "Vanilla High": 22,
+        "Vanilla Ultra": 32,
         "Bethini Poor": 0,
-        "Bethini Low": "12",
-        "Bethini Medium": "16",
-        "Bethini High": "20",
-        "Bethini Ultra": "24"
+        "Bethini Low": 12,
+        "Bethini Medium": 16,
+        "Bethini High": 20,
+        "Bethini Ultra": 24
       }
     }
   ]
