@@ -6553,6 +6553,7 @@
       "name": "bGridsDynamic",
       "type": "boolean",
       "section": "General",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 0
       }
@@ -9159,7 +9160,9 @@
     {
       "name": "bSaveOnPause",
       "type": "boolean",
+      "ini": "StarfieldPrefs.ini",
       "section": "GamePlay",
+      "alwaysPrint": true,
       "value": {
         "default": 1
       }
@@ -25605,6 +25608,7 @@
       "name": "fSkyCellRefFadeDistance",
       "type": "float",
       "section": "Display",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 150000.0
       }
@@ -35714,6 +35718,7 @@
       "name": "uGridsToDemand",
       "type": "number",
       "section": "General",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 3
       }
@@ -35722,6 +35727,7 @@
       "name": "uGridsToLoad",
       "type": "number",
       "section": "General",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 5
       }
@@ -35730,6 +35736,7 @@
       "name": "uGridsToLoadMax",
       "type": "number",
       "section": "General",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 5
       }
@@ -35738,6 +35745,7 @@
       "name": "uGridsToLoadMin",
       "type": "number",
       "section": "General",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 3
       }

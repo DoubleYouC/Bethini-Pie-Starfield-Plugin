@@ -332,7 +332,7 @@
             "customWidth": "18",
             "settingChoices": {
               "4:3": [ "1.3333", "2.4" ],
-              "16:9": [ "1.6", "2.4" ],
+              "16:9": [ "1.6", "2.3889" ],
               "16:10": [ "1.6", "2.41" ],
               "21:9": [ "1.7778", "2.42" ],
               "32:9": [ "1.6", "3.5556" ]
@@ -392,9 +392,9 @@
             "increment": "0.01",
             "length": "100",
             "resolution": "0.01",
-            "settings": [ "fRenderResolutionScaleFactor", "fMinRenderResolutionScaleFactor", "fMinDynamicResolutionScale" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldCustom.ini", "StarfieldCustom.ini" ],
-            "targetSections": [ "Display", "Display", "Display" ],
+            "settings": [ "fRenderResolutionScaleFactor", "fMinRenderResolutionScaleFactor" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldCustom.ini" ],
+            "targetSections": [ "Display", "Display" ],
             "to": "1",
             "tooltip": "Sets the internal render resolution scale that will then be upscaled to your resolution. This slider is bigger than the in-game slider, and will very much improve performance if set lower, at the expense of visuals.",
             "type": "Slider",
@@ -510,6 +510,16 @@
             "targetSections": [ "Display" ],
             "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
             "type": "Checkbutton"
+          },
+          "Mipmap Bias": {
+            "choices": [ "-2", "-1.5", "-1", "-0.5", "0", "0.5", "1", "1.5", "2" ],
+            "settings": [ "fMipBiasOffset" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the mipmap bias. Recommended to set to -0.5 when using upscaling. Positive values can be used to reduce texture resolution.",
+            "type": "Combobox",
+            "validate": "float",
+            "width": "8"
           }
         }
       },
@@ -688,15 +698,6 @@
             "targetSections": [ "General" ],
             "tooltip": "Toggles off the borders.",
             "type": "Checkbutton"
-          },
-          "Sprint Fix": {
-            "Offvalue": [ [ "58.522" ] ],
-            "Onvalue": [ [ "0" ] ],
-            "settings": [ "fPlayerDisableSprintingLoadingCellDistance" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "GamePlay" ],
-            "tooltip": "If enabled, sprinting will be allowed even when nearby cells are not fully loaded.",
-            "type": "Checkbutton"
           }
         }
       },
@@ -706,8 +707,31 @@
           "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "7",
+        "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
+          "Autosaves": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bDisableAutoSave" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles autosaves.",
+            "type": "Checkbutton"
+          },
+          "Max Autosaves": {
+            "decimal places": "0",
+            "from": "1",
+            "increment": "1",
+            "settings": [ "iAutoSaveCount" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of autosaves to keep.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+
           "Save on Travel": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -726,13 +750,13 @@
             "tooltip": "Toggles autosaves made after sleeping.",
             "type": "Checkbutton"
           },
-          "Save on Quit to Main Menu": {
+          "Exit Saves": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bSaveGameOnQuitToMainMenu" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "General" ],
-            "tooltip": "Toggles autosaves made when quitting to the main menu. This does NOT disable exit saves made when quitting to desktop.",
+            "tooltip": "Toggles exit saves made when quitting the game.",
             "type": "Checkbutton"
           },
           "Save on Wait": {
@@ -742,6 +766,15 @@
             "targetINIs": [ "StarfieldPrefs.ini" ],
             "targetSections": [ "GamePlay" ],
             "tooltip": "Toggles autosaves made after waiting.",
+            "type": "Checkbutton"
+          },
+          "Save on Pause": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSaveOnPause" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Toggles autosaves made upon closing certain menus that pause the game.",
             "type": "Checkbutton"
           },
           "Save on Pause Timer": {
@@ -756,6 +789,34 @@
             "type": "Spinbox",
             "validate": "float",
             "width": "5"
+          },
+          "Missing Content Warning": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisplayMissingContentDialogue" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles the missing content warning when loading a saved game missing a previously enabled plugin.",
+            "type": "Checkbutton"
+          },
+
+          "Scripted Autosaves": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAllowScriptedAutosave" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles scripted autosaves.",
+            "type": "Checkbutton"
+          },
+          "Scripted Force Saves": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAllowScriptedForceSave" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "SaveGame" ],
+            "tooltip": "Toggles scripted force saves.",
+            "type": "Checkbutton"
           }
         }
       },
@@ -800,13 +861,13 @@
             "tooltip": "Toggles the camera shaking when boosting your ship.",
             "type": "Checkbutton"
           },
-          "Disable Combat Dialogue": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
+          "Combat Dialogue": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
             "settings": [ "bDisableCombatDialogue" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Combat" ],
-            "tooltip": "Toggles off those cheeky comments that enemies say while in combat.",
+            "tooltip": "Toggles those cheeky comments that enemies say while in combat.",
             "type": "Checkbutton"
           },
           "NPCs Use Ammo": {
@@ -828,12 +889,14 @@
             "type": "Checkbutton"
           },
           "Over-Encumbered Reminder": {
+            "choices": [ "30", "300", "3600" ],
             "settings": [ "fEncumberedReminderTimer" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "General" ],
             "tooltip": "Sets the time interval between subsequent \"You are carrying too much to be able to run\" messages in seconds.",
-            "type": "Entry",
-            "validate": "float"
+            "type": "Combobox",
+            "validate": "float",
+            "width": "8"
           }
         }
       },
@@ -987,6 +1050,40 @@
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Interface" ],
             "settings": [ "bPhotoModeLetterBoxed" ]
+          },
+          "Controller Vibration": {
+            "tooltip": "Toggles controller vibration.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "settings": [ "bGamePadRumble" ]
+          },
+          "HUD Opacity": {
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0",
+            "increment": ".01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fHUDOpacity" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "to": "1",
+            "tooltip": "Sets HUD opacity.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Crosshair": {
+            "tooltip": "Toggles the crosshair.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bCrosshairEnabled" ]
           }
         }
       },
@@ -1057,14 +1154,23 @@
           "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "3",
+        "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
+          "Invert Y": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bInvertYValues" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Toggles the ability of the the mouse to be inverted over the y-axis (up and down movement).",
+            "type": "Checkbutton"
+          },
           "Look Sensitivity": {
             "digits": "4",
             "decimal places": "4",
             "from": "0.0000",
             "increment": "0.0001",
-            "length": "100",
+            "length": "150",
             "resolution": "0.0025",
             "settings": [ "fMouseHeadingSensitivity" ],
             "targetINIs": [ "StarfieldPrefs.ini" ],
@@ -1076,6 +1182,7 @@
             "width": "7"
           },
           "X Scale": {
+            "customWidth": "26",
             "settings": [ "fMouseHeadingXScale" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Controls" ],
@@ -1084,255 +1191,138 @@
             "validate": "float"
           },
           "Y Scale": {
+            "customWidth": "26",
             "settings": [ "fMouseHeadingYScale" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Controls" ],
             "tooltip": "Sets the mouse vertical scale value (how much the camera moves when moving the mouse vertically).",
             "type": "Entry",
             "validate": "float"
+          },
+          "Mouse Wheel Zoom Speed": {
+            "customWidth": "26",
+            "entryWidth": "7",
+            "settings": [ "fMouseWheelZoomSpeed" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Camera" ],
+            "tooltip": "Sets the transition speed when zooming in and out in third person mode using the mouse wheel. This also affects how fast the transition from first to third person occurs.",
+            "type": "Entry",
+            "validate": "float"
           }
         }
       }
     },
-    "Visuals": {
-      "Effects": {
-        "NumberOfVerticallyStackedSettings": "1",
-        "Settings": {
-          "Depth of Field": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDepthOfFieldEnable" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
-            "type": "Checkbutton"
-          },
-          "Volumetric Lighting": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bVolumetricLightingEnable" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles volumetric lighting.",
-            "type": "Checkbutton"
-          },
-          "Film Grain": {
-            "decimal places": "2",
-            "digits": "3",
-            "from": "0",
-            "increment": "0.01",
-            "length": "100",
-            "resolution": "0.01",
-            "settings": [ "fFilmGrainIntensity" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "1",
-            "tooltip": "Sets the intensity of the film grain effect.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Motion Blur": {
-            "choices": [ "None", "Low", "Medium", "High" ],
-            "settingChoices": {
-              "None": [ "0", "1" ],
-              "Low": [ "1", "1" ],
-              "Medium": [ "1", "2" ],
-              "High": [ "1", "3" ]
-            },
-            "settings": [ "bEnableMotionBlur", "uMotionBlurQuality" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "Ultra.ini" ],
-            "targetSections": [ "MotionBlur", "MotionBlur" ],
-            "tooltip": "Controls motion blur quality.",
-            "type": "Dropdown"
-          }
-        }
-      },
-      "Decals": {
+    "Environment": {
+      "Grass": {
         "Pack": {
           "Side": "Left",
-          "Expand": 0
+          "Expand": 0,
+          "Fill": "None"
         },
         "NumberOfVerticallyStackedSettings": "9",
         "Settings": {
-          "Decals": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDecals" ],
-            "targetINIs": [ "Ultra.ini" ],
-            "targetSections": [ "Decals" ],
-            "tooltip": "Toggles decals (mostly blood effects).",
-            "type": "Checkbutton"
-          },
-          "Disable Gore": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDisableAllGore" ],
+          "Disable Grass": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bAllowCreateGrass" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Toggles gory effects, such as blood.",
+            "targetSections": [ "Grass" ],
+            "tooltip": "Toggles off grass.",
             "type": "Checkbutton"
           },
-          "Max Decals Per Frame": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "iMaxDecalsPerFrame" ],
-            "targetINIs": [ "Ultra.ini" ],
-            "targetSections": [ "Decals" ],
-            "to": "250",
-            "tooltip": "Sets the maximum number of decals that can be shown per frame.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+          "Terrain Tint": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseTerrainTintOnGrass" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Grass" ],
+            "tooltip": "Toggles terrain tint on grass.",
+            "type": "Checkbutton"
           },
-          "Max Skinned Decals": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "uMaxSkinDecals" ],
-            "targetINIs": [ "Ultra.ini" ],
-            "targetSections": [ "Decals" ],
-            "to": "100",
-            "tooltip": "Sets the maximum number of skinned decals.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Max Skinned Decals Per Frame": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "iMaxSkinDecalsPerFrame" ],
-            "targetINIs": [ "Ultra.ini" ],
-            "targetSections": [ "Decals" ],
-            "to": "100",
-            "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Max Skinned Decals Per Actor": {
-            "customWidth": "30",
+          "Grass Fade Start": {
+            "customWidth": "26",
             "decimal places": "0",
             "digits": "2",
             "from": "0",
             "increment": "1",
             "length": "100",
             "resolution": "1",
-            "settings": [ "uMaxSkinDecalsPerActor" ],
+            "settings": [ "fGrassStartFadeDistance" ],
             "targetINIs": [ "Ultra.ini" ],
-            "targetSections": [ "Decals" ],
-            "to": "60",
-            "tooltip": "Sets the maximum number of skinned decals per actor.",
+            "targetSections": [ "Grass" ],
+            "to": "88",
+            "tooltip": "Sets the distance where grass starts to fade.",
             "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+            "validate": "float",
+            "width": "7"
           },
-          "Decal Lifetime": {
-            "customWidth": "30",
+          "Grass Fade Range": {
+            "customWidth": "26",
             "decimal places": "0",
             "digits": "3",
             "from": "0",
             "increment": "1",
             "length": "100",
             "resolution": "1",
-            "settings": [ "fDecalLifetime" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "300",
-            "tooltip": "Sets the time in seconds that some decals will stay visible.",
+            "settings": [ "fGrassFadeDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "202",
+            "tooltip": "Sets the grass fade range distance. Grass extends this far past the Grass Fade Start, but gradually fades out.",
             "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+            "validate": "float",
+            "width": "7"
           },
-          "Decal Distance": {
-            "customWidth": "30",
-            "decimal places": "0",
+          "Random Cull Factor": {
+            "customWidth": "26",
+            "decimal places": "2",
             "digits": "3",
+            "from": "0",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fGrassRandomCullFactor" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "5",
+            "tooltip": "Sets the random cull factor.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Random Cull Start Distance": {
+            "customWidth": "26",
+            "decimal places": "0",
+            "digits": "2",
             "from": "0",
             "increment": "1",
             "length": "100",
             "resolution": "1",
-            "settings": [ "fDecalLOD0" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "250",
-            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "settings": [ "fGrassStartRandomCullDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "88",
+            "tooltip": "Sets the distance that random culling starts.",
             "type": "Slider",
             "validate": "float",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+            "width": "7"
           },
-          "Decal Distance Space": {
-            "customWidth": "30",
+          "Culling Footprint": {
+            "customWidth": "26",
             "decimal places": "0",
-            "digits": "3",
+            "digits": "2",
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "0",
-            "settings": [ "fDecalLOD0Space" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "250",
-            "tooltip": "Sets the distance that some decals will show, such as bullet impacts, in space.",
+            "resolution": "1",
+            "settings": [ "uGrassMeshInstanceCullingSSFootprint" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "30",
+            "tooltip": "Sets the grass culling footprint.",
             "type": "Slider",
-            "validate": "float",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+            "validate": "integer",
+            "width": "7"
           }
         }
       }
@@ -1708,6 +1698,392 @@
             "targetSections": [ "Display" ],
             "tooltip": "Toggles focus shadows in the player space station.",
             "type": "Checkbutton"
+          }
+        }
+      }
+    },
+    "Visuals": {
+      "Effects": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Depth of Field": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDepthOfFieldEnable" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
+            "type": "Checkbutton"
+          },
+          "Film Grain": {
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fFilmGrainIntensity" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "1",
+            "tooltip": "Sets the intensity of the film grain effect.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Motion Blur": {
+            "choices": [ "None", "Low", "Medium", "High" ],
+            "settingChoices": {
+              "None": [ "0", "1" ],
+              "Low": [ "1", "1" ],
+              "Medium": [ "1", "2" ],
+              "High": [ "1", "3" ]
+            },
+            "settings": [ "bEnableMotionBlur", "uMotionBlurQuality" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "Ultra.ini" ],
+            "targetSections": [ "MotionBlur", "MotionBlur" ],
+            "tooltip": "Controls motion blur quality.",
+            "type": "Dropdown"
+          }
+        }
+      },
+      "Decals": {
+        "Pack": {
+          "Side": "Left",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "9",
+        "Settings": {
+          "Decals": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDecals" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "tooltip": "Toggles decals (mostly blood effects).",
+            "type": "Checkbutton"
+          },
+          "Disable Gore": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDisableAllGore" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles gory effects, such as blood.",
+            "type": "Checkbutton"
+          },
+          "Max Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxDecalsPerFrame" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "250",
+            "tooltip": "Sets the maximum number of decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecals" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Frame": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "iMaxSkinDecalsPerFrame" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Max Skinned Decals Per Actor": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "2",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "uMaxSkinDecalsPerActor" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "60",
+            "tooltip": "Sets the maximum number of skinned decals per actor.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Lifetime": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLifetime" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "300",
+            "tooltip": "Sets the time in seconds that some decals will stay visible.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLOD0" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Distance Space": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "0",
+            "settings": [ "fDecalLOD0Space" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts, in space.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          }
+        }
+      },
+      "Volumetric Lighting": {
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "9",
+        "Settings": {
+          "Volumetric Lighting": {
+            "customWidth": "20",
+            "choices": [ "None", "Low", "Medium", "High", "Ultra" ],
+            "settingChoices": {
+              "None": [ "0", "0" ],
+              "Low": [ "1", "0" ],
+              "Medium": [ "1", "1" ],
+              "High": [ "1", "2" ],
+              "Ultra": [ "1", "3" ]
+            },
+            "settings": [ "bVolumetricLightingEnable", "uraVolumetricQuality" ],
+            "targetINIs": [ "StarfieldCustom.ini", "Ultra.ini" ],
+            "targetSections": [ "Display", "VolumetricLighting" ],
+            "tooltip": "Sets volumetric lighting quality.",
+            "type": "Dropdown"
+          },
+          "Phase Function": {
+            "customWidth": "20",
+            "choices": [ "Schlick (Low)", "HG (High)" ],
+            "settingChoices": {
+              "Schlick (Low)": [ "1" ],
+              "HG (High)": [ "0" ]
+            },
+            "settings": [ "uraVolumetricLightingPhaseFunction" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "VolumetricLighting" ],
+            "tooltip": "Sets volumetric lighting phase function.",
+            "type": "Dropdown"
+          },
+          "Half Resolution Fog Map Blur": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bFogMapBlurHalfRes" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "VolumetricLighting" ],
+            "tooltip": "Toggles half resolution fog map blur.",
+            "type": "Checkbutton"
+          },
+          "Volumetric Indirect Fallback": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bVolumetricIndirectForceFallback" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "VolumetricLighting" ],
+            "tooltip": "Toggles volumetric indirect lighting force fallback.",
+            "type": "Checkbutton"
+          }
+        }
+      }
+    },
+    "View Distance": {
+      "Distant Details": {
+        "Pack": {
+          "Fill": "None"
+        },
+        "NumberOfVerticallyStackedSettings": "9",
+        "Settings": {
+          "Level 1 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "4",
+            "settings": [ "fBlockLevel0Distance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "ViewDistance" ],
+            "to": "2808",
+            "tooltip": "Sets the level 1 block distance. This is the distance that level 1 object LOD is shown (presumably).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Level 2 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "210",
+            "resolution": "4",
+            "settings": [ "fBlockLevel1Distance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "ViewDistance" ],
+            "to": "7488",
+            "tooltip": "Sets the level 2 block distance. This is the distance that level 2 object LOD is shown (presumably).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+
+          },
+          "Level 4 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "300",
+            "resolution": "5",
+            "settings": [ "fBlockLevel2Distance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "ViewDistance" ],
+            "to": "11232",
+            "tooltip": "Sets the level 4 block distance. This is the distance that level 4 object LOD is shown (presumably).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Level 8 Block Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "5",
+            "from": "0",
+            "increment": "1",
+            "length": "300",
+            "resolution": "5",
+            "settings": [ "fBlockMaximumDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "ViewDistance" ],
+            "to": "11232",
+            "tooltip": "Sets the level 8 block distance. This is the distance that level 8 object LOD is shown (presumably).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Far Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "5",
+            "from": "0",
+            "increment": "1",
+            "length": "300",
+            "resolution": "5",
+            "settings": [ "fFarDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "ViewDistance" ],
+            "to": "80000",
+            "tooltip": "Sets the far distance. It is currently unknown what exactly the far distance is controlling, but appears to be a LOD setting.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
           }
         }
       }
