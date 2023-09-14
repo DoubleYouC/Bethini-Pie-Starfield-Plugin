@@ -36714,7 +36714,6 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -36724,7 +36723,6 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -36734,7 +36732,6 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -36744,7 +36741,15 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uPersistentUuidData2",
+      "type": "number",
+      "section": "Bethesda.net",
+      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 0
       }
@@ -36754,7 +36759,6 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -36764,7 +36768,6 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -36774,7 +36777,6 @@
       "type": "number",
       "section": "Bethesda.net",
       "ini": "StarfieldPrefs.ini",
-      "alwaysPrint": true,
       "value": {
         "default": 0
       }
@@ -38840,11 +38842,11 @@
         "Vanilla Medium": 10000,
         "Vanilla High": 10000,
         "Vanilla Ultra": 10000,
-        "Bethini Poor": 5615,
-        "Bethini Low": 5615,
-        "Bethini Medium": 5615,
-        "Bethini High": 5615,
-        "Bethini Ultra": 5615
+        "Bethini Poor": 1872,
+        "Bethini Low": 3744,
+        "Bethini Medium": 3744,
+        "Bethini High": 3744,
+        "Bethini Ultra": 5849
       }
     },
     {
@@ -39930,11 +39932,11 @@
         "Vanilla Medium": 6000,
         "Vanilla High": 6000,
         "Vanilla Ultra": 6000,
-        "Bethini Poor": 1872,
-        "Bethini Low": 1872,
+        "Bethini Poor": 2340,
+        "Bethini Low": 2808,
         "Bethini Medium": 3743,
-        "Bethini High": 3743,
-        "Bethini Ultra": 3743
+        "Bethini High": 4679,
+        "Bethini Ultra": 5849
       }
     },
     {
@@ -45324,7 +45326,7 @@
         "Vanilla Medium": 16,
         "Vanilla High": 22,
         "Vanilla Ultra": 32,
-        "Bethini Poor": 0,
+        "Bethini Poor": 12,
         "Bethini Low": 12,
         "Bethini Medium": 16,
         "Bethini High": 20,

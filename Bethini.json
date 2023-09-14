@@ -315,7 +315,7 @@
           "Fill": "None",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1280x720", "1366x768", "1440x900", "1600x900", "1680x1050", "1920x1200", "1920x1080", "2560x1080", "2560x1440", "2560x1600", "3440x1440", "3840x2160", "Manual..." ],
@@ -370,6 +370,21 @@
             "targetINIs": [ "StarfieldPrefs.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Sets the upscaling technology method used.",
+            "type": "Dropdown"
+          },
+          "Motion Blur": {
+            "customWidth": "18",
+            "choices": [ "None", "Low", "Medium", "High" ],
+            "settingChoices": {
+              "None": [ "0", "1" ],
+              "Low": [ "1", "1" ],
+              "Medium": [ "1", "2" ],
+              "High": [ "1", "3" ]
+            },
+            "settings": [ "bEnableMotionBlur", "uMotionBlurQuality" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "Ultra.ini" ],
+            "targetSections": [ "MotionBlur", "MotionBlur" ],
+            "tooltip": "Controls motion blur quality.",
             "type": "Dropdown"
           },
           "Anisotropic Filtering": {
@@ -475,6 +490,32 @@
             "validate": "float",
             "width": "7"
           },
+          "Film Grain": {
+            "customWidth": "22",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fFilmGrainIntensity" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "1",
+            "tooltip": "Sets the intensity of the film grain effect.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Variable Rate Shading": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseReducedShadingRate" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles variable rate shading.",
+            "type": "Checkbutton"
+          },
           "Dynamic Resolution": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -511,7 +552,28 @@
             "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
             "type": "Checkbutton"
           },
+          "Depth of Field": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDepthOfFieldEnable" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
+            "type": "Checkbutton"
+          },
+          "VRS Variance Cutoff": {
+            "customWidth": "20",
+            "choices": [ "0.075", "0.1", "0.125", "0.15" ],
+            "settings": [ "fVariableRateShadingVarianceCutoff" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "VariableRateShading" ],
+            "tooltip": "Sets the variable rate shading variance cutoff.",
+            "type": "Combobox",
+            "validate": "float",
+            "width": "8"
+          },
           "Mipmap Bias": {
+            "customWidth": "20",
             "choices": [ "-2", "-1.5", "-1", "-0.5", "0", "0.5", "1", "1.5", "2" ],
             "settings": [ "fMipBiasOffset" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
@@ -619,6 +681,14 @@
             "targetSections": [ "General" ],
             "tooltip": "Toggles the message of the day.",
             "type": "Checkbutton"
+          },
+          "Starting Console Command": {
+            "entry_width": "50",
+            "settings": [ "sStartingConsoleCommand" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the starting console command.",
+            "type": "Entry"
           }
         }
       }
@@ -1325,6 +1395,52 @@
             "width": "7"
           }
         }
+      },
+      "Terrain": {
+        "Pack": {
+          "Expand": 0,
+          "Fill": "None"
+        },
+        "NumberOfVerticallyStackedSettings": "9",
+        "Settings": {
+          "Stochastic Tiling": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableStochasticTiling" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Terrain" ],
+            "tooltip": "Toggles stochastic tiling of terrain.",
+            "type": "Checkbutton"
+          },
+          "Dominant Stochastic Tiling": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableStochasticTilingDominantPlane" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Terrain" ],
+            "tooltip": "Toggles stochastic tiling of terrain in the dominant plane.",
+            "type": "Checkbutton"
+          },
+          "Planar Mapping": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableStochasticTilingDominantPlane" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Terrain" ],
+            "tooltip": "Toggles terrain planar mapping.",
+            "type": "Checkbutton"
+          },
+          "Displacement Error Threshold": {
+            "choices": [ "0.5", "1.0" ],
+            "settings": [ "fTerrainDisplacementErrorThreshold" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Terrain" ],
+            "tooltip": "Sets the terrain displacement error threshold.",
+            "type": "Combobox",
+            "validate": "float",
+            "width": "8"
+          }
+        }
       }
     },
     "Shadows": {
@@ -1423,7 +1539,7 @@
             "customWidth": "30",
             "decimal places": "0",
             "digits": "2",
-            "from": "0",
+            "from": "12",
             "increment": "1",
             "length": "100",
             "resolution": "1",
@@ -1431,7 +1547,7 @@
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "Shadows" ],
             "to": "40",
-            "tooltip": "Sets the maximum shadow distance.",
+            "tooltip": "Sets the dynamic shadow map count.",
             "type": "Slider",
             "validate": "integer",
             "width": "8"
@@ -1544,7 +1660,7 @@
         "NumberOfVerticallyStackedSettings": "12",
         "Settings": {
           "Focus Shadow Resolution": {
-            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "choices": [ "256", "512", "1024", "2048", "3072", "4096", "8192", "16384" ],
             "customWidth": "32",
             "decimal places": "0",
             "settings": [ "uFocusShadowResolution" ],
@@ -1556,7 +1672,7 @@
             "width": "12"
           },
           "Directional Light Shadow Resolution": {
-            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "choices": [ "256", "512", "1024", "2048", "3072", "4096", "8192", "16384" ],
             "customWidth": "32",
             "decimal places": "0",
             "settings": [ "uDirectionalLightShadowMapResolution" ],
@@ -1568,7 +1684,7 @@
             "width": "12"
           },
           "Terrain Shadow Resolution": {
-            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "choices": [ "256", "512", "1024", "2048", "3072", "4096", "8192", "16384" ],
             "customWidth": "32",
             "decimal places": "0",
             "settings": [ "uTerrainShadowMapSize" ],
@@ -1703,56 +1819,235 @@
       }
     },
     "Visuals": {
-      "Effects": {
-        "NumberOfVerticallyStackedSettings": "1",
+      "Ambient Occlusion": {
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
+        "NumberOfVerticallyStackedSettings": "4",
         "Settings": {
-          "Depth of Field": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bDepthOfFieldEnable" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
-            "type": "Checkbutton"
+          "Power": {
+            "customWidth": "17",
+            "reversed": "1",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "5",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fGTAOPower" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "0",
+            "tooltip": "Sets the power.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
           },
-          "Film Grain": {
+          "Radius": {
+            "customWidth": "17",
+            "reversed": "1",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "15",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fGTAORadius" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "0",
+            "tooltip": "Sets the radius.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Attenuation Distance": {
+            "customWidth": "17",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fGTAOMaxAttenuationDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "100",
+            "tooltip": "Sets the attenuation distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Thickness Correction": {
+            "customWidth": "17",
             "decimal places": "2",
             "digits": "3",
             "from": "0",
             "increment": "0.01",
             "length": "100",
             "resolution": "0.01",
-            "settings": [ "fFilmGrainIntensity" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display" ],
+            "settings": [ "fGTAOBetaThicknessCorrection" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "SAO" ],
             "to": "1",
-            "tooltip": "Sets the intensity of the film grain effect.",
+            "tooltip": "Sets the beta thickness correction.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "float",
             "width": "7"
           },
-          "Motion Blur": {
-            "choices": [ "None", "Low", "Medium", "High" ],
-            "settingChoices": {
-              "None": [ "0", "1" ],
-              "Low": [ "1", "1" ],
-              "Medium": [ "1", "2" ],
-              "High": [ "1", "3" ]
-            },
-            "settings": [ "bEnableMotionBlur", "uMotionBlurQuality" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "Ultra.ini" ],
-            "targetSections": [ "MotionBlur", "MotionBlur" ],
-            "tooltip": "Controls motion blur quality.",
-            "type": "Dropdown"
+          "Distant Mid Power": {
+            "customWidth": "30",
+            "reversed": "1",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "5",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fDistantAOMidPower" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "0",
+            "tooltip": "Sets the distant mid power.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Distant Mid Radius": {
+            "customWidth": "30",
+            "reversed": "1",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "15",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fDistantAOMidSAORadius" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "0",
+            "tooltip": "Sets the distant mid radius.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Distant Mid Attenuation Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDistantAOMidMaxAttenuationDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "800",
+            "tooltip": "Sets the distant mid attenuation distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+
+          "Distant Mid Thickness Correction": {
+            "customWidth": "30",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fDistantAOMidBetaThicknessCorrection" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "1",
+            "tooltip": "Sets the distant mid beta thickness correction.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+
+
+          "Distant Far Radius": {
+            "customWidth": "30",
+            "reversed": "1",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "15",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fDistantAOFarSAORadius" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "0",
+            "tooltip": "Sets the distant far radius.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+
+          "Distant Far Power": {
+            "customWidth": "30",
+            "reversed": "1",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "5",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fDistantAOFarPower" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "0",
+            "tooltip": "Sets the distant far power.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+
+          "Distant Far Attenuation Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDistantAOFarMaxAttenuationDistance" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "6000",
+            "tooltip": "Sets the distant far attenuation distance.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Distant Far Thickness Correction": {
+            "customWidth": "30",
+            "decimal places": "2",
+            "digits": "3",
+            "from": "0",
+            "increment": "0.01",
+            "length": "100",
+            "resolution": "0.01",
+            "settings": [ "fDistantAOFarBetaThicknessCorrection" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "SAO" ],
+            "to": "1",
+            "tooltip": "Sets the distant far beta thickness correction.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
           }
         }
       },
       "Decals": {
         "Pack": {
-          "Side": "Left",
-          "Expand": 0
+          "Fill": "X"
         },
-        "NumberOfVerticallyStackedSettings": "9",
+        "NumberOfVerticallyStackedSettings": "3",
         "Settings": {
           "Decals": {
             "Offvalue": [ [ "0" ] ],
@@ -1772,6 +2067,29 @@
             "tooltip": "Toggles gory effects, such as blood.",
             "type": "Checkbutton"
           },
+          "Decal Lifetime": {
+            "customWidth": "17",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLifetime" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "300",
+            "tooltip": "Sets the time in seconds that some decals will stay visible.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
           "Max Decals Per Frame": {
             "customWidth": "30",
             "decimal places": "0",
@@ -1787,6 +2105,52 @@
             "tooltip": "Sets the maximum number of decals that can be shown per frame.",
             "type": "Slider",
             "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDecalLOD0" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Distance Space": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "0",
+            "settings": [ "fDecalLOD0Space" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "250",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts, in space.",
+            "type": "Slider",
+            "validate": "float",
             "width": "7",
             "dependentSettings": {
               "Decals": {
@@ -1863,87 +2227,18 @@
                 "value": [ [ "1" ] ]
               }
             }
-          },
-          "Decal Lifetime": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "fDecalLifetime" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "300",
-            "tooltip": "Sets the time in seconds that some decals will stay visible.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Decal Distance": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "1",
-            "settings": [ "fDecalLOD0" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "250",
-            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
-            "type": "Slider",
-            "validate": "float",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
-          },
-          "Decal Distance Space": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "0",
-            "settings": [ "fDecalLOD0Space" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "250",
-            "tooltip": "Sets the distance that some decals will show, such as bullet impacts, in space.",
-            "type": "Slider",
-            "validate": "float",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
           }
         }
       },
-      "Volumetric Lighting": {
+      "Lighting": {
         "Pack": {
-          "Fill": "None",
-          "Expand": 0
+          "Side": "Left",
+          "Fill": "X"
         },
-        "NumberOfVerticallyStackedSettings": "9",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Volumetric Lighting": {
-            "customWidth": "20",
+            "customWidth": "25",
             "choices": [ "None", "Low", "Medium", "High", "Ultra" ],
             "settingChoices": {
               "None": [ "0", "0" ],
@@ -1958,8 +2253,8 @@
             "tooltip": "Sets volumetric lighting quality.",
             "type": "Dropdown"
           },
-          "Phase Function": {
-            "customWidth": "20",
+          "Volumetric Phase Function": {
+            "customWidth": "25",
             "choices": [ "Schlick (Low)", "HG (High)" ],
             "settingChoices": {
               "Schlick (Low)": [ "1" ],
@@ -1971,6 +2266,34 @@
             "tooltip": "Sets volumetric lighting phase function.",
             "type": "Dropdown"
           },
+          "Indirect Lighting": {
+            "customWidth": "15",
+            "choices": [ "Low", "Medium", "High" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ]
+            },
+            "settings": [ "uGIFallbackQuality" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "GlobalIllumination" ],
+            "tooltip": "Sets the indirect lighting quality.",
+            "type": "Dropdown"
+          },
+          "Particle Lighting": {
+            "customWidth": "15",
+            "choices": [ "Low", "Medium", "High" ],
+            "settingChoices": {
+              "Low": [ "0" ],
+              "Medium": [ "1" ],
+              "High": [ "2" ]
+            },
+            "settings": [ "uParticleLightingParticleCountQuality" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Particle" ],
+            "tooltip": "Sets the particle lighting count quality.",
+            "type": "Dropdown"
+          },
           "Half Resolution Fog Map Blur": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -1978,6 +2301,24 @@
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "VolumetricLighting" ],
             "tooltip": "Toggles half resolution fog map blur.",
+            "type": "Checkbutton"
+          },
+          "Half Resolution Indirect": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bHalfResIndirect" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "GlobalIllumination" ],
+            "tooltip": "Toggles half resolution indirect lighting.",
+            "type": "Checkbutton"
+          },
+          "Half Resolution Particles": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableHalfResParticles" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "Particle" ],
+            "tooltip": "Toggles half resolution particles.",
             "type": "Checkbutton"
           },
           "Volumetric Indirect Fallback": {
@@ -2011,7 +2352,7 @@
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "ViewDistance" ],
             "to": "2808",
-            "tooltip": "Sets the level 1 block distance. This is the distance that level 1 object LOD is shown (presumably).",
+            "tooltip": "Sets the level 1 block distance. This is the distance that level 1 object LOD is shown.",
             "type": "Slider",
             "validate": "float",
             "width": "7"
@@ -2028,7 +2369,7 @@
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "ViewDistance" ],
             "to": "7488",
-            "tooltip": "Sets the level 2 block distance. This is the distance that level 2 object LOD is shown (presumably).",
+            "tooltip": "Sets the level 2 block distance. This is the distance that level 2 object LOD is shown.",
             "type": "Slider",
             "validate": "float",
             "width": "7"
@@ -2046,7 +2387,7 @@
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "ViewDistance" ],
             "to": "11232",
-            "tooltip": "Sets the level 4 block distance. This is the distance that level 4 object LOD is shown (presumably).",
+            "tooltip": "Sets the level 4 block distance. This is the distance that level 4 object LOD is shown.",
             "type": "Slider",
             "validate": "float",
             "width": "7"
@@ -2063,7 +2404,7 @@
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "ViewDistance" ],
             "to": "11232",
-            "tooltip": "Sets the level 8 block distance. This is the distance that level 8 object LOD is shown (presumably).",
+            "tooltip": "Sets the level 8 block distance. This is the distance that level 8 object LOD is shown.",
             "type": "Slider",
             "validate": "float",
             "width": "7"
@@ -2071,7 +2412,7 @@
           "Far Distance": {
             "customWidth": "20",
             "decimal places": "0",
-            "digits": "5",
+            "digits": "4",
             "from": "0",
             "increment": "1",
             "length": "300",
@@ -2079,8 +2420,8 @@
             "settings": [ "fFarDistance" ],
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "ViewDistance" ],
-            "to": "80000",
-            "tooltip": "Sets the far distance. It is currently unknown what exactly the far distance is controlling, but appears to be a LOD setting.",
+            "to": "6000",
+            "tooltip": "Sets the far distance for some distant LODs.",
             "type": "Slider",
             "validate": "float",
             "width": "7"
