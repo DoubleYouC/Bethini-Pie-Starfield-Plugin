@@ -45128,7 +45128,7 @@
       "name": "uReflectionsResolution",
       "type": "number",
       "ini": "Ultra.ini",
-      "notes": "Anything below 64 causes CTD.",
+      "notes": "Anything below 64 causes CTD. Max should be around 768, as very high values causes extreme performance penalty.",
       "section": "Reflections",
       "value": {
         "default": 128,
@@ -45139,8 +45139,8 @@
         "Bethini Poor": 64,
         "Bethini Low": 64,
         "Bethini Medium": 128,
-        "Bethini High": 256,
-        "Bethini Ultra": 256
+        "Bethini High": 160,
+        "Bethini Ultra": 192
       }
     },
     {
