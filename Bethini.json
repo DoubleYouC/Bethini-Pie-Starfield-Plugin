@@ -677,6 +677,28 @@
             "targetSections": [ "General" ],
             "tooltip": "Sets the starting console command.",
             "type": "Entry"
+          },
+          "Console Hotkeys": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseConsoleHotkeys" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Toggles console hotkeys.",
+            "type": "Checkbutton"
+          },
+          "Console INI": {
+            "settings": [ "sConsoleINI" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the console ini file.",
+            "type": "Entry",
+            "dependentSettings": {
+              "Console Hotkeys": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           }
         }
       }
@@ -955,6 +977,19 @@
             "type": "Combobox",
             "validate": "float",
             "width": "8"
+          },
+          "Crowd Density": {
+            "choices": [ "Low", "Medium", "High" ],
+            "settingChoices": {
+              "Low": [ "100", "0.4" ],
+              "Medium": [ "150", "0.6" ],
+              "High": [ "200", "1" ]
+            },
+            "settings": [ "uMaxCrowdActorCount", "fCrowdActorPlatformSpecificSpawnScalar" ],
+            "targetINIs": [ "Ultra.ini", "Ultra.ini" ],
+            "targetSections": [ "Crowd", "Crowd" ],
+            "tooltip": "Sets crowd density.",
+            "type": "Dropdown"
           }
         }
       },
@@ -2368,8 +2403,8 @@
             "settings": [ "fFarDistance" ],
             "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "ViewDistance" ],
-            "to": "6000",
-            "tooltip": "Sets the far distance for some distant LODs.",
+            "to": "12000",
+            "tooltip": "Sets the far distance.",
             "type": "Slider",
             "validate": "float",
             "width": "7"
