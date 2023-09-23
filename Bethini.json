@@ -400,7 +400,7 @@
             "width": "12"
           },
           "Render Resolution Scale": {
-            "customWidth": "22",
+            "customWidth": "25",
             "decimal places": "2",
             "from": "0.1",
             "increment": "0.01",
@@ -415,7 +415,7 @@
             "width": "7"
           },
           "Dynamic Resolution Scale": {
-            "customWidth": "22",
+            "customWidth": "25",
             "decimal places": "2",
             "from": "0.1",
             "increment": "0.01",
@@ -436,7 +436,7 @@
             }
           },
           "First Person FOV": {
-            "customWidth": "22",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "40",
             "increment": "1",
@@ -451,7 +451,7 @@
             "width": "7"
           },
           "Third Person FOV": {
-            "customWidth": "22",
+            "customWidth": "25",
             "decimal places": "0",
             "from": "40",
             "increment": "1",
@@ -466,7 +466,7 @@
             "width": "7"
           },
           "Gamma": {
-            "customWidth": "22",
+            "customWidth": "25",
             "decimal places": "3",
             "from": "0",
             "increment": "0.01",
@@ -481,7 +481,7 @@
             "width": "7"
           },
           "Film Grain": {
-            "customWidth": "22",
+            "customWidth": "25",
             "decimal places": "2",
             "from": "0",
             "increment": "0.01",
@@ -644,7 +644,7 @@
           "Fill": "X",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "1",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Load Loose Files": {
             "Offvalue": [
@@ -667,15 +667,25 @@
             "settings": [ "bEnableMessageOfTheDay" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "General" ],
-            "tooltip": "Toggles the message of the day.",
+            "tooltip": "Toggles the message of the day. Disable in order to stop it from causing issues loading mods from the game Data directory",
             "type": "Checkbutton"
           },
           "Starting Console Command": {
+            "customWidth": "25",
             "entry_width": "50",
             "settings": [ "sStartingConsoleCommand" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "General" ],
             "tooltip": "Sets the starting console command.",
+            "type": "Entry"
+          },
+          "Photo Mode Folder": {
+            "customWidth": "25",
+            "entry_width": "50",
+            "settings": [ "sPhotoModeFolder" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the photo mode folder. Set to something that does not have \"Data\" in it to stop it from causing issues loading mods from the game Data directory.",
             "type": "Entry"
           },
           "Console Hotkeys": {
@@ -709,7 +719,7 @@
           "Fill": "X",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "1",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Language": {
             "choices": [ "English", "French", "German", "Spanish", "Japanese", "Italian", "Polish", "Portuguese", "Simplified Chinese" ],
@@ -1012,7 +1022,7 @@
           },
           "Post-Load Update Time": {
             "choices": [ "500", "2000" ],
-            "customWidth": "20",
+            "customWidth": "24",
             "decimal places": "0",
             "settings": [ "fPostLoadUpdateTimeMS" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
@@ -1024,7 +1034,7 @@
           },
           "Max Allocated Memory": {
             "choices": [ "153600", "300000", "500000" ],
-            "customWidth": "20",
+            "customWidth": "24",
             "decimal places": "0",
             "settings": [ "iMaxAllocatedMemoryBytes" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
@@ -1199,7 +1209,6 @@
             "width": "5"
           },
           "Text Size": {
-            "customWidth": "16",
             "decimal places": "0",
             "from": "0",
             "settings": [ "iConsoleTextSize" ],
