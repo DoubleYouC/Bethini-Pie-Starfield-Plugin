@@ -2738,7 +2738,7 @@
       "section": "ContactShadows",
       "type": "boolean",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
@@ -2756,7 +2756,7 @@
       "section": "ContactShadows",
       "type": "boolean",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 1,
@@ -4847,7 +4847,7 @@
       "section": "Particle",
       "type": "boolean",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
@@ -5399,7 +5399,7 @@
       "section": "Terrain",
       "type": "boolean",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 1,
@@ -5417,7 +5417,7 @@
       "section": "Terrain",
       "type": "boolean",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 0,
         "Vanilla High": 1,
@@ -5467,7 +5467,7 @@
       "section": "Terrain",
       "type": "boolean",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 1,
@@ -6210,7 +6210,7 @@
       "section": "VolumetricLighting",
       "type": "boolean",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
@@ -6781,7 +6781,7 @@
       "section": "GlobalIllumination",
       "type": "boolean",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
@@ -6799,7 +6799,7 @@
       "section": "Geometry",
       "type": "boolean",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 0,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
@@ -12073,7 +12073,7 @@
       "section": "VolumetricLighting",
       "type": "boolean",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 1,
         "Vanilla High": 1,
@@ -12459,6 +12459,14 @@
     {
       "name": "bWriteDisposableInstanceCSV",
       "section": "SaveGame",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bShowDisabledAsserts",
+      "section": "HAVOK",
       "type": "boolean",
       "value": {
         "default": 0
@@ -12965,7 +12973,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 85.9437
+        "default": 85.943665
       }
     },
     {
@@ -12989,7 +12997,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 7.162
+        "default": 7.161972
       }
     },
     {
@@ -12997,7 +13005,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 7.162
+        "default": 7.161972
       }
     },
     {
@@ -13013,7 +13021,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 85.9437
+        "default": 85.943665
       }
     },
     {
@@ -13301,7 +13309,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.0014
+        "default": 0.00142
       }
     },
     {
@@ -13453,7 +13461,7 @@
       "section": "Combat",
       "type": "float",
       "value": {
-        "default": 28.575
+        "default": 28.575001
       }
     },
     {
@@ -14517,7 +14525,7 @@
       "section": "PostEffects",
       "type": "float",
       "value": {
-        "default": 0.7,
+        "default": 0.0,
         "Vanilla Low": 0,
         "Vanilla Medium": 0.7,
         "Vanilla High": 0.7,
@@ -14785,7 +14793,7 @@
       "section": "HAVOK",
       "type": "float",
       "value": {
-        "default": 1224.796
+        "default": 1224.796021
       }
     },
     {
@@ -14849,7 +14857,7 @@
       "section": "BIEvents",
       "type": "float",
       "value": {
-        "default": 16.7
+        "default": 16.700001
       }
     },
     {
@@ -14905,7 +14913,7 @@
       "section": "Cloth",
       "type": "float",
       "value": {
-        "default": 1020.663
+        "default": 1020.663025
       }
     },
     {
@@ -15321,7 +15329,7 @@
       "section": "Crowd",
       "type": "float",
       "value": {
-        "default": 1,
+        "default": 0.4,
         "Vanilla Low": 0.4,
         "Vanilla Medium": 0.6,
         "Vanilla High": 1,
@@ -15507,7 +15515,7 @@
       "section": "Actor",
       "type": "float",
       "value": {
-        "default": 43.8915
+        "default": 43.891499
       }
     },
     {
@@ -15587,7 +15595,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": -1.5708
+        "default": -1.570796
       }
     },
     {
@@ -15787,7 +15795,7 @@
       "section": "DebugCamera",
       "type": "float",
       "value": {
-        "default": 3.1416
+        "default": 3.141593
       }
     },
     {
@@ -15827,7 +15835,7 @@
       "section": "DebugCamera",
       "type": "float",
       "value": {
-        "default": 1.5691
+        "default": 1.569051
       }
     },
     {
@@ -15899,7 +15907,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 0.0
+        "default": 0.00001
       }
     },
     {
@@ -16389,7 +16397,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 1.8286
+        "default": 1.82857
       }
     },
     {
@@ -16517,7 +16525,7 @@
       "section": "Dialogue",
       "type": "float",
       "value": {
-        "default": 0.8571
+        "default": 0.85714
       }
     },
     {
@@ -17073,7 +17081,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 1.25,
+        "default": 2.5,
         "Vanilla Low": 2.5,
         "Vanilla Medium": 2,
         "Vanilla High": 1.45,
@@ -17091,7 +17099,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 5,
+        "default": 8.0,
         "Vanilla Low": 8,
         "Vanilla Medium": 7,
         "Vanilla High": 6,
@@ -17143,7 +17151,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 400,
+        "default": 600.0,
         "Vanilla Low": 600,
         "Vanilla Medium": 600,
         "Vanilla High": 500,
@@ -17161,7 +17169,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 1,
+        "default": 2.0,
         "Vanilla Low": 2,
         "Vanilla Medium": 1.3,
         "Vanilla High": 1.1,
@@ -17179,7 +17187,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 2.5,
+        "default": 3.0,
         "Vanilla Low": 3,
         "Vanilla Medium": 2.5,
         "Vanilla High": 2.5,
@@ -17437,7 +17445,7 @@
       "section": "Transparency",
       "type": "float",
       "value": {
-        "Unknown Default": 25.17
+        "default": 25.17
       },
       "ini": "Ultra.ini"
     },
@@ -17446,7 +17454,7 @@
       "section": "Transparency",
       "type": "float",
       "value": {
-        "Unknown Default": 15.8
+        "default": 15.8
       },
       "ini": "Ultra.ini"
     },
@@ -17455,7 +17463,7 @@
       "section": "Transparency",
       "type": "float",
       "value": {
-        "Unknown Default": 2
+        "default": 2.0
       },
       "ini": "Ultra.ini"
     },
@@ -17464,7 +17472,7 @@
       "section": "Transparency",
       "type": "float",
       "value": {
-        "Unknown Default": 2
+        "default": 2.0
       },
       "ini": "Ultra.ini"
     },
@@ -17910,7 +17918,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 1.5708
+        "default": 1.570796
       }
     },
     {
@@ -18246,7 +18254,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.3927
+        "default": 0.392699
       }
     },
     {
@@ -18310,7 +18318,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 0.0
+        "default": 0.000005
       }
     },
     {
@@ -18352,7 +18360,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 1.4,
+        "default": 1.5,
         "Vanilla Low": 1.5,
         "Vanilla Medium": 1.4,
         "Vanilla High": 1.2,
@@ -18430,7 +18438,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": 0.6667
+        "default": 0.66672
       }
     },
     {
@@ -18623,7 +18631,7 @@
       "section": "Grass",
       "type": "float",
       "value": {
-        "default": 14,
+        "default": 15.0,
         "Vanilla Low": 14,
         "Vanilla Medium": 14,
         "Vanilla High": 14,
@@ -18641,7 +18649,7 @@
       "section": "Grass",
       "type": "float",
       "value": {
-        "default": 2.2,
+        "default": 2.5,
         "Vanilla Low": 2.5,
         "Vanilla Medium": 2.2,
         "Vanilla High": 1.5,
@@ -18659,7 +18667,7 @@
       "section": "Grass",
       "type": "float",
       "value": {
-        "default": 140,
+        "default": 100.0,
         "Vanilla Low": 100,
         "Vanilla Medium": 140,
         "Vanilla High": 200,
@@ -18677,7 +18685,7 @@
       "section": "Grass",
       "type": "float",
       "value": {
-        "default": 25,
+        "default": 10.0,
         "Vanilla Low": 10,
         "Vanilla Medium": 25,
         "Vanilla High": 30,
@@ -19841,7 +19849,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 4.0143
+        "default": 4.014257
       }
     },
     {
@@ -19849,7 +19857,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": -0.2182
+        "default": -0.218166
       }
     },
     {
@@ -20101,7 +20109,7 @@
       "section": "Workshop",
       "type": "float",
       "value": {
-        "default": 71.4
+        "default": 71.400002
       }
     },
     {
@@ -20463,7 +20471,7 @@
       "section": "MomentBasedOIT",
       "type": "float",
       "value": {
-        "default": 0.0078
+        "default": 0.007843
       }
     },
     {
@@ -20559,7 +20567,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": 0.1151
+        "default": 0.115141
       }
     },
     {
@@ -20567,7 +20575,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": -0.3827
+        "default": -0.382666
       }
     },
     {
@@ -20575,7 +20583,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": 2.0287
+        "default": 2.02865
       }
     },
     {
@@ -20583,7 +20591,7 @@
       "section": "Controls",
       "type": "float",
       "value": {
-        "default": -0.7545
+        "default": -0.754499
       }
     },
     {
@@ -20875,7 +20883,7 @@
       "section": "Combat",
       "type": "float",
       "value": {
-        "default": 85.725
+        "default": 85.724998
       }
     },
     {
@@ -20891,7 +20899,7 @@
       "section": "Combat",
       "type": "float",
       "value": {
-        "default": 0.0001
+        "default": 0.00014
       }
     },
     {
@@ -20955,7 +20963,7 @@
       "section": "Combat",
       "type": "float",
       "value": {
-        "default": 85.725
+        "default": 85.724998
       }
     },
     {
@@ -21147,7 +21155,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 3.1416
+        "default": 3.141593
       }
     },
     {
@@ -21358,7 +21366,7 @@
       "section": "Animation",
       "type": "float",
       "value": {
-        "default": 0.0667
+        "default": 0.066667
       }
     },
     {
@@ -21406,7 +21414,7 @@
       "section": "Explosion",
       "type": "float",
       "value": {
-        "default": 28.575
+        "default": 28.575001
       }
     },
     {
@@ -21494,7 +21502,7 @@
       "section": "Cloth",
       "type": "float",
       "value": {
-        "default": 0.3927
+        "default": 0.392699
       }
     },
     {
@@ -21752,7 +21760,7 @@
       "section": "SpaceScattering",
       "type": "float",
       "value": {
-        "default": 0.0863
+        "default": 0.08627
       }
     },
     {
@@ -21760,7 +21768,7 @@
       "section": "SpaceScattering",
       "type": "float",
       "value": {
-        "default": 0.0
+        "default": 0.000005
       }
     },
     {
@@ -21848,7 +21856,7 @@
       "section": "DynamicNavmesh",
       "type": "float",
       "value": {
-        "default": 0.9962
+        "default": 0.996195
       }
     },
     {
@@ -21928,7 +21936,7 @@
       "section": "DynamicNavmesh",
       "type": "float",
       "value": {
-        "default": 0.7071
+        "default": 0.707107
       }
     },
     {
@@ -22506,7 +22514,7 @@
       "section": "DynamicNavmesh",
       "type": "float",
       "value": {
-        "default": 0.9659
+        "default": 0.965926
       }
     },
     {
@@ -22563,7 +22571,7 @@
       "section": "Pathfinding",
       "type": "float",
       "value": {
-        "default": 0.3572
+        "default": 0.357187
       }
     },
     {
@@ -22659,7 +22667,7 @@
       "section": "SpaceScattering",
       "type": "float",
       "value": {
-        "default": 2.54499997327472e+25
+        "default": 25449999730000000000000000
       }
     },
     {
@@ -23315,7 +23323,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 1.4835
+        "default": 1.48353
       }
     },
     {
@@ -23323,7 +23331,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": -1.4835
+        "default": -1.48353
       }
     },
     {
@@ -23363,7 +23371,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.2618
+        "default": 0.261799
       }
     },
     {
@@ -23371,7 +23379,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": -0.0873
+        "default": -0.087266
       }
     },
     {
@@ -23387,7 +23395,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.0873
+        "default": 0.087266
       }
     },
     {
@@ -23715,7 +23723,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": 1.5708
+        "default": 1.570796
       }
     },
     {
@@ -23723,7 +23731,7 @@
       "section": "Interface",
       "type": "float",
       "value": {
-        "default": -1.5708
+        "default": -1.570796
       }
     },
     {
@@ -23963,7 +23971,7 @@
       "section": "GamePlay",
       "type": "float",
       "value": {
-        "default": 58.522
+        "default": 58.521999
       }
     },
     {
@@ -24787,7 +24795,7 @@
       "section": "Actor",
       "type": "float",
       "value": {
-        "default": 8035.7144
+        "default": 8035.714355
       }
     },
     {
@@ -24931,7 +24939,7 @@
       "section": "Reflections",
       "type": "float",
       "value": {
-        "Unknown Default": ""
+        "default": 70.0
       },
       "ini": "Ultra.ini"
     },
@@ -24940,7 +24948,7 @@
       "section": "Reflections",
       "type": "float",
       "value": {
-        "Unknown Default": ""
+        "default": 0.0
       },
       "ini": "Ultra.ini"
     },
@@ -25593,7 +25601,7 @@
       "section": "Shadows",
       "type": "float",
       "value": {
-        "default": 7,
+        "default": 6.0,
         "Vanilla Low": 6,
         "Vanilla Medium": 7,
         "Vanilla High": 9,
@@ -25611,7 +25619,7 @@
       "section": "Shadows",
       "type": "float",
       "value": {
-        "default": 18,
+        "default": 12.0,
         "Vanilla Low": 12,
         "Vanilla Medium": 25,
         "Vanilla High": 25,
@@ -25629,7 +25637,7 @@
       "section": "Shadows",
       "type": "float",
       "value": {
-        "default": 60,
+        "default": 50.0,
         "Vanilla Low": 50,
         "Vanilla Medium": 60,
         "Vanilla High": 70,
@@ -25673,7 +25681,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 0.0059
+        "default": 0.005859
       }
     },
     {
@@ -25977,7 +25985,7 @@
       "section": "Spaceship",
       "type": "float",
       "value": {
-        "default": 5.7296
+        "default": 5.729578
       }
     },
     {
@@ -27164,7 +27172,7 @@
       "section": "StarMap",
       "type": "float",
       "value": {
-        "default": -38.865
+        "default": -38.865002
       }
     },
     {
@@ -27196,7 +27204,7 @@
       "section": "StarMap",
       "type": "float",
       "value": {
-        "default": -38.649
+        "default": -38.648998
       }
     },
     {
@@ -27652,7 +27660,7 @@
       "section": "StarMap",
       "type": "float",
       "value": {
-        "default": 1.043
+        "default": 1.043009
       }
     },
     {
@@ -27660,7 +27668,7 @@
       "section": "StarMap",
       "type": "float",
       "value": {
-        "default": 0.0873
+        "default": 0.08727
       }
     },
     {
@@ -27669,6 +27677,14 @@
       "type": "float",
       "value": {
         "default": 0.15
+      }
+    },
+    {
+      "name": "fStarMapSystemPanSpeed",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 25.0
       }
     },
     {
@@ -28036,7 +28052,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 0.0312
+        "default": 0.03125
       }
     },
     {
@@ -28076,7 +28092,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 0.0312
+        "default": 0.03125
       }
     },
     {
@@ -28204,7 +28220,7 @@
       "section": "LOD",
       "type": "float",
       "value": {
-        "default": 28.575
+        "default": 28.575001
       }
     },
     {
@@ -28316,7 +28332,7 @@
       "section": "General",
       "type": "float",
       "value": {
-        "default": 58.522
+        "default": 58.521999
       }
     },
     {
@@ -28838,7 +28854,7 @@
       "section": "MomentBasedOIT",
       "type": "float",
       "value": {
-        "default": 0.502
+        "default": 0.501961
       }
     },
     {
@@ -29448,7 +29464,7 @@
       "section": "VATS",
       "type": "float",
       "value": {
-        "default": 35.719
+        "default": 35.719002
       }
     },
     {
@@ -29568,7 +29584,7 @@
       "section": "VariableRateShading",
       "type": "float",
       "value": {
-        "default": 0.1,
+        "default": 0.15,
         "Vanilla Low": 0.15,
         "Vanilla Medium": 0.1,
         "Vanilla High": 0.075,
@@ -29674,7 +29690,7 @@
       "section": "Actor",
       "type": "float",
       "value": {
-        "default": 58.522
+        "default": 58.521999
       }
     },
     {
@@ -30138,7 +30154,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 2.3889
+        "default": 2.388889
       }
     },
     {
@@ -30386,7 +30402,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 1.4835
+        "default": 1.48353
       }
     },
     {
@@ -30394,7 +30410,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": -1.4835
+        "default": -1.48353
       }
     },
     {
@@ -30500,7 +30516,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 1.2217
+        "default": 1.22173
       }
     },
     {
@@ -30524,7 +30540,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.2618
+        "default": 0.261799
       }
     },
     {
@@ -30614,7 +30630,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": -0.0016
+        "default": -0.001646
       }
     },
     {
@@ -30622,7 +30638,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.392
+        "default": 0.391979
       }
     },
     {
@@ -30630,7 +30646,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.0
+        "default": 0.00005
       }
     },
     {
@@ -30646,7 +30662,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 6.7218
+        "default": 6.72176
       }
     },
     {
@@ -31460,7 +31476,7 @@
       "section": "ContactShadows",
       "type": "integer",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 2,
@@ -31550,7 +31566,8 @@
       "section": "Wwise",
       "type": "integer",
       "value": {
-        "default": 4
+        "default": 2,
+        "fixedDefault": 4
       },
       "alwaysPrint": true
     },
@@ -32287,7 +32304,7 @@
       "section": "Decals",
       "type": "integer",
       "value": {
-        "default": 5,
+        "default": 3,
         "Vanilla Low": 3,
         "Vanilla Medium": 5,
         "Vanilla High": 10,
@@ -32449,7 +32466,7 @@
       "section": "Decals",
       "type": "integer",
       "value": {
-        "default": 3,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 3,
         "Vanilla High": 10,
@@ -34463,9 +34480,7 @@
       "section": "Terminals",
       "type": "string",
       "value": {
-        "default": "FIXME",
-        "type": "string",
-        "section": " EMPTY NAME"
+        "default": "FIXME: EMPTY NAME"
       }
     },
     {
@@ -34649,7 +34664,8 @@
       "section": "General",
       "type": "string",
       "value": {
-        "default": "DefaultGlobalGraphicsSettings.json"
+        "default": "",
+        "fixedDefault": "DefaultGlobalGraphicsSettings.json"
       },
       "alwaysPrint": true
     },
@@ -34731,9 +34747,7 @@
       "section": "Kit",
       "type": "string",
       "value": {
-        "default": "ipc",
-        "type": "string",
-        "section": "///editor"
+        "default": "ipc:///editor"
       }
     },
     {
@@ -34741,9 +34755,7 @@
       "section": "Kit",
       "type": "string",
       "value": {
-        "default": "ipc",
-        "type": "string",
-        "section": "///game"
+        "default": "ipc:///game"
       }
     },
     {
@@ -34968,7 +34980,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Animations.ba2, Starfield - DensityMaps.ba2, Starfield - FaceAnimation01.ba2, Starfield - FaceAnimation02.ba2, Starfield - FaceAnimation03.ba2, Starfield - FaceAnimation04.ba2, Starfield - FaceAnimationPatch.ba2, Starfield - FaceMeshes.ba2, Starfield - GeneratedTextures.ba2, Starfield - LODMeshes.ba2, Starfield - LODMeshesPatch.ba2, Starfield - Materials.ba2, Starfield - Meshes01.ba2, Starfield - Meshes02.ba2, Starfield - MeshesPatch.ba2, Starfield - Misc.ba2, Starfield - Particles.ba2, Starfield - PlanetData.ba2, Starfield - Terrain01.ba2, Starfield - Terrain02.ba2, Starfield - Terrain03.ba2, Starfield - Terrain04.ba2, Starfield - TerrainPatch.ba2"
+        "default": "Starfield - Meshes.ba2, Starfield - MeshesExtra.ba2, Starfield - Materials.ba2, Starfield - Particles.ba2, Starfield - Sounds.ba2, Starfield - Voices.ba2,  Starfield - Animations.ba2, Starfield - Terrain.ba2",
+        "fixedDefault": "Starfield - Animations.ba2, Starfield - DensityMaps.ba2, Starfield - FaceAnimation01.ba2, Starfield - FaceAnimation02.ba2, Starfield - FaceAnimation03.ba2, Starfield - FaceAnimation04.ba2, Starfield - FaceAnimationPatch.ba2, Starfield - FaceMeshes.ba2, Starfield - GeneratedTextures.ba2, Starfield - LODMeshes.ba2, Starfield - LODMeshesPatch.ba2, Starfield - Materials.ba2, Starfield - Meshes01.ba2, Starfield - Meshes02.ba2, Starfield - MeshesPatch.ba2, Starfield - Misc.ba2, Starfield - Particles.ba2, Starfield - PlanetData.ba2, Starfield - Terrain01.ba2, Starfield - Terrain02.ba2, Starfield - Terrain03.ba2, Starfield - Terrain04.ba2, Starfield - TerrainPatch.ba2"
       },
       "alwaysPrint": true
     },
@@ -34977,7 +34990,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Interface.ba2, Starfield - Misc.ba2"
+        "default": "Starfield - Shaders.ba2, Starfield - Interface.ba2, Starfield - Materials.ba2",
+        "fixedDefault": "Starfield - Interface.ba2, Starfield - Misc.ba2"
       },
       "alwaysPrint": true
     },
@@ -35004,7 +35018,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Voices01.ba2, Starfield - Voices02.ba2, Starfield - VoicesPatch.ba2"
+        "default": "Starfield - Voices.ba2",
+        "fixedDefault": "Starfield - Voices01.ba2, Starfield - Voices02.ba2, Starfield - VoicesPatch.ba2"
       },
       "alwaysPrint": true
     },
@@ -35013,7 +35028,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - LODTextures.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
+        "default": "Starfield - Textures1.ba2, Starfield - Textures2.ba2, Starfield - Textures3.ba2, Starfield - Textures4.ba2, Starfield - Textures5.ba2, Starfield - Textures6.ba2, Starfield - Textures7.ba2, Starfield - Textures8.ba2, Starfield - Textures9.ba2",
+        "fixedDefault": "Starfield - LODTextures.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
       },
       "alwaysPrint": true
     },
@@ -35051,7 +35067,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Interface.ba2, Starfield - Localization.ba2, Starfield - Shaders.ba2, Starfield - ShadersBeta.ba2, Starfield - WwiseSounds01.ba2, Starfield - WwiseSounds02.ba2, Starfield - WwiseSounds03.ba2, Starfield - WwiseSounds04.ba2, Starfield - WwiseSounds05.ba2, Starfield - WwiseSoundsPatch.ba2, BlueprintShips-Starfield - Localization.ba2"
+        "default": "Starfield - Startup.ba2, Starfield - Shaders.ba2, Starfield - Interface.ba2",
+        "fixedDefault": "Starfield - Interface.ba2, Starfield - Localization.ba2, Starfield - Shaders.ba2, Starfield - ShadersBeta.ba2, Starfield - WwiseSounds01.ba2, Starfield - WwiseSounds02.ba2, Starfield - WwiseSounds03.ba2, Starfield - WwiseSounds04.ba2, Starfield - WwiseSounds05.ba2, Starfield - WwiseSoundsPatch.ba2, BlueprintShips-Starfield - Localization.ba2"
       },
       "alwaysPrint": true
     },
@@ -35456,6 +35473,30 @@
       }
     },
     {
+      "name": "strPipboyScreenGlowEffect",
+      "section": "GamePlay",
+      "type": "string",
+      "value": {
+        "default": "ScreenGlowEffect01"
+      }
+    },
+    {
+      "name": "strPlayerCharacterBehavior1stPGraphPathAddition",
+      "section": "Animation",
+      "type": "string",
+      "value": {
+        "default": "_1stPerson\\"
+      }
+    },
+    {
+      "name": "strPluginsFileHeader",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "# This file is used by Fallout4 to keep track of your downloaded content. # Please do not modify this file."
+      }
+    },
+    {
       "name": "uActiveEffectDamageNumberCooldownMs",
       "section": "Interface",
       "type": "unsigned integer",
@@ -35468,7 +35509,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 3,
@@ -36196,7 +36237,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "default": 2048,
+        "default": 1024,
         "Vanilla Low": 1024,
         "Vanilla Medium": 2048,
         "Vanilla High": 2048,
@@ -36623,7 +36664,7 @@
       "section": "Quality",
       "type": "unsigned integer",
       "value": {
-        "default": 3,
+        "default": 0,
         "Vanilla Low": 3,
         "Vanilla Medium": 3,
         "Vanilla High": 3,
@@ -36642,7 +36683,7 @@
       "section": "Quality",
       "type": "unsigned integer",
       "value": {
-        "default": 3,
+        "default": 5,
         "Vanilla Low": 3,
         "Vanilla Medium": 3,
         "Vanilla High": 3,
@@ -36923,7 +36964,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "Unknown Default": ""
+        "default": 4
       },
       "ini": "Ultra.ini"
     },
@@ -36932,7 +36973,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "Unknown Default": ""
+        "default": 4
       },
       "ini": "Ultra.ini"
     },
@@ -37030,7 +37071,7 @@
       "section": "Crowd",
       "type": "unsigned integer",
       "value": {
-        "default": 150,
+        "default": 100,
         "Vanilla Low": 100,
         "Vanilla Medium": 150,
         "Vanilla High": 200,
@@ -37048,7 +37089,7 @@
       "section": "Decals",
       "type": "unsigned integer",
       "value": {
-        "default": 50,
+        "default": 25,
         "Vanilla Low": 25,
         "Vanilla Medium": 50,
         "Vanilla High": 100,
@@ -37742,7 +37783,7 @@
       "section": "Particle",
       "type": "unsigned integer",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 2,
@@ -38130,7 +38171,7 @@
       "section": "Reflections",
       "type": "unsigned integer",
       "value": {
-        "default": 128,
+        "default": 64,
         "Vanilla Low": 64,
         "Vanilla Medium": 128,
         "Vanilla High": 256,
@@ -38337,7 +38378,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "default": 4,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 4,
         "Vanilla High": 8,
@@ -38391,7 +38432,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "default": 36,
+        "default": 44,
         "Vanilla Low": 44,
         "Vanilla Medium": 36,
         "Vanilla High": 32,
@@ -38727,7 +38768,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "default": 512,
+        "default": 256,
         "Vanilla Low": 256,
         "Vanilla Medium": 512,
         "Vanilla High": 1024,
@@ -38769,7 +38810,7 @@
       "section": "Shadows",
       "type": "unsigned integer",
       "value": {
-        "default": 16,
+        "default": 12,
         "Vanilla Low": 12,
         "Vanilla Medium": 16,
         "Vanilla High": 22,
@@ -39421,11 +39462,20 @@
       }
     },
     {
+      "name": "uraScatteringQuality",
+      "section": "AtmosphericScattering",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      },
+      "ini": "Ultra.ini"
+    },
+    {
       "name": "uraVolumetricLightingPhaseFunction",
       "section": "VolumetricLighting",
       "type": "unsigned integer",
       "value": {
-        "default": 0,
+        "default": 1,
         "Vanilla Low": 1,
         "Vanilla Medium": 0,
         "Vanilla High": 0,
@@ -39440,11 +39490,19 @@
       "notes": "1 is Schlick. 0 is HG."
     },
     {
+      "name": "uraVolumetricLightingTemporalFrameCount",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 7
+      }
+    },
+    {
       "name": "uraVolumetricQuality",
       "section": "VolumetricLighting",
       "type": "unsigned integer",
       "value": {
-        "default": 1,
+        "default": 0,
         "Vanilla Low": 0,
         "Vanilla Medium": 1,
         "Vanilla High": 2,
@@ -39456,63 +39514,6 @@
         "Bethini Ultra": 3
       },
       "ini": "Ultra.ini"
-    },
-    {
-      "name": "bshowDisabledAsserts",
-      "section": "HAVOK",
-      "type": "boolean",
-      "value": {
-        "default": "False"
-      }
-    },
-    {
-      "name": "fNavMeshMovementTiltSpeed",
-      "section": "",
-      "type": "float",
-      "value": {
-        "default": "30.000000"
-      }
-    },
-    {
-      "name": "strPipboyScreenGlowEffect",
-      "section": "GamePlay",
-      "type": "string",
-      "value": {
-        "default": "ScreenGlowEffect01"
-      }
-    },
-    {
-      "name": "strPlayerCharacterBehavior1stPGraphPathAddition",
-      "section": "Animation",
-      "type": "string",
-      "value": {
-        "default": "_1stPerson\\"
-      }
-    },
-    {
-      "name": "strPluginsFileHeader",
-      "section": "General",
-      "type": "string",
-      "value": {
-        "default": "# This file is used by Fallout4 to keep track of your downloaded content. # Please do not modify this file."
-      }
-    },
-    {
-      "name": "uraScatteringQuality",
-      "section": "AtmosphericScattering",
-      "type": "unsigned integer",
-      "ini": "Ultra.ini",
-      "value": {
-        "default": "0"
-      }
-    },
-    {
-      "name": "uraVolumetricLightingTemporalFrameCount",
-      "section": "Display",
-      "type": "unsigned integer",
-      "value": {
-        "default": "7"
-      }
     }
   ]
 }
