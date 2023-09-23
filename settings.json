@@ -18637,10 +18637,10 @@
         "Vanilla High": 14,
         "Vanilla Ultra": 14,
         "Bethini Poor": 0,
-        "Bethini Low": 25,
-        "Bethini Medium": 50,
-        "Bethini High": 88,
-        "Bethini Ultra": 202
+        "Bethini Low": 0,
+        "Bethini Medium": 0,
+        "Bethini High": 0,
+        "Bethini Ultra": 0
       },
       "ini": "Ultra.ini"
     },
@@ -18657,8 +18657,8 @@
         "Bethini Poor": 2.5,
         "Bethini Low": 2.5,
         "Bethini Medium": 2.2,
-        "Bethini High": 1.5,
-        "Bethini Ultra": 0.5
+        "Bethini High": 2.0,
+        "Bethini Ultra": 1.5
       },
       "ini": "Ultra.ini"
     },
@@ -18673,10 +18673,10 @@
         "Vanilla High": 200,
         "Vanilla Ultra": 200,
         "Bethini Poor": 0,
-        "Bethini Low": 7,
-        "Bethini Medium": 15,
-        "Bethini High": 58,
-        "Bethini Ultra": 88
+        "Bethini Low": 32,
+        "Bethini Medium": 65,
+        "Bethini High": 146,
+        "Bethini Ultra": 290
       },
       "ini": "Ultra.ini"
     },
@@ -18691,10 +18691,10 @@
         "Vanilla High": 30,
         "Vanilla Ultra": 50,
         "Bethini Poor": 10,
-        "Bethini Low": 10,
-        "Bethini Medium": 25,
-        "Bethini High": 30,
-        "Bethini Ultra": 50
+        "Bethini Low": 7,
+        "Bethini Medium": 15,
+        "Bethini High": 58,
+        "Bethini Ultra": 88
       },
       "ini": "Ultra.ini"
     },
