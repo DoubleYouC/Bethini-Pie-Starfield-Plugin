@@ -17758,11 +17758,11 @@
         "Vanilla Medium": 6000,
         "Vanilla High": 6000,
         "Vanilla Ultra": 6000,
-        "Bethini Poor": 2340,
-        "Bethini Low": 2808,
-        "Bethini Medium": 3743,
-        "Bethini High": 4679,
-        "Bethini Ultra": 5849
+        "Bethini Poor": 6009,
+        "Bethini Low": 6009,
+        "Bethini Medium": 6009,
+        "Bethini High": 6009,
+        "Bethini Ultra": 6009
       },
       "ini": "Ultra.ini",
       "notes": "In meters, 420168 units"
