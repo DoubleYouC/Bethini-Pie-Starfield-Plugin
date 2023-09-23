@@ -34924,7 +34924,8 @@
       "section": "Display",
       "type": "string",
       "value": {
-        "default": "Data\\Textures\\Photos"
+        "default": "Data\\Textures\\Photos",
+        "recommended": "Photos"
       }
     },
     {
