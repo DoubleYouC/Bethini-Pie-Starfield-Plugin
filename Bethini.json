@@ -66,6 +66,19 @@
       "NoLabelFrame": {
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
+          "Notice": {
+            "Description": "Instructions for Mod Organizer 2 users:\n1. Add Bethini Pie as an executable and run through Mod Organizer 2.\n2. Leave the INI Path below at the default Documents\\My Games\\Starfield location. Do NOT redirect to your profile location.",
+            "type": "description"
+          }
+        }
+      },
+      "Paths": {
+        "NumberOfVerticallyStackedSettings": "6",
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
+        "Settings": {
           "Game Path": {
             "browse": [ "directory", "directory", "directory" ],
             "choices": [ "FUNCGamePath", "Browse...", "Manual..." ],
@@ -87,7 +100,16 @@
             "targetSections": [ "Directories" ],
             "tooltip": "Specifies the path to the INI files.",
             "type": "Dropdown"
-          },
+          }
+        }
+      },
+      "Backups": {
+        "NumberOfVerticallyStackedSettings": "6",
+        "Pack": {
+          "Fill": "None",
+          "Expand": 0
+        },
+        "Settings": {
           "Restore Backup": {
             "choices": "FUNCBackups",
             "custom_function": "restore_backup",
@@ -263,9 +285,9 @@
             "from": "40",
             "increment": "1",
             "length": "100",
-            "settings": [ "fFPWorldFOV" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
-            "targetSections": [ "Camera" ],
+            "settings": [ "fFPWorldFOV", "fFPGeometryFOV" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "Camera", "Camera" ],
             "to": "120",
             "tooltip": "Sets the field of view in first person mode.",
             "type": "Slider",
@@ -279,7 +301,7 @@
             "increment": "1",
             "length": "100",
             "settings": [ "fTPWorldFOV" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
             "targetSections": [ "Camera" ],
             "to": "120",
             "tooltip": "Sets the field of view in third person mode.",
@@ -492,12 +514,13 @@
           },
           "Photo Mode Folder": {
             "customWidth": "25",
-            "entry_width": "50",
+            "choices": [ "Data\\Textures\\Photos", "Photos" ],
+            "width": "48",
             "settings": [ "sPhotoModeFolder" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Display" ],
-            "tooltip": "Sets the photo mode folder. Set to something that does not have \"Data\" in it to stop it from causing issues loading mods from the game Data directory.",
-            "type": "Entry"
+            "tooltip": "Sets the photo mode folder. Set to something that does not have \"Data\" in it to stop it from causing issues loading mods from the game Data directory.\n\nLeave it at default Data\\Textures\\Photos if using Mod Organizer.",
+            "type": "Combobox"
           },
           "Console Hotkeys": {
             "Offvalue": [ [ "0" ] ],
@@ -1006,6 +1029,17 @@
         },
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
+          "Max Buffer Size": {
+            "choices": [ "32768", "300000", "600000" ],
+            "decimal places": "0",
+            "settings": [ "iConsoleBufferMaxDisplaySize" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the maximum memory buffer size that the console can use to display output. Increase this if you need to dump a lot from the console.",
+            "type": "Combobox",
+            "validate": "whole",
+            "width": "8"
+          },
           "Screen Percentage": {
             "customWidth": "16",
             "decimal places": "0",
