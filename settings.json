@@ -21247,8 +21247,7 @@
       "value": {
         "default": 4
       },
-      "ini": "StarfieldPrefs.ini",
-      "notes": "Doesn't appear to do anything."
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "fMaxBendingLumberyard",
@@ -39231,6 +39230,14 @@
       }
     },
     {
+      "name": "uiLastVersionAutodetectRun",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "uiLowFrameRateFrequency",
       "section": "Actor",
       "type": "unsigned integer",
@@ -39475,7 +39482,16 @@
       "section": "Display",
       "type": "unsigned integer",
       "value": {
-        "default": 3
+        "default": 4294967295
+      },
+      "ini": "StarfieldPrefs.ini"
+    },
+    {
+      "name": "uiUpscalingTechnique",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
       },
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true

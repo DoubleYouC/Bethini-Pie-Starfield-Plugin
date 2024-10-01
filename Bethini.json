@@ -214,16 +214,19 @@
             "type": "Dropdown"
           },
           "Upscaling Method": {
-            "choices": [ "None", "CAS", "FSR2" ],
+            "choices": [ "None", "CAS", "DLSS", "FSR3", "FSR3 + Frame Generation", "XESS" ],
             "customWidth": "18",
             "settingChoices": {
-              "None": [ "0" ],
-              "CAS": [ "1" ],
-              "FSR2": [ "3" ]
+              "None": [ "1", "0" ],
+              "CAS": [ "2", "0" ],
+              "FSR3": [ "8", "0" ],
+              "FSR3 + Frame Generation": [ "16", "2" ],
+              "DLSS": [ "4", "0" ],
+              "XESS": ["32", "0"]
             },
-            "settings": [ "uiUpscaleTech" ],
-            "targetINIs": [ "StarfieldPrefs.ini" ],
-            "targetSections": [ "Display" ],
+            "settings": [ "uiUpscalingTechnique", "uiFrameGenerationTech" ],
+            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display", "Display" ],
             "tooltip": "Sets the upscaling technology method used.",
             "type": "Dropdown"
           },
