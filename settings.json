@@ -18549,6 +18549,14 @@
       "ini": "StarfieldPrefs.ini"
     },
     {
+      "name": "fGammaBase",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 2.4
+      }
+    },
+    {
       "name": "fGammaMax",
       "section": "Display",
       "type": "float",
@@ -18562,6 +18570,14 @@
       "type": "float",
       "value": {
         "default": 0.0
+      }
+    },
+    {
+      "name": "fGammaUI",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 2.4
       }
     },
     {
