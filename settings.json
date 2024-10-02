@@ -37848,7 +37848,7 @@
       "type": "string",
       "value": {
         "default": "Starfield - Textures1.ba2, Starfield - Textures2.ba2, Starfield - Textures3.ba2, Starfield - Textures4.ba2, Starfield - Textures5.ba2, Starfield - Textures6.ba2, Starfield - Textures7.ba2, Starfield - Textures8.ba2, Starfield - Textures9.ba2",
-        "fixedDefault": "Starfield - LODTextures.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
+        "fixedDefault": "Starfield - LODTextures01.ba2, Starfield - LODTextures02.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
       },
       "alwaysPrint": true
     },
