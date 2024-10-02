@@ -2518,6 +2518,14 @@
       }
     },
     {
+      "name": "bCheckForMissingContentOnStartup",
+      "section": "Gameplay",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bCheckRuntimeCollisions",
       "section": "Archive",
       "type": "boolean",
@@ -4137,6 +4145,14 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bDisplayCreditCTA",
+      "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -6457,6 +6473,14 @@
       "alwaysPrint": true
     },
     {
+      "name": "bFlightControlInvertYaw",
+      "section": "Controls",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bFlightFavorXYCorrectionOnPathFailure",
       "section": "Pathfinding",
       "type": "boolean",
@@ -7182,7 +7206,7 @@
       "section": "Display",
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 0
       },
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true
@@ -7517,6 +7541,14 @@
     },
     {
       "name": "bInvertMovementThumbstick",
+      "section": "Controls",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bInvertXValues",
       "section": "Controls",
       "type": "boolean",
       "value": {
@@ -8066,6 +8098,14 @@
       }
     },
     {
+      "name": "bMotionBlurEnabled",
+      "section": "Quality",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bMouseMoveDeviceSwitchDisabled",
       "section": "Controls",
       "type": "boolean",
@@ -8164,6 +8204,14 @@
     {
       "name": "bMultithreadedUpdatePoseBounds",
       "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bMusicOn",
+      "section": "CreationsMenu",
       "type": "boolean",
       "value": {
         "default": 1
@@ -10012,6 +10060,14 @@
       }
     },
     {
+      "name": "bShipBuilderEnableLooseRules",
+      "section": "Spaceship",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bShipBuilderEnableReframeZoom",
       "section": "Spaceship",
       "type": "boolean",
@@ -11434,6 +11490,14 @@
       }
     },
     {
+      "name": "bUpsellOwned",
+      "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bUseActorAvoidBox",
       "section": "Pathfinding",
       "type": "boolean",
@@ -12676,6 +12740,30 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bVehicleCO2PreventsSlowMo",
+      "section": "Camera",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bVehicleStickSwap",
+      "section": "Controls",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bVehicleStickyDirectionModeEnabled",
+      "section": "Controls",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -15203,11 +15291,27 @@
       }
     },
     {
+      "name": "fBrightnessBoostHDR",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 3.5
+      }
+    },
+    {
       "name": "fBrightnessColorBase",
       "section": "Display",
       "type": "float",
       "value": {
         "default": 0.067
+      }
+    },
+    {
+      "name": "fBrightnessHDR",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.8
       }
     },
     {
@@ -16015,6 +16119,14 @@
       }
     },
     {
+      "name": "fContrast",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
       "name": "fContrastMax",
       "section": "Display",
       "type": "float",
@@ -16024,6 +16136,14 @@
     },
     {
       "name": "fContrastMin",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fContrastUI",
       "section": "Display",
       "type": "float",
       "value": {
@@ -18669,7 +18789,15 @@
       "section": "FSR2",
       "type": "float",
       "value": {
-        "default": 1.1
+        "default": 0.95
+      }
+    },
+    {
+      "name": "fFSR2TandCScale",
+      "section": "FSR2",
+      "type": "float",
+      "value": {
+        "default": 0.96
       }
     },
     {
@@ -29734,7 +29862,7 @@
       "section": "Streamline",
       "type": "float",
       "value": {
-        "default": 0.0
+        "default": 6.0
       }
     },
     {
@@ -30258,6 +30386,14 @@
       }
     },
     {
+      "name": "fTPShipFOV",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 90.0
+      }
+    },
+    {
       "name": "fTPShipFOVMax",
       "section": "Display",
       "type": "float",
@@ -30278,7 +30414,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 70.0
+        "default": 90.0
       },
       "ini": "StarfieldPrefs.ini"
     },
@@ -31865,6 +32001,70 @@
       }
     },
     {
+      "name": "fVehicleCameraPitchSpeedG",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fVehicleCameraYawSpeedG",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fVehicleDefaultBoostAccelValue",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fVehicleDefaultReverseBrakeValue",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fVehicleDriveDirectionChangeInputAngleDeltaThreshold",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 90.0
+      }
+    },
+    {
+      "name": "fVehicleDriveDirectionChangeSpeedPercentageThreshold",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 0.333
+      }
+    },
+    {
+      "name": "fVehicleDriveDirectionForwardAngle_Gamepad",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 135.0
+      }
+    },
+    {
+      "name": "fVehicleDriveDirectionForwardAngle_MouseKB",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 100.0
+      }
+    },
+    {
       "name": "fVehicleFOVOffsetMax",
       "section": "Camera",
       "type": "float",
@@ -31878,6 +32078,22 @@
       "type": "float",
       "value": {
         "default": -20.0
+      }
+    },
+    {
+      "name": "fVehicleFirstPersonFOVOffset",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fVehicleFirstPersonMovementScale",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 0.5
       }
     },
     {
@@ -32046,6 +32262,38 @@
       "type": "float",
       "value": {
         "default": 1.0
+      }
+    },
+    {
+      "name": "fVehicleThirdPersonFOVOffset",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fVehicleTurnTowardsStickBowtiePercent",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 0.0625
+      }
+    },
+    {
+      "name": "fVehicleTurnTowardsStickForwardDeadzoneAngle",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 2.5
+      }
+    },
+    {
+      "name": "fVehicleTurnTowardsStickReverseDeadzoneAngle",
+      "section": "Controls",
+      "type": "float",
+      "value": {
+        "default": 40.0
       }
     },
     {
@@ -33097,7 +33345,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 5E-05
+        "default": 0.00005
       }
     },
     {
@@ -33398,6 +33646,14 @@
       "type": "float",
       "value": {
         "default": 0.0025
+      }
+    },
+    {
+      "name": "fXeSSReactiveScale",
+      "section": "XeSS",
+      "type": "float",
+      "value": {
+        "default": 8.0
       }
     },
     {
@@ -34503,6 +34759,14 @@
       }
     },
     {
+      "name": "iHasUserAcceptedVersion",
+      "section": "Legal",
+      "type": "integer",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "iHeartbeatFrequencyMS",
       "section": "BIEvents",
       "type": "integer",
@@ -34715,7 +34979,7 @@
       "section": "Display",
       "type": "integer",
       "value": {
-        "default": 0
+        "default": -8
       }
     },
     {
@@ -36244,6 +36508,14 @@
       "type": "integer",
       "value": {
         "default": 100
+      }
+    },
+    {
+      "name": "iVehicleDesiredCameraPosition",
+      "section": "Camera",
+      "type": "integer",
+      "value": {
+        "default": 2
       }
     },
     {
@@ -39153,6 +39425,14 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "uDisplayHash",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2432656971
+      }
+    },
+    {
       "name": "uDisplayMonitor",
       "section": "Display",
       "type": "unsigned integer",
@@ -41964,6 +42244,30 @@
       "alwaysPrint": true
     },
     {
+      "name": "uVehicleGamepadControlMode",
+      "section": "Controls",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "uVehicleMKBControlMode",
+      "section": "Controls",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
+      }
+    },
+    {
+      "name": "uVehicleTurnTowardsCameraMethod",
+      "section": "Controls",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "uViewDistance",
       "section": "Quality",
       "type": "unsigned integer",
@@ -42186,6 +42490,14 @@
       }
     },
     {
+      "name": "uiDLSSUpscalingPreset",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
+      }
+    },
+    {
       "name": "uiDefaultDegradeLevel",
       "section": "Textures",
       "type": "unsigned integer",
@@ -42258,6 +42570,14 @@
       }
     },
     {
+      "name": "uiFrameGenerationTech",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uiHighFrameRateFrequency",
       "section": "Actor",
       "type": "unsigned integer",
@@ -42287,6 +42607,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 10
+      }
+    },
+    {
+      "name": "uiMarketplaceUpdatedHash",
+      "section": "General",
+      "type": "unsigned integer",
+      "value": {
+        "default": 4294967295
       }
     },
     {
@@ -42399,6 +42727,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 3
+      }
+    },
+    {
+      "name": "uiMigratedRendererSettingsFlags",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -42530,6 +42866,14 @@
       }
     },
     {
+      "name": "uiStreamlineReflexMode",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uiSurfaceMapDistantLODHighModelThreshold",
       "section": "SurfaceMap",
       "type": "unsigned integer",
@@ -42571,11 +42915,19 @@
       "ini": "StarfieldPrefs.ini"
     },
     {
+      "name": "uiUpscalingPreset",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 4294967295
+      }
+    },
+    {
       "name": "uiUpscalingTechnique",
       "section": "Display",
       "type": "unsigned integer",
       "value": {
-        "default": 1
+        "default": 8
       },
       "ini": "StarfieldPrefs.ini",
       "alwaysPrint": true
@@ -42610,6 +42962,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 8600
+      }
+    },
+    {
+      "name": "uiXeSSUpscalingPreset",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
       }
     },
     {
