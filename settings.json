@@ -273,6 +273,14 @@
       }
     },
     {
+      "name": "aHighlightScannableFillColor_Bounty",
+      "section": "Monocle",
+      "type": "rgba",
+      "value": {
+        "default": "255,0,0,30"
+      }
+    },
+    {
       "name": "aHighlightScannableFillColor_FullyScanned",
       "section": "Monocle",
       "type": "rgba",
@@ -353,6 +361,14 @@
       }
     },
     {
+      "name": "aHighlightScannableOutlineColorHigh_Bounty",
+      "section": "Monocle",
+      "type": "rgba",
+      "value": {
+        "default": "255,0,0,30"
+      }
+    },
+    {
       "name": "aHighlightScannableOutlineColorHigh_FullyScanned",
       "section": "Monocle",
       "type": "rgba",
@@ -430,6 +446,14 @@
       "type": "rgba",
       "value": {
         "default": "62,173,242,128"
+      }
+    },
+    {
+      "name": "aHighlightScannableOutlineColorLow_Bounty",
+      "section": "Monocle",
+      "type": "rgba",
+      "value": {
+        "default": "255,0,0,30"
       }
     },
     {
@@ -1033,8 +1057,32 @@
       }
     },
     {
+      "name": "bAddRGDFilesToCrashZip",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bAddRagdollPusher",
+      "section": "VehicleData",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bAddRuntimeFoundBlueprintInteractionOffsetRefs",
       "section": "Spaceship",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bAddWheelColl",
+      "section": "VehicleData",
       "type": "boolean",
       "value": {
         "default": 1
@@ -1046,6 +1094,14 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bAdjustLightIrradianceForExposure",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -1149,7 +1205,7 @@
       "section": "Display",
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 0
       }
     },
     {
@@ -1393,6 +1449,14 @@
       }
     },
     {
+      "name": "bAllowResolutionScaleAdjustment",
+      "section": "Streamline",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bAllowResourceReloading",
       "section": "General",
       "type": "boolean",
@@ -1419,6 +1483,14 @@
     {
       "name": "bAllowShadowcasterNPCLights",
       "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bAllowSurfaceTreeGenerationSave",
+      "section": "Planet",
       "type": "boolean",
       "value": {
         "default": 0
@@ -1660,8 +1732,24 @@
       }
     },
     {
+      "name": "bApplyCloudsMipBias",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bApplyFootSyncVelocityChange",
       "section": "Animation",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bApplyPreExposure",
+      "section": "Streamline",
       "type": "boolean",
       "value": {
         "default": 1
@@ -1713,6 +1801,14 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bAsyncSubmitAndPresent",
+      "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -2190,6 +2286,14 @@
       }
     },
     {
+      "name": "bCSMEnableOcclusionCulling",
+      "section": "Shadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bCacheStagingBuffer",
       "section": "Textures",
       "type": "boolean",
@@ -2470,8 +2574,32 @@
       }
     },
     {
+      "name": "bClampVelocity",
+      "section": "VehicleData",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bClearBuffersUsingShader",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bClearFlipAndRotationOnLoad",
       "section": "Planet",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bClearResourcesOnProduce",
+      "section": "Debug",
       "type": "boolean",
       "value": {
         "default": 0
@@ -2842,6 +2970,14 @@
       }
     },
     {
+      "name": "bCreatePhysicalGroundShape",
+      "section": "SurfaceMap",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bCreateRecipeAllowEdit",
       "section": "General",
       "type": "boolean",
@@ -2948,6 +3084,14 @@
       }
     },
     {
+      "name": "bCullNonPreskinnedDynamicShadows",
+      "section": "Shadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bCustomMeshInstancePatchScreenSizeCalculation",
       "section": "LOD",
       "type": "boolean",
@@ -3003,6 +3147,14 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bDeDitherExpandedMask",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -3956,6 +4108,14 @@
       }
     },
     {
+      "name": "bDisableWwiseErrorCallbackMessages",
+      "section": "Audio",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bDismemberOneLimb",
       "section": "Combat",
       "type": "boolean",
@@ -4022,6 +4182,14 @@
     {
       "name": "bDisregardTimeWindowWhenAvoidingActors",
       "section": "Pathfinding",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bDistantBlockUseJobsite",
+      "section": "LODManager",
       "type": "boolean",
       "value": {
         "default": 1
@@ -4345,6 +4513,14 @@
       "notes": "Disabling causes visual issues."
     },
     {
+      "name": "bEditorSpawnActivatorAsStatic",
+      "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bEditorSpawnFurnituresAsStatic",
       "section": "General",
       "type": "boolean",
@@ -4577,6 +4753,14 @@
       }
     },
     {
+      "name": "bEnableContactShadowPerpendicularSafeZone",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bEnableCrashCache",
       "section": "Debug",
       "type": "boolean",
@@ -4612,10 +4796,10 @@
       "name": "bEnableDRED",
       "section": "Display",
       "type": "boolean",
-      "notes": "Decreases performance, but don't know what it does.",
       "value": {
         "default": 0
-      }
+      },
+      "notes": "Decreases performance, but don't know what it does."
     },
     {
       "name": "bEnableDebugLayer",
@@ -4826,6 +5010,14 @@
       }
     },
     {
+      "name": "bEnableGeometryInWaterGlobalReflectionProbe",
+      "section": "Reflections",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bEnableGlobalLayer",
       "section": "Display",
       "type": "boolean",
@@ -4872,6 +5064,14 @@
     {
       "name": "bEnableHeadLODSwap",
       "section": "FaceGen",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bEnableHitDataLogging",
+      "section": "Debug",
       "type": "boolean",
       "value": {
         "default": 0
@@ -5132,11 +5332,11 @@
     {
       "name": "bEnableOccluderDepthPrepass",
       "section": "Display",
-      "notes": "Don't enable. Causes significant performance decrease.",
       "type": "boolean",
       "value": {
         "default": 0
-      }
+      },
+      "notes": "Don't enable. Causes significant performance decrease."
     },
     {
       "name": "bEnableOppositeDetection",
@@ -5211,6 +5411,14 @@
       }
     },
     {
+      "name": "bEnablePreskinning",
+      "section": "Skinning",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bEnableProcGenDebug",
       "section": "ProcGen",
       "type": "boolean",
@@ -5261,6 +5469,14 @@
       "notes": "Believed to be unused."
     },
     {
+      "name": "bEnableReflectionProbeFaceBatching",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bEnableRemoteDebugging",
       "section": "Papyrus",
       "type": "boolean",
@@ -5288,7 +5504,6 @@
       "name": "bEnableRenderdoc",
       "section": "General",
       "type": "boolean",
-      "notes": "",
       "value": {
         "default": 0
       }
@@ -5358,6 +5573,14 @@
       }
     },
     {
+      "name": "bEnableSkyCubemapSunDisk",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bEnableSmallAreaTrimmer",
       "section": "NavMeshGen",
       "type": "boolean",
@@ -5400,6 +5623,14 @@
     {
       "name": "bEnableStarsOnPlanet",
       "section": "Weather",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bEnableSticky",
+      "section": "VehicleData",
       "type": "boolean",
       "value": {
         "default": 1
@@ -5631,6 +5862,38 @@
     {
       "name": "bEnableVariableRateShading",
       "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bEnableVehicleFoliageDeformation",
+      "section": "Vehicle",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bEnableVehicleLandingFoliageDeformation",
+      "section": "Vehicle",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bEnableVehicleLaunchFoliageDeformation",
+      "section": "Vehicle",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bEnableVehicleWheelFoliageDeformation",
+      "section": "Vehicle",
       "type": "boolean",
       "value": {
         "default": 1
@@ -6143,6 +6406,15 @@
       }
     },
     {
+      "name": "bFirstPersonContactShadows",
+      "section": "ContactShadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      },
+      "ini": "Ultra.ini"
+    },
+    {
       "name": "bFitViewFocus",
       "section": "Shadows",
       "type": "boolean",
@@ -6187,6 +6459,14 @@
     {
       "name": "bFlightFavorXYCorrectionOnPathFailure",
       "section": "Pathfinding",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bFlushCmdsInTasks",
+      "section": "RenderGraph",
       "type": "boolean",
       "value": {
         "default": 1
@@ -6363,6 +6643,14 @@
       }
     },
     {
+      "name": "bForceLinearJobExecution",
+      "section": "RenderGraph",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bForceLowDetailReflections",
       "section": "Water",
       "type": "boolean",
@@ -6397,6 +6685,14 @@
     {
       "name": "bForcePhotoModeLoadScreen",
       "section": "Interface",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bForcePreserveScreenProps",
+      "section": "Display",
       "type": "boolean",
       "value": {
         "default": 0
@@ -6499,6 +6795,14 @@
       }
     },
     {
+      "name": "bFreezeVehicleOnExit",
+      "section": "Vehicle",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bFull Screen",
       "section": "Display",
       "type": "boolean",
@@ -6528,10 +6832,10 @@
       "name": "bGPULodEvaluation",
       "section": "Display",
       "type": "boolean",
-      "notes": "Don't disable. Bugs out visuals.",
       "value": {
         "default": 1
-      }
+      },
+      "notes": "Don't disable. Bugs out visuals."
     },
     {
       "name": "bGamePadRumble",
@@ -6708,6 +7012,14 @@
       }
     },
     {
+      "name": "bGlobalReflectionProbeAdjustHeightNearWater",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bGravJumpSearchDebug",
       "section": "Pathing",
       "type": "boolean",
@@ -6733,7 +7045,23 @@
       }
     },
     {
+      "name": "bGroupCascadeShadowsWithDynamics",
+      "section": "Shadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bGroupDynamicOnlyShadows",
+      "section": "Shadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bGroupFocusShadows",
       "section": "Shadows",
       "type": "boolean",
       "value": {
@@ -6787,6 +7115,15 @@
       "value": {
         "default": 1
       }
+    },
+    {
+      "name": "bHalfResDepthAvg",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      },
+      "ini": "Ultra.ini"
     },
     {
       "name": "bHalfResIndirect",
@@ -6874,6 +7211,22 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bHazardGravUpdatePlayerEveryFrame",
+      "section": "Combat",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bHazardGravUpdateStaggerStart",
+      "section": "Combat",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -6999,6 +7352,14 @@
     {
       "name": "bIgnoreTriangleSlope",
       "section": "NavMeshGen",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bImGuiSunDiskOverrideSettings",
+      "section": "Debug",
       "type": "boolean",
       "value": {
         "default": 0
@@ -7343,6 +7704,15 @@
       }
     },
     {
+      "name": "bLayeredSkinnedContactShadows",
+      "section": "ContactShadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      },
+      "ini": "Ultra.ini"
+    },
+    {
       "name": "bLeakPlanetWorldspace",
       "section": "Planet",
       "type": "boolean",
@@ -7431,6 +7801,14 @@
       }
     },
     {
+      "name": "bLoadEnumeratedSoundBanksList",
+      "section": "Wwise",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bLoadGameFreshStartWhenLowOnFormIDs",
       "section": "SaveGame",
       "type": "boolean",
@@ -7465,6 +7843,14 @@
     {
       "name": "bLoadMarkers",
       "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bLoadParticlesLooseFiles",
+      "section": "Particles",
       "type": "boolean",
       "value": {
         "default": 0
@@ -7530,10 +7916,10 @@
       "name": "bMTREnabled",
       "section": "Display",
       "type": "boolean",
-      "notes": "Don't disable. Decreases performance if disabled. Might be Multi-Threaded Rendering",
       "value": {
-        "default": 1
-      }
+        "default": 0
+      },
+      "notes": "This was updated to be disabled... previously it lowered performance if you disabled it. Need to check."
     },
     {
       "name": "bMagicDebug",
@@ -7565,6 +7951,14 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bMaxRadiusMeshInstancePatchCalculation",
+      "section": "LOD",
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -7664,6 +8058,14 @@
       }
     },
     {
+      "name": "bModShowDownloadInsteadOfInstallLimit",
+      "section": "Bethesda.net",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bMouseMoveDeviceSwitchDisabled",
       "section": "Controls",
       "type": "boolean",
@@ -7749,6 +8151,14 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bMultithreadedRenderGraphEnabled",
+      "section": "RenderGraph",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -8002,6 +8412,14 @@
     {
       "name": "bParallelizeDependentManagerUpdates",
       "section": "Animation",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bParentTransformFocusShadowMeshletCulling",
+      "section": "Shadows",
       "type": "boolean",
       "value": {
         "default": 1
@@ -8336,6 +8754,14 @@
       }
     },
     {
+      "name": "bPlayMarketplaceMenuMusic",
+      "section": "General",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bPlayStaggers",
       "section": "Combat",
       "type": "boolean",
@@ -8437,6 +8863,30 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bPostEffectBlurSeparable",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bPostEffectRadialBlurHalfRes",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bPostEffectRadialBlurTwoPass",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -8964,7 +9414,7 @@
       "section": "Workshop",
       "type": "boolean",
       "value": {
-        "default": 0
+        "default": 1
       }
     },
     {
@@ -9248,6 +9698,14 @@
       }
     },
     {
+      "name": "bReuseModelDetailMaps",
+      "section": "SurfaceMap",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bReuseOverlayTextureIndex",
       "section": "Terrain",
       "type": "boolean",
@@ -9422,6 +9880,14 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bScreenSpaceShadowsEnabled",
+      "section": "ContactShadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -9690,6 +10156,14 @@
       }
     },
     {
+      "name": "bShowAllAttachedBodiesInSelectiveVDBDisplay",
+      "section": "Havok",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bShowAllOperations",
       "section": "Particles",
       "type": "boolean",
@@ -9727,6 +10201,14 @@
       "type": "boolean",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "bShowDisabledAsserts",
+      "section": "HAVOK",
+      "type": "boolean",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -9781,6 +10263,14 @@
     },
     {
       "name": "bShowFurnitureMarkersForSelectedOnly",
+      "section": "AI",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bShowFurnitureQuickExitMarkers",
       "section": "AI",
       "type": "boolean",
       "value": {
@@ -9894,6 +10384,14 @@
       }
     },
     {
+      "name": "bShowNonAddedBodiesInSelectiveVDBDisplay",
+      "section": "Havok",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bShowOnlyActiveQuestTargets",
       "section": "Interface",
       "type": "boolean",
@@ -9999,6 +10497,14 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bSkinContactShadows",
+      "section": "ContactShadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -10563,6 +11069,14 @@
       }
     },
     {
+      "name": "bStartingDistanceMeshInstancePatchCalculation",
+      "section": "LOD",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bStaticAvoidanceTriggerMovementBlocked",
       "section": "Pathfinding",
       "type": "boolean",
@@ -10587,6 +11101,14 @@
       }
     },
     {
+      "name": "bStreamlineReflexEnableMarkers",
+      "section": "Streamline",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bSubgraphDataCleanBuild",
       "section": "Animation",
       "type": "boolean",
@@ -10603,7 +11125,47 @@
       }
     },
     {
+      "name": "bSunDisk",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bSunDiskUsesInterpolatedIlluminance",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bSurfaceMapCacheHandles",
+      "section": "SurfaceMap",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bSurfaceMapCursorFollowTerrain",
+      "section": "SurfaceMap",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bSurfaceMapRealtimeLightUpdate",
+      "section": "SurfaceMap",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bSurfaceMapShowPointCloud",
       "section": "SurfaceMap",
       "type": "boolean",
       "value": {
@@ -10619,8 +11181,24 @@
       }
     },
     {
+      "name": "bSurfaceMapZoomOnCursor",
+      "section": "SurfaceMap",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bSyncAllSGNode",
       "section": "ModelNode",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bTESTGameDataWait",
+      "section": "Bethesda.net",
       "type": "boolean",
       "value": {
         "default": 1
@@ -10643,13 +11221,21 @@
       }
     },
     {
-      "name": "bTemporalAA_idTech7",
+      "name": "bTempMenusCanDisableUpscalers",
       "section": "Display",
       "type": "boolean",
-      "notes": "Doesn't appear to do anything. No performance impact or visual change noticed.'",
       "value": {
         "default": 1
       }
+    },
+    {
+      "name": "bTemporalAA_idTech7",
+      "section": "Display",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      },
+      "notes": "Doesn't appear to do anything. No performance impact or visual change noticed.'"
     },
     {
       "name": "bTerrainEnableMIMBlocks1",
@@ -10744,6 +11330,14 @@
       }
     },
     {
+      "name": "bTrackCriticalRefsIndividually",
+      "section": "Debug",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bTrackFileLoading",
       "section": "Archive",
       "type": "boolean",
@@ -10797,6 +11391,14 @@
       "type": "boolean",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "bUISaveBatchLoadInBackground",
+      "section": "Interface",
+      "type": "boolean",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -10881,6 +11483,14 @@
     },
     {
       "name": "bUseAsyncDownload",
+      "section": "SaveGame",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bUseAsyncWriteStorage",
       "section": "SaveGame",
       "type": "boolean",
       "value": {
@@ -10987,10 +11597,10 @@
       "name": "bUseClusteredProbes",
       "section": "Display",
       "type": "boolean",
-      "notes": "Don't disable. Decreases performance. Not sure what it does, but probably related to lighting or reflections.",
       "value": {
         "default": 1
-      }
+      },
+      "notes": "Don't disable. Decreases performance. Not sure what it does, but probably related to lighting or reflections."
     },
     {
       "name": "bUseCompanionWarping",
@@ -11204,10 +11814,10 @@
       "name": "bUseGPUCulling",
       "section": "Display",
       "type": "boolean",
-      "notes": "Don't disable. Bugs out graphics.",
       "value": {
         "default": 1
-      }
+      },
+      "notes": "Don't disable. Bugs out graphics."
     },
     {
       "name": "bUseGlobalReflectionAtCameraPosition",
@@ -11411,6 +12021,14 @@
       }
     },
     {
+      "name": "bUseMissingContentFlow",
+      "section": "SaveGame",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bUseMovementLOD",
       "section": "Actor",
       "type": "boolean",
@@ -11523,6 +12141,14 @@
       }
     },
     {
+      "name": "bUsePenetrationCheckForActorsKilledByVehicle",
+      "section": "Havok",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bUsePlacedOverlayParentOffset",
       "section": "Overlay",
       "type": "boolean",
@@ -11573,6 +12199,14 @@
     {
       "name": "bUsePools",
       "section": "Particles",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bUsePostEffectPreUpscale",
+      "section": "Display",
       "type": "boolean",
       "value": {
         "default": 1
@@ -11757,6 +12391,14 @@
       }
     },
     {
+      "name": "bUseStrictlyConservativeDepthPyramidForFrustumMasked",
+      "section": "Shadows",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "bUseTangentSmoothing",
       "section": "Pathfinding",
       "type": "boolean",
@@ -11799,6 +12441,14 @@
     {
       "name": "bUseUnsupportedCast",
       "section": "HAVOK",
+      "type": "boolean",
+      "value": {
+        "default": 1
+      }
+    },
+    {
+      "name": "bUseVehicleDamage",
+      "section": "VehicleData",
       "type": "boolean",
       "value": {
         "default": 1
@@ -12255,6 +12905,22 @@
       }
     },
     {
+      "name": "bWaterEnableParallax",
+      "section": "Water",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "bWaterForceUpwardReflection",
+      "section": "Water",
+      "type": "boolean",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "bWaterSystemEnableDebugDisplay",
       "section": "Display",
       "type": "boolean",
@@ -12413,7 +13079,7 @@
       "section": "Workshop",
       "type": "boolean",
       "value": {
-        "default": 1
+        "default": 0
       }
     },
     {
@@ -12475,14 +13141,6 @@
     {
       "name": "bWriteDisposableInstanceCSV",
       "section": "SaveGame",
-      "type": "boolean",
-      "value": {
-        "default": 0
-      }
-    },
-    {
-      "name": "bShowDisabledAsserts",
-      "section": "HAVOK",
       "type": "boolean",
       "value": {
         "default": 0
@@ -13118,6 +13776,30 @@
       "type": "float",
       "value": {
         "default": 0.0
+      }
+    },
+    {
+      "name": "fAccelAnglePID_D",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fAccelAnglePID_I",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
+      "name": "fAccelAnglePID_P",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.1
       }
     },
     {
@@ -13803,6 +14485,14 @@
       }
     },
     {
+      "name": "fAutoHDRUIScale",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.75
+      }
+    },
+    {
       "name": "fAutoPilotPathDistance",
       "section": "Spaceship",
       "type": "float",
@@ -13930,6 +14620,14 @@
       "type": "float",
       "value": {
         "default": 5.0
+      }
+    },
+    {
+      "name": "fAvoidanceTimeWindowForMovingObstacles",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 7.0
       }
     },
     {
@@ -14217,6 +14915,14 @@
       }
     },
     {
+      "name": "fBloomAmountScale",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.28
+      }
+    },
+    {
       "name": "fBloomGaussianKernelMinScale",
       "section": "Display",
       "type": "float",
@@ -14245,7 +14951,7 @@
       "section": "ContactShadows",
       "type": "float",
       "value": {
-        "default": 0.1
+        "default": 0.05
       }
     },
     {
@@ -14433,6 +15139,22 @@
       }
     },
     {
+      "name": "fBoostPitchDamp",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fBoostRollDamp",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
       "name": "fBorderFadePercent",
       "section": "ContactShadows",
       "type": "float",
@@ -14481,6 +15203,30 @@
       }
     },
     {
+      "name": "fBrightnessColorBase",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.067
+      }
+    },
+    {
+      "name": "fBrightnessHDRMax",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fBrightnessHDRMin",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
       "name": "fBudgetBaseCost",
       "section": "Workshop",
       "type": "float",
@@ -14517,7 +15263,7 @@
       "section": "Workshop",
       "type": "float",
       "value": {
-        "default": 2.0
+        "default": 5.0
       }
     },
     {
@@ -14653,11 +15399,35 @@
       }
     },
     {
+      "name": "fCameraCutAcceleration",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 500.0
+      }
+    },
+    {
+      "name": "fCameraCutFovSpeedThreshold",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 610.0
+      }
+    },
+    {
       "name": "fCameraCutFovThresholdDegrees",
       "section": "Display",
       "type": "float",
       "value": {
         "default": 10.0
+      }
+    },
+    {
+      "name": "fCameraCutRotationAcceleration",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 50.0
       }
     },
     {
@@ -14863,6 +15633,22 @@
     {
       "name": "fChaseCameraSpeed",
       "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fClampVelocityCoef",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.95
+      }
+    },
+    {
+      "name": "fClampVelocityDeceleration",
+      "section": "VehicleData",
       "type": "float",
       "value": {
         "default": 10.0
@@ -15197,6 +15983,14 @@
       }
     },
     {
+      "name": "fContactShadowPerpendicularSafeZone",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.000488
+      }
+    },
+    {
       "name": "fContactShadowsOffsetNoiseScale",
       "section": "ContactShadows",
       "type": "float",
@@ -15218,6 +16012,22 @@
       "type": "float",
       "value": {
         "default": 0.35
+      }
+    },
+    {
+      "name": "fContrastMax",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fContrastMin",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.0
       }
     },
     {
@@ -15286,6 +16096,22 @@
     },
     {
       "name": "fCostForEnteringExtendedSearchSpaceMultiplier",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fCostMultiplierWhenMovingTowardDistantThreat",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fCostMultiplierWhenMovingTowardNearbyThreat",
       "section": "Pathfinding",
       "type": "float",
       "value": {
@@ -15583,6 +16409,14 @@
       }
     },
     {
+      "name": "fCursorTerrainOffsetMultiplier",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.15
+      }
+    },
+    {
       "name": "fCutPaddingSC",
       "section": "DynamicNavmesh",
       "type": "float",
@@ -15700,6 +16534,126 @@
       "type": "float",
       "value": {
         "default": 2.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicAngleX",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicAngleY",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicAngleZ",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 3.141593
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureFarPlane1",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 12.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureFarPlane32",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 200.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureFarStart1",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 8.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureFarStart32",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 100.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureNearPlane1",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 3.5
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureNearPlane32",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureNearStart1",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 3.5
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicApertureNearStart32",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 1.3
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicDistance",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 2.5
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicPositionX",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicPositionY",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fDebugCameraCinematicPositionZ",
+      "section": "DebugCamera",
+      "type": "float",
+      "value": {
+        "default": 0.0
       }
     },
     {
@@ -15923,7 +16877,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 0.00001
+        "default": 1E-05
       }
     },
     {
@@ -16221,7 +17175,7 @@
       "section": "Terrain",
       "type": "float",
       "value": {
-        "default": 3000.0
+        "default": 1000.0
       }
     },
     {
@@ -16229,7 +17183,7 @@
       "section": "Terrain",
       "type": "float",
       "value": {
-        "default": -1000.0
+        "default": -500.0
       }
     },
     {
@@ -16254,6 +17208,14 @@
       "type": "float",
       "value": {
         "default": 2.0
+      }
+    },
+    {
+      "name": "fDefaultVehicleAutoVanityZoomScale",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 3.0
       }
     },
     {
@@ -17009,6 +17971,22 @@
       }
     },
     {
+      "name": "fDistanceThresholdToConsiderThreatAsDistant",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 50.0
+      }
+    },
+    {
+      "name": "fDistanceThresholdToConsiderThreatAsNearby",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
       "name": "fDistanceThresholdToShortCircuitPathingToFurniture",
       "section": "Pathfinding",
       "type": "float",
@@ -17265,6 +18243,14 @@
       }
     },
     {
+      "name": "fDoFStrengthResetThreshold",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.6
+      }
+    },
+    {
       "name": "fDownFloatSpeed",
       "section": "Havok",
       "type": "float",
@@ -17409,6 +18395,14 @@
       }
     },
     {
+      "name": "fEdgeGeometryOffset",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.05
+      }
+    },
+    {
       "name": "fEdgeHighAlpha",
       "section": " NavMesh",
       "type": "float",
@@ -17533,11 +18527,67 @@
       }
     },
     {
+      "name": "fExitDelay",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
       "name": "fExpensiveDoorCost",
       "section": "Pathfinding",
       "type": "float",
       "value": {
         "default": 30000.0
+      }
+    },
+    {
+      "name": "fExplosionScaleAngular",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 10000.0
+      }
+    },
+    {
+      "name": "fExplosionScaleLinear",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 100.0
+      }
+    },
+    {
+      "name": "fExtendedContactShadowsBaseRayLength",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.06
+      }
+    },
+    {
+      "name": "fExtendedContactShadowsOffsetNoiseScale",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.15
+      }
+    },
+    {
+      "name": "fExtendedContactShadowsRayBias",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.05
+      }
+    },
+    {
+      "name": "fExtendedContactShadowsThicknessScale",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 6.0
       }
     },
     {
@@ -17584,19 +18634,19 @@
       "name": "fFPGeometryFOV",
       "section": "Camera",
       "type": "float",
-      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": 85.0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "fFPWorldFOV",
       "section": "Camera",
-      "ini": "StarfieldPrefs.ini",
       "type": "float",
       "value": {
         "default": 85.0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "fFPWorldFOVMax",
@@ -17818,6 +18868,14 @@
       }
     },
     {
+      "name": "fFavoringGoalCostMult",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
       "name": "fFavoritesDOFFarEnd",
       "section": "Interface",
       "type": "float",
@@ -17929,6 +18987,14 @@
       "type": "float",
       "value": {
         "default": 0.1
+      }
+    },
+    {
+      "name": "fFinishAllLoadsTimeoutSeconds",
+      "section": "LODManager",
+      "type": "float",
+      "value": {
+        "default": 25.0
       }
     },
     {
@@ -18108,6 +19174,38 @@
       }
     },
     {
+      "name": "fFoliageDeformationAnimationScrollSpeed",
+      "section": "FoliageDeformation",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fFoliageDeformationBendStrengthUnit",
+      "section": "FoliageDeformation",
+      "type": "float",
+      "value": {
+        "default": 0.3
+      }
+    },
+    {
+      "name": "fFoliageDeformationEffectExponent",
+      "section": "FoliageDeformation",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fFoliageDeformationMaxZTrampleAmount",
+      "section": "FoliageDeformation",
+      "type": "float",
+      "value": {
+        "default": 0.15
+      }
+    },
+    {
       "name": "fFootFront",
       "section": "Animation",
       "type": "float",
@@ -18121,6 +19219,14 @@
       "type": "float",
       "value": {
         "default": 0.15
+      }
+    },
+    {
+      "name": "fFoundationOnWorkshopItemThresholdInMeters",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 0.2
       }
     },
     {
@@ -18352,7 +19458,7 @@
       "section": "SAO",
       "type": "float",
       "value": {
-        "default": 0.000005
+        "default": 5E-06
       }
     },
     {
@@ -18447,6 +19553,14 @@
       "type": "float",
       "value": {
         "default": 0.1
+      }
+    },
+    {
+      "name": "fGameResetAudioFadeSecs",
+      "section": "Audio",
+      "type": "float",
+      "value": {
+        "default": 2.0
       }
     },
     {
@@ -18561,7 +19675,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 10.0
+        "default": 4.0
       }
     },
     {
@@ -18569,7 +19683,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 0.0
+        "default": 1.0
       }
     },
     {
@@ -18637,6 +19751,14 @@
       }
     },
     {
+      "name": "fGlobalFrictionOverride",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": -1.0
+      }
+    },
+    {
       "name": "fGlobalHeightInverseLumberyard",
       "section": "Vegetation",
       "type": "float",
@@ -18650,6 +19772,14 @@
       "type": "float",
       "value": {
         "default": 0.18
+      }
+    },
+    {
+      "name": "fGlobalReflectionProbeFadeInHysteresis",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.97
       }
     },
     {
@@ -18805,6 +19935,38 @@
       }
     },
     {
+      "name": "fHDRImage1High",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.82
+      }
+    },
+    {
+      "name": "fHDRImage1Low",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.11
+      }
+    },
+    {
+      "name": "fHDRImage2High",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.98
+      }
+    },
+    {
+      "name": "fHDRImage2Low",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.12
+      }
+    },
+    {
       "name": "fHUDOpacity",
       "section": "Interface",
       "type": "float",
@@ -18895,6 +20057,22 @@
       }
     },
     {
+      "name": "fHairTexturesUpgradeEnterDistSq",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 100.0
+      }
+    },
+    {
+      "name": "fHairTexturesUpgradeExitDistSq",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 144.0
+      }
+    },
+    {
       "name": "fHardLandingDamagePercentThreshold",
       "section": "Audio",
       "type": "float",
@@ -18924,6 +20102,38 @@
       "type": "float",
       "value": {
         "default": 20.0
+      }
+    },
+    {
+      "name": "fHazardZeroGPlayerAccelAmount",
+      "section": "Combat",
+      "type": "float",
+      "value": {
+        "default": 8.0
+      }
+    },
+    {
+      "name": "fHazardZeroGPlayerAccelDuration",
+      "section": "Combat",
+      "type": "float",
+      "value": {
+        "default": 0.2
+      }
+    },
+    {
+      "name": "fHazardZeroGPlayerDecelAmount",
+      "section": "Combat",
+      "type": "float",
+      "value": {
+        "default": 12.0
+      }
+    },
+    {
+      "name": "fHazardZeroGPlayerDecelDuration",
+      "section": "Combat",
+      "type": "float",
+      "value": {
+        "default": 0.25
       }
     },
     {
@@ -18983,6 +20193,22 @@
       }
     },
     {
+      "name": "fHeavyJostleAngular",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": -0.6
+      }
+    },
+    {
+      "name": "fHeavyJostleLinear",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": -0.6
+      }
+    },
+    {
       "name": "fHeightfieldFarPlane",
       "section": "Display",
       "type": "float",
@@ -19003,7 +20229,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 8.0
+        "default": 9.0
       }
     },
     {
@@ -19092,6 +20318,14 @@
       "type": "float",
       "value": {
         "default": 32.0
+      }
+    },
+    {
+      "name": "fHighCostTriangleGoalMultiplierSC",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 10.0
       }
     },
     {
@@ -19383,6 +20617,14 @@
       }
     },
     {
+      "name": "fHighlightOutlineColorPulseTime_Bounty",
+      "section": "Monocle",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
       "name": "fHighlightOutlineColorPulseTime_FullyScanned",
       "section": "Monocle",
       "type": "float",
@@ -19476,6 +20718,14 @@
       "type": "float",
       "value": {
         "default": 3.0
+      }
+    },
+    {
+      "name": "fHighlightScannableOutlineThickness_Bounty",
+      "section": "Monocle",
+      "type": "float",
+      "value": {
+        "default": 1.0
       }
     },
     {
@@ -19764,6 +21014,22 @@
       "type": "float",
       "value": {
         "default": 0.6
+      }
+    },
+    {
+      "name": "fImGuiSunDiskScreenSizeMax",
+      "section": "Debug",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fImGuiSunDiskScreenSizeMin",
+      "section": "Debug",
+      "type": "float",
+      "value": {
+        "default": 0.1
       }
     },
     {
@@ -20413,6 +21679,14 @@
       }
     },
     {
+      "name": "fLateralAccelAngleCoef",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.05
+      }
+    },
+    {
       "name": "fLegacyBloomAmountScale",
       "section": "Display",
       "type": "float",
@@ -20441,7 +21715,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 0.002
+        "default": 0.006
       }
     },
     {
@@ -20474,6 +21748,22 @@
       "type": "float",
       "value": {
         "default": 1.5
+      }
+    },
+    {
+      "name": "fLightJostleAngular",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": -0.3
+      }
+    },
+    {
+      "name": "fLightJostleLinear",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": -0.3
       }
     },
     {
@@ -20578,6 +21868,14 @@
       "type": "float",
       "value": {
         "default": 1.0
+      }
+    },
+    {
+      "name": "fLongitudinalAccelAngleCoef",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.05
       }
     },
     {
@@ -21177,6 +22475,14 @@
       }
     },
     {
+      "name": "fMarketplaceIntroWarningDisplayTime",
+      "section": "Bethesda.net",
+      "type": "float",
+      "value": {
+        "default": 5.0
+      }
+    },
+    {
       "name": "fMasterFilePreLoadMB",
       "section": "General",
       "type": "float",
@@ -21700,6 +23006,14 @@
       }
     },
     {
+      "name": "fMaximumModelScreenSizeToApplyRatio",
+      "section": "LOD",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
       "name": "fMaximumTimeWindowForActors",
       "section": "Pathfinding",
       "type": "float",
@@ -21808,7 +23122,7 @@
       "section": "SpaceScattering",
       "type": "float",
       "value": {
-        "default": 0.000005
+        "default": 5E-06
       }
     },
     {
@@ -22097,6 +23411,14 @@
       "type": "float",
       "value": {
         "default": 0.0
+      }
+    },
+    {
+      "name": "fModelEdgeSize",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 25.0
       }
     },
     {
@@ -22615,6 +23937,14 @@
       }
     },
     {
+      "name": "fNonMovingIdleDelay",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 20.0
+      }
+    },
+    {
       "name": "fNonPreferredConnectionMultSC",
       "section": "Pathfinding",
       "type": "float",
@@ -22707,7 +24037,7 @@
       "section": "SpaceScattering",
       "type": "float",
       "value": {
-        "default": 25449999730000000000000000
+        "default": 2.54499997327472E+25
       }
     },
     {
@@ -22727,11 +24057,59 @@
       }
     },
     {
+      "name": "fObstacleManagerAngleThresholdToForceAnUpdate",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 5.0
+      }
+    },
+    {
+      "name": "fObstacleManagerAngleThresholdToUpdateOnDeactivate",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fObstacleManagerDistanceThresholdToForceAnUpdate",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 0.0714
+      }
+    },
+    {
+      "name": "fObstacleManagerDistanceThresholdToUpdateOnDeactivate",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 0.01
+      }
+    },
+    {
       "name": "fObstacleManagerMinWidth",
       "section": "Pathfinding",
       "type": "float",
       "value": {
         "default": 0.229
+      }
+    },
+    {
+      "name": "fObstacleManagerSpeedThresholdToBecomeActiveS",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
+      "name": "fObstacleManagerSpeedThresholdToStayActiveS",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 1.0
       }
     },
     {
@@ -22772,6 +24150,14 @@
       "type": "float",
       "value": {
         "default": 0.7
+      }
+    },
+    {
+      "name": "fOrbitCheckerMinAltitudeWarningMult",
+      "section": "Starfield",
+      "type": "float",
+      "value": {
+        "default": 0.8
       }
     },
     {
@@ -23943,6 +25329,14 @@
       }
     },
     {
+      "name": "fPlanetaryShadowMaxDarkness",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
       "name": "fPlayableAreaX",
       "section": "General",
       "type": "float",
@@ -24319,6 +25713,14 @@
       }
     },
     {
+      "name": "fPotentialSupportManifoldThreshold",
+      "section": "Havok",
+      "type": "float",
+      "value": {
+        "default": 0.0001
+      }
+    },
+    {
       "name": "fPowerArmorCriticalDamagePercent",
       "section": "Interface",
       "type": "float",
@@ -24507,7 +25909,7 @@
       "section": "LODDynamicPlacement",
       "type": "float",
       "value": {
-        "default": 0.8
+        "default": 1.0
       }
     },
     {
@@ -24515,7 +25917,7 @@
       "section": "LODDynamicPlacement",
       "type": "float",
       "value": {
-        "default": 0.5
+        "default": 0.75
       }
     },
     {
@@ -24523,7 +25925,7 @@
       "section": "LODDynamicPlacement",
       "type": "float",
       "value": {
-        "default": 0.2
+        "default": 0.5
       }
     },
     {
@@ -24531,7 +25933,7 @@
       "section": "LODDynamicPlacement",
       "type": "float",
       "value": {
-        "default": 0.1
+        "default": 0.25
       }
     },
     {
@@ -24775,6 +26177,22 @@
       }
     },
     {
+      "name": "fRainRippleBaseFrequency",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 100.0
+      }
+    },
+    {
+      "name": "fRainRippleBaseMaskSize",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
       "name": "fRainRippleExpansionSpeed",
       "section": "Water",
       "type": "float",
@@ -24795,7 +26213,63 @@
       "section": "Water",
       "type": "float",
       "value": {
-        "default": 2.5
+        "default": 0.4
+      }
+    },
+    {
+      "name": "fRainRippleMacroWavesAmplitude",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fRainRippleMacroWavesMaskRingFilter_FallOffDistance",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 0.3
+      }
+    },
+    {
+      "name": "fRainRippleMacroWavesMaskRingFilter_FullPowDistance",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 0.4
+      }
+    },
+    {
+      "name": "fRainRippleMaxRingSize",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fRainRippleMicroWavesAmplitude",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fRainRippleMicroWavesMaskRingFilter_FallOffDistance",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fRainRippleMicroWavesMaskRingFilter_FullPowDistance",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 0.4
       }
     },
     {
@@ -24823,6 +26297,38 @@
       }
     },
     {
+      "name": "fRainRippleSplashAmplitude",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 2.0
+      }
+    },
+    {
+      "name": "fRainRippleSplashExtinctionRate",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 1.4
+      }
+    },
+    {
+      "name": "fRainRippleSplashRadius",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 0.01
+      }
+    },
+    {
+      "name": "fRainRippleTotalAmplitude",
+      "section": "Water",
+      "type": "float",
+      "value": {
+        "default": 0.7
+      }
+    },
+    {
       "name": "fRainScale",
       "section": "Water",
       "type": "float",
@@ -24843,7 +26349,15 @@
       "section": "ContactShadows",
       "type": "float",
       "value": {
-        "default": 0.01
+        "default": 0.04
+      }
+    },
+    {
+      "name": "fRayDirectionJitterRadius",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 0.03
       }
     },
     {
@@ -24900,6 +26414,14 @@
       "type": "float",
       "value": {
         "default": 0.85
+      }
+    },
+    {
+      "name": "fReflectionProbeFastUpdateHysteresis",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.01
       }
     },
     {
@@ -24967,6 +26489,14 @@
       }
     },
     {
+      "name": "fReflectionProbeHysteresisLowBound",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.7
+      }
+    },
+    {
       "name": "fReflectionProbeImageSpaceBorderFadeDistance",
       "section": "Display",
       "type": "float",
@@ -24993,6 +26523,14 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "fReflectionProbeLowerHysteresisStart",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.6
+      }
+    },
+    {
       "name": "fReflectionProbeMetalnessLimit",
       "section": "Display",
       "type": "float",
@@ -25014,6 +26552,30 @@
       "type": "float",
       "value": {
         "default": 3.0
+      }
+    },
+    {
+      "name": "fReflectionProbeWaterGlobalFarEnabledFarClip",
+      "section": "General",
+      "type": "float",
+      "value": {
+        "default": 1200.0
+      }
+    },
+    {
+      "name": "fReflectionProbeWaterGlobalNearClipMax",
+      "section": "General",
+      "type": "float",
+      "value": {
+        "default": 500.0
+      }
+    },
+    {
+      "name": "fReflectionProbeWaterGlobalNearClipMin",
+      "section": "General",
+      "type": "float",
+      "value": {
+        "default": 0.1
       }
     },
     {
@@ -25165,6 +26727,14 @@
       }
     },
     {
+      "name": "fResourceMapMaxSearchDistance",
+      "section": "ImageProcess",
+      "type": "float",
+      "value": {
+        "default": 2.25
+      }
+    },
+    {
       "name": "fResourceReloadUpdateSInverval",
       "section": "General",
       "type": "float",
@@ -25242,6 +26812,14 @@
       "type": "float",
       "value": {
         "default": 0.2
+      }
+    },
+    {
+      "name": "fRockSurfaceColorBlendIntensity",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.5
       }
     },
     {
@@ -25565,11 +27143,115 @@
       }
     },
     {
+      "name": "fScreenSpaceShadowsBackfaceShadowIntensity",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 0.8
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsFarThicknessBlendStart",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 400.0
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsFarThicknessDistance",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 50.0
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsFarThicknessScale",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 0.006
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsNearThicknessBlendStart",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 2.0
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsNearThicknessDistance",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 16.0
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsNearThicknessScale",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 0.008
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsShadowContrast",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 4.0
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsTerrainBiasSharpness",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 13.5
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsTerrainNormalRayBias",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 1.1
+      }
+    },
+    {
+      "name": "fScreenSpaceShadowsThicknessScale",
+      "section": "ContactShadows",
+      "type": "float",
+      "value": {
+        "default": 0.002
+      }
+    },
+    {
       "name": "fScreenSpaceSizeMultiplier",
       "section": "LOD",
       "type": "float",
       "value": {
         "default": 1.0
+      }
+    },
+    {
+      "name": "fSeamlessTerrainOffset",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
+      "name": "fSecondJostleDelay",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 1.2
       }
     },
     {
@@ -26221,11 +27903,27 @@
       }
     },
     {
+      "name": "fShipBuilderSwappableWallBoundsCleanupPadding",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
+      "name": "fShipBuilderVehicleZoomDefaultDistance",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 7.0
+      }
+    },
+    {
       "name": "fShipBuilderZoomDefaultDistance",
       "section": "Spaceship",
       "type": "float",
       "value": {
-        "default": 150.0
+        "default": 75.0
       }
     },
     {
@@ -26257,7 +27955,7 @@
       "section": "Spaceship",
       "type": "float",
       "value": {
-        "default": 10.0
+        "default": 9.0
       }
     },
     {
@@ -26274,6 +27972,14 @@
       "type": "float",
       "value": {
         "default": 75.0
+      }
+    },
+    {
+      "name": "fShipDecorationPlugPositionMoveTowardInterior",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 2.75
       }
     },
     {
@@ -26346,6 +28052,30 @@
       "type": "float",
       "value": {
         "default": 0.5
+      }
+    },
+    {
+      "name": "fShipHangarDefaultFOV",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 45.0
+      }
+    },
+    {
+      "name": "fShipHangarOffsetPercentageX",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 0.8
+      }
+    },
+    {
+      "name": "fShipHangarOffsetPercentageY",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 0.375
       }
     },
     {
@@ -26632,6 +28362,14 @@
       }
     },
     {
+      "name": "fSmallSpotLightDepthBias",
+      "section": "Shadows",
+      "type": "float",
+      "value": {
+        "default": 60.0
+      }
+    },
+    {
       "name": "fSmallSpotLightNormalBias",
       "section": "Shadows",
       "type": "float",
@@ -26696,6 +28434,14 @@
       }
     },
     {
+      "name": "fSpaceContactShadowsBaseRayLength",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 0.53
+      }
+    },
+    {
       "name": "fSpaceDirectionalShadowCascade0Scale",
       "section": "Display",
       "type": "float",
@@ -26716,7 +28462,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 5.0
+        "default": 10.0
       }
     },
     {
@@ -26724,7 +28470,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 10.0
+        "default": 25.0
       }
     },
     {
@@ -26948,7 +28694,7 @@
       "section": "Shadows",
       "type": "float",
       "value": {
-        "default": 2.0
+        "default": 4.0
       }
     },
     {
@@ -27608,6 +29354,14 @@
       }
     },
     {
+      "name": "fStarMapOrbitLinesTransitionTime",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 0.9
+      }
+    },
+    {
       "name": "fStarMapOrbitsFadeInTime",
       "section": "StarMap",
       "type": "float",
@@ -27824,6 +29578,14 @@
       }
     },
     {
+      "name": "fStarfieldStarsRadiusMult",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
       "name": "fStarmapSystemFlickerInitialDelay",
       "section": "StarMap",
       "type": "float",
@@ -27904,11 +29666,51 @@
       }
     },
     {
+      "name": "fStatusPingTime",
+      "section": "Bethesda.net",
+      "type": "float",
+      "value": {
+        "default": 60.0
+      }
+    },
+    {
+      "name": "fSteeringMaxVisualSpeed",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 180.0
+      }
+    },
+    {
       "name": "fStepHeightModifier",
       "section": "HAVOK",
       "type": "float",
       "value": {
         "default": 0.5
+      }
+    },
+    {
+      "name": "fStickyAngularThreshold",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
+      "name": "fStickyForcesSumThreshold",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.05
+      }
+    },
+    {
+      "name": "fStickyLinearThreshold",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.2
       }
     },
     {
@@ -27925,6 +29727,30 @@
       "type": "float",
       "value": {
         "default": 2.0
+      }
+    },
+    {
+      "name": "fStreamlineReflexFramerateCapMS",
+      "section": "Streamline",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fSubsteppingDampFactor",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fSubsteppingStrengthFactor",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 1.0
       }
     },
     {
@@ -27992,6 +29818,86 @@
       }
     },
     {
+      "name": "fSurfaceMapDeadZonePercentage",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.03
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeDepthBiasScale0",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeDepthBiasScale1",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeDepthBiasScale2",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 20.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeDepthBiasScale3",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 7.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeScale0",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 44.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeScale1",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 40.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeScale2",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 22.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorCascadeScale3",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fSurfaceMapExteriorIndirectLightScale",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 20.0
+      }
+    },
+    {
       "name": "fSurfaceMapFalloffDistance",
       "section": "SurfaceMap",
       "type": "float",
@@ -28024,6 +29930,118 @@
       }
     },
     {
+      "name": "fSurfaceMapInteriorCascadeDepthBiasScale0",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 2.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeDepthBiasScale1",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 2.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeDepthBiasScale2",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeDepthBiasScale3",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeScale0",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 12.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeScale1",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeScale2",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorCascadeScale3",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorIndirectLightScale",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": 17.5
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorZoomDistanceDefault",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 220.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorZoomDistanceMax",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 350.0
+      }
+    },
+    {
+      "name": "fSurfaceMapInteriorZoomDistanceMin",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 110.0
+      }
+    },
+    {
+      "name": "fSurfaceMapLightPitchDeg",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": -44.0
+      }
+    },
+    {
+      "name": "fSurfaceMapLightYawDeg",
+      "section": "StarMap",
+      "type": "float",
+      "value": {
+        "default": -90.0
+      }
+    },
+    {
       "name": "fSurfaceMapLockHeight",
       "section": "SurfaceMap",
       "type": "float",
@@ -28032,11 +30050,43 @@
       }
     },
     {
+      "name": "fSurfaceMapMarkerMaxScale",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fSurfaceMapMarkerMaxScaleAtZoomPercent",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.1
+      }
+    },
+    {
+      "name": "fSurfaceMapMarkerMinScale",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.4
+      }
+    },
+    {
+      "name": "fSurfaceMapMarkerMinScaleAtZoomPercent",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.9
+      }
+    },
+    {
       "name": "fSurfaceMapPanLimitXOffset",
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 4520.0
+        "default": 2679.399902
       }
     },
     {
@@ -28044,7 +30094,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": -0.8591
+        "default": -0.3986
       }
     },
     {
@@ -28052,7 +30102,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 4532.0
+        "default": 2656.199951
       }
     },
     {
@@ -28060,7 +30110,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": -0.5945
+        "default": -0.1248
       }
     },
     {
@@ -28076,7 +30126,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 90.0
+        "default": 85.0
       }
     },
     {
@@ -28084,7 +30134,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": -50.0
+        "default": 10.0
       }
     },
     {
@@ -28120,6 +30170,22 @@
       }
     },
     {
+      "name": "fSurfaceMapRotatedPanScalarFullZoomIn",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 1.02
+      }
+    },
+    {
+      "name": "fSurfaceMapRotatedPanScalarFullZoomOut",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 1.4
+      }
+    },
+    {
       "name": "fSurfaceMapYawDefaultAngleDegrees",
       "section": "SurfaceMap",
       "type": "float",
@@ -28148,7 +30214,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 4500.0
+        "default": 4000.0
       }
     },
     {
@@ -28156,7 +30222,7 @@
       "section": "SurfaceMap",
       "type": "float",
       "value": {
-        "default": 700.0
+        "default": 450.0
       }
     },
     {
@@ -28192,13 +30258,29 @@
       }
     },
     {
-      "name": "fTPWorldFOV",
-      "section": "Camera",
+      "name": "fTPShipFOVMax",
+      "section": "Display",
       "type": "float",
-      "ini": "StarfieldPrefs.ini",
+      "value": {
+        "default": 110.0
+      }
+    },
+    {
+      "name": "fTPShipFOVMin",
+      "section": "Display",
+      "type": "float",
       "value": {
         "default": 70.0
       }
+    },
+    {
+      "name": "fTPWorldFOV",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 70.0
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "fTPWorldFOVMax",
@@ -28427,6 +30509,14 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "fTerrainEdgeHeight",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 25.0
+      }
+    },
+    {
       "name": "fTerrainLODErrorThreshold",
       "section": "Terrain",
       "type": "float",
@@ -28439,7 +30529,7 @@
       "section": "Terrain",
       "type": "float",
       "value": {
-        "default": 700.0
+        "default": 1000.0
       }
     },
     {
@@ -28447,7 +30537,7 @@
       "section": "Terrain",
       "type": "float",
       "value": {
-        "default": -300.0
+        "default": -500.0
       }
     },
     {
@@ -28504,6 +30594,14 @@
       "type": "float",
       "value": {
         "default": 5.0
+      }
+    },
+    {
+      "name": "fTerrainUVMultiplier",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.01
       }
     },
     {
@@ -28856,6 +30954,30 @@
       "type": "float",
       "value": {
         "default": 2.0
+      }
+    },
+    {
+      "name": "fTintAlphaTerrain",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.75
+      }
+    },
+    {
+      "name": "fTintAlphaTree",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fTintAlphaWater",
+      "section": "SurfaceMap",
+      "type": "float",
+      "value": {
+        "default": 1.0
       }
     },
     {
@@ -29347,6 +31469,14 @@
       }
     },
     {
+      "name": "fUpperLimitForTheMinimumDistanceForValidFleePath",
+      "section": "Pathfinding",
+      "type": "float",
+      "value": {
+        "default": 3.5
+      }
+    },
+    {
       "name": "fUserGamepadCursorAccelerateThreshold",
       "section": "Interface",
       "type": "float",
@@ -29655,6 +31785,22 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "fVascoJostleEnterDelay",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 0.6
+      }
+    },
+    {
+      "name": "fVascoJostleExitDelay",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 1.6
+      }
+    },
+    {
       "name": "fVatsLightColorB",
       "section": "VATS",
       "type": "float",
@@ -29719,6 +31865,190 @@
       }
     },
     {
+      "name": "fVehicleFOVOffsetMax",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": 20.0
+      }
+    },
+    {
+      "name": "fVehicleFOVOffsetMin",
+      "section": "Camera",
+      "type": "float",
+      "value": {
+        "default": -20.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingMaxRadius",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 4.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingMaxSpeed",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 14.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingMaxStrength",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 2.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingMinRadius",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingMinStrength",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingRadiusDecay",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 10.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLandingStrengthDecay",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchForceFar",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 0.5
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchForceNear",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 1.5
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchInterval",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 0.05
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchRadiusFar",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 8.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchRadiusNear",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 4.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchStart",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 0.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchStrengthDecay",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationLaunchStrengthMaxDistance",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 25.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationWheelMaxRadius",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 3.5
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationWheelMaxSpeed",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 12.0
+      }
+    },
+    {
+      "name": "fVehicleFoliageDeformationWheelMinRadius",
+      "section": "Vehicle",
+      "type": "float",
+      "value": {
+        "default": 1.5
+      }
+    },
+    {
+      "name": "fVehicleHangarOffsetPercentageX",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 0.7
+      }
+    },
+    {
+      "name": "fVehicleHangarOffsetPercentageY",
+      "section": "Spaceship",
+      "type": "float",
+      "value": {
+        "default": 0.4
+      }
+    },
+    {
+      "name": "fVehicleScannerMarkerZOffset",
+      "section": "Interface",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
       "name": "fVelocityPercentageUsedToHeadBackToPath",
       "section": "Pathfinding",
       "type": "float",
@@ -29743,6 +32073,14 @@
       }
     },
     {
+      "name": "fVerticalCollisionMinimumTimer",
+      "section": "VehicleData",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
       "name": "fVisibleNavmeshMoveDist",
       "section": "Actor",
       "type": "float",
@@ -29764,6 +32102,14 @@
       "type": "float",
       "value": {
         "default": 4.0
+      }
+    },
+    {
+      "name": "fVolumetricLightingDepthEpsilonViewSpace",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 200.0
       }
     },
     {
@@ -29812,6 +32158,14 @@
       "type": "float",
       "value": {
         "default": 10000.0
+      }
+    },
+    {
+      "name": "fVolumetricLightingFogTerrainMapSpan",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 9000.0
       }
     },
     {
@@ -30039,6 +32393,14 @@
       }
     },
     {
+      "name": "fWaterLightingScale",
+      "section": "Display",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
       "name": "fWaterMaterialLODDistance",
       "section": "Water",
       "type": "float",
@@ -30211,7 +32573,7 @@
       "section": "Display",
       "type": "float",
       "value": {
-        "default": 2.388889
+        "default": 3.56
       }
     },
     {
@@ -30399,6 +32761,22 @@
       }
     },
     {
+      "name": "fWorkshopDecorateFollowCameraExtraZUpMult",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 0.05
+      }
+    },
+    {
+      "name": "fWorkshopDecorateMinimumBoundHeight",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 0.2
+      }
+    },
+    {
       "name": "fWorkshopDestructedItemAlpha",
       "section": "Workshop",
       "type": "float",
@@ -30444,6 +32822,22 @@
       "type": "float",
       "value": {
         "default": 1.0
+      }
+    },
+    {
+      "name": "fWorkshopFollowCameraExtraZUpMult",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 1.0
+      }
+    },
+    {
+      "name": "fWorkshopForwardCastBoundingBoxScale",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 0.33
       }
     },
     {
@@ -30703,7 +33097,7 @@
       "section": "Camera",
       "type": "float",
       "value": {
-        "default": 0.00005
+        "default": 5E-05
       }
     },
     {
@@ -30839,6 +33233,14 @@
       }
     },
     {
+      "name": "fWorkshopMaximumBoundHeight",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 3.0
+      }
+    },
+    {
       "name": "fWorkshopMinimumBoundHeight",
       "section": "Workshop",
       "type": "float",
@@ -30916,6 +33318,14 @@
       "type": "float",
       "value": {
         "default": 0.229
+      }
+    },
+    {
+      "name": "fWorkshopTempItemDecorateFollowCameraCastLength",
+      "section": "Workshop",
+      "type": "float",
+      "value": {
+        "default": 3.0
       }
     },
     {
@@ -31143,6 +33553,14 @@
       }
     },
     {
+      "name": "iAutoHDRPaperWhiteLevelNits",
+      "section": "Display",
+      "type": "integer",
+      "value": {
+        "default": 140
+      }
+    },
+    {
       "name": "iAutoSaveCount",
       "section": "SaveGame",
       "type": "integer",
@@ -31261,7 +33679,7 @@
       "section": "Display",
       "type": "integer",
       "value": {
-        "default": 64
+        "default": 256
       }
     },
     {
@@ -31325,7 +33743,7 @@
       "section": "BIEvents",
       "type": "integer",
       "value": {
-        "default": 3
+        "default": 1
       }
     },
     {
@@ -31441,6 +33859,22 @@
       }
     },
     {
+      "name": "iClientLoadedEsmFrequencyMS",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iClientLoadedEsmLevel",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "iClientPerformanceFrequencyMS",
       "section": "BIEvents",
       "type": "integer",
@@ -31453,7 +33887,7 @@
       "section": "BIEvents",
       "type": "integer",
       "value": {
-        "default": 7
+        "default": 5
       }
     },
     {
@@ -32029,6 +34463,22 @@
       }
     },
     {
+      "name": "iGameplayOptionsAppliedFrequencyMS",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iGameplayOptionsAppliedLevel",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 1
+      }
+    },
+    {
       "name": "iGrassCellRadius",
       "section": "Grass",
       "type": "integer",
@@ -32042,6 +34492,14 @@
       "type": "integer",
       "value": {
         "default": 4
+      }
+    },
+    {
+      "name": "iHalfCellSize",
+      "section": "SurfaceMap",
+      "type": "integer",
+      "value": {
+        "default": 25
       }
     },
     {
@@ -32329,7 +34787,7 @@
       "section": "Display",
       "type": "integer",
       "value": {
-        "default": 81920
+        "default": 98304
       }
     },
     {
@@ -32337,7 +34795,7 @@
       "section": "Display",
       "type": "integer",
       "value": {
-        "default": 32768
+        "default": 49152
       }
     },
     {
@@ -32515,7 +34973,7 @@
       "section": "Display",
       "type": "integer",
       "value": {
-        "default": 1920
+        "default": 1024
       }
     },
     {
@@ -32825,6 +35283,14 @@
       }
     },
     {
+      "name": "iPlayCinematicCamera",
+      "section": "Camera",
+      "type": "integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "iPlayerCharacterImagespaceModifierAnimCount",
       "section": "Animation",
       "type": "integer",
@@ -33062,6 +35528,38 @@
       "type": "integer",
       "value": {
         "default": 20548
+      }
+    },
+    {
+      "name": "iRequestedLevelCountLarge",
+      "section": "LODDynamicPlacement",
+      "type": "integer",
+      "value": {
+        "default": 4
+      }
+    },
+    {
+      "name": "iRequestedLevelCountMedium",
+      "section": "LODDynamicPlacement",
+      "type": "integer",
+      "value": {
+        "default": 2
+      }
+    },
+    {
+      "name": "iRequestedLevelCountSmall",
+      "section": "LODDynamicPlacement",
+      "type": "integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iRequestedLevelCountXLarge",
+      "section": "LODDynamicPlacement",
+      "type": "integer",
+      "value": {
+        "default": 4
       }
     },
     {
@@ -33549,6 +36047,14 @@
       }
     },
     {
+      "name": "iSubsteppingMaxSteps",
+      "section": "VehicleData",
+      "type": "integer",
+      "value": {
+        "default": 10
+      }
+    },
+    {
       "name": "iSurfaceMapAutoRotate",
       "section": "SurfaceMap",
       "type": "integer",
@@ -33594,6 +36100,14 @@
       "type": "integer",
       "value": {
         "default": 5
+      }
+    },
+    {
+      "name": "iSurfaceMapMaxPointsPerHeight",
+      "section": "SurfaceMap",
+      "type": "integer",
+      "value": {
+        "default": 224
       }
     },
     {
@@ -33733,6 +36247,38 @@
       }
     },
     {
+      "name": "iVehicleEndFrequencyMS",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iVehicleEndLevel",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 3
+      }
+    },
+    {
+      "name": "iVehicleStartFrequencyMS",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "iVehicleStartLevel",
+      "section": "BIEvents",
+      "type": "integer",
+      "value": {
+        "default": 3
+      }
+    },
+    {
       "name": "iVolumetricLightingDistantScatteringSampleCount",
       "section": "Display",
       "type": "integer",
@@ -33794,6 +36340,14 @@
       "type": "integer",
       "value": {
         "default": 30
+      }
+    },
+    {
+      "name": "iWheelLayer",
+      "section": "WheelData",
+      "type": "integer",
+      "value": {
+        "default": 20
       }
     },
     {
@@ -34205,6 +36759,14 @@
       }
     },
     {
+      "name": "sAccountsURL",
+      "section": "Bethesda.net",
+      "type": "string",
+      "value": {
+        "default": ""
+      }
+    },
+    {
       "name": "sAnimTextExportOutputPath",
       "section": "Animation",
       "type": "string",
@@ -34290,6 +36852,14 @@
       "type": "string",
       "value": {
         "default": "Starfield.ESM"
+      }
+    },
+    {
+      "name": "sBaseGameSoundBanksList",
+      "section": "Wwise",
+      "type": "string",
+      "value": {
+        "default": "Init, Starfield_AMB, Starfield_DRS, Starfield_FST, Starfield_FX, Starfield_ITM, Starfield_MUS, Starfield_NPC, Starfield_OBJ, Starfield_PHY, Starfield_QST, Starfield_UI, Starfield_VEH, Starfield_VOC, Starfield_WPN"
       }
     },
     {
@@ -34413,6 +36983,38 @@
       }
     },
     {
+      "name": "sDebugCameraCinematicBone",
+      "section": "DebugCamera",
+      "type": "string",
+      "value": {
+        "default": "COM"
+      }
+    },
+    {
+      "name": "sDebugCameraCinematicLookAtBone",
+      "section": "DebugCamera",
+      "type": "string",
+      "value": {
+        "default": ""
+      }
+    },
+    {
+      "name": "sDebugCameraCinematicPrecisionFormatDegreesString",
+      "section": "DebugCamera",
+      "type": "string",
+      "value": {
+        "default": "%.3f deg"
+      }
+    },
+    {
+      "name": "sDebugCameraCinematicPrecisionFormatString",
+      "section": "DebugCamera",
+      "type": "string",
+      "value": {
+        "default": "%.3f"
+      }
+    },
+    {
       "name": "sDebugCameraFollowBone",
       "section": "DebugCamera",
       "type": "string",
@@ -34482,6 +37084,22 @@
       "type": "string",
       "value": {
         "default": "LDirtFootprints01"
+      }
+    },
+    {
+      "name": "sDeveloperEmail",
+      "section": "Bethesda.net",
+      "type": "string",
+      "value": {
+        "default": ""
+      }
+    },
+    {
+      "name": "sDeveloperUsername",
+      "section": "Bethesda.net",
+      "type": "string",
+      "value": {
+        "default": ""
       }
     },
     {
@@ -34570,6 +37188,22 @@
       "type": "string",
       "value": {
         "default": "diagdata.json, Warnings.txt, Starfield.ini, StarfieldCustom.ini, WarningsQuest.txt, StarfieldPrefs.ini, StarfieldConsoleHistory.log"
+      }
+    },
+    {
+      "name": "sExternalDLCVoiceFilePathLanguage",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": ""
+      }
+    },
+    {
+      "name": "sExternalDLCVoiceFilePathPrefix",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": ""
       }
     },
     {
@@ -34767,6 +37401,14 @@
       }
     },
     {
+      "name": "sHDRBrightnessImage",
+      "section": "Display",
+      "type": "string",
+      "value": {
+        "default": "Textures/Interface/Settings/HDR1.dds, Textures/Interface/Settings/HDR2.dds"
+      }
+    },
+    {
       "name": "sHideTexturePath",
       "section": "Display",
       "type": "string",
@@ -34878,6 +37520,126 @@
       "type": "string",
       "value": {
         "default": "Play_MUS_Main_Menu_Stop"
+      }
+    },
+    {
+      "name": "sMarketplaceMenuMusicEvent",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "MUS_Main_Menu_Creations_Play"
+      }
+    },
+    {
+      "name": "sMarketplaceMenuMusicEventToggleOff",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "MUS_Main_Menu_Creations_MusicToggle_Off"
+      }
+    },
+    {
+      "name": "sMarketplaceMenuMusicEventToggleOn",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "MUS_Main_Menu_Creations_MusicToggle_On"
+      }
+    },
+    {
+      "name": "sMarketplaceMenuMusicStopEvent",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "MUS_Main_Menu_Creations_Stop"
+      }
+    },
+    {
+      "name": "sMarketplaceMenuSFXEvent",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "MUS_Main_Menu_Creations_SFX_Play"
+      }
+    },
+    {
+      "name": "sMarketplaceMenuSFXStopEvent",
+      "section": "General",
+      "type": "string",
+      "value": {
+        "default": "MUS_Main_Menu_Creations_SFX_Stop"
+      }
+    },
+    {
+      "name": "sMaterialInvisible",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/Layered/ShaderModels/Invisible.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathModel",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/CityMap.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathRock",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/Rock.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathShips",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/Spaceships.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathTerrain",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/Terrain.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathTerrainEdge",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/TerrainEdge.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathTree",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/ProcGen.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathWater",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/Water.mat"
+      }
+    },
+    {
+      "name": "sMaterialPathWorkshops",
+      "section": "SurfaceMap",
+      "type": "string",
+      "value": {
+        "default": "Materials/CityMaps/Outposts.mat"
       }
     },
     {
@@ -35146,6 +37908,22 @@
       }
     },
     {
+      "name": "sRuntimeLODDatabaseBaseName",
+      "section": "LODManager",
+      "type": "string",
+      "value": {
+        "default": "LODRuntimeDB"
+      }
+    },
+    {
+      "name": "sRuntimeLODDatabaseFolder",
+      "section": "LODManager",
+      "type": "string",
+      "value": {
+        "default": "DistantLOD/"
+      }
+    },
+    {
       "name": "sRuntimeLODDatabasePath",
       "section": "LODManager",
       "type": "string",
@@ -35207,6 +37985,14 @@
       "type": "string",
       "value": {
         "default": "Actors\\Human\\Faces\\Chargen"
+      }
+    },
+    {
+      "name": "sSoundbankOverrideName",
+      "section": "Audio",
+      "type": "string",
+      "value": {
+        "default": ""
       }
     },
     {
@@ -35309,10 +38095,10 @@
       "name": "sStreamlineConfig",
       "section": "Display",
       "type": "string",
-      "ini": "StarfieldPrefs.ini",
       "value": {
         "default": "ZQAAAFgCAADIAAAALAEAAJABAAD0AQAAvAIAAAAAAAAgAwAAAQAAAA=="
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "sSupportedResolutionsList",
@@ -35320,6 +38106,14 @@
       "type": "string",
       "value": {
         "default": "1280x720, 1366x768, 1440x900, 1600x900, 1680x1050, 1920x1200, 1920x1080, 2560x1080, 2560x1440, 2560x1600, 3440x1440, 3840x2160"
+      }
+    },
+    {
+      "name": "sSurfaceMapIndirectCubeMap",
+      "section": "StarMap",
+      "type": "string",
+      "value": {
+        "default": ""
       }
     },
     {
@@ -35633,7 +38427,7 @@
       "section": "Interface",
       "type": "unsigned integer",
       "value": {
-        "default": 2
+        "default": 3
       }
     },
     {
@@ -35768,6 +38562,15 @@
       }
     },
     {
+      "name": "uCascadeUpdateStrategyMode",
+      "section": "Shadows",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
+      },
+      "ini": "Ultra.ini"
+    },
+    {
       "name": "uCascadesGrassDistance",
       "section": "Shadows",
       "type": "unsigned integer",
@@ -35781,6 +38584,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 0
+      }
+    },
+    {
+      "name": "uCheckpointBufferElementCount",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 65536
       }
     },
     {
@@ -35805,6 +38616,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 500
+      }
+    },
+    {
+      "name": "uClipmapCacheWidth",
+      "section": "LODManager",
+      "type": "unsigned integer",
+      "value": {
+        "default": 75
       }
     },
     {
@@ -36038,6 +38857,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 8
+      }
+    },
+    {
+      "name": "uDepthMvFixupMipBias",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
       }
     },
     {
@@ -36317,6 +39144,15 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "uDirectionalShadowmapsUseLODFadeLastCascadeIndex",
+      "section": "Shadows",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
+      },
+      "ini": "Ultra.ini"
+    },
+    {
       "name": "uDisplayMonitor",
       "section": "Display",
       "type": "unsigned integer",
@@ -36377,7 +39213,15 @@
       "section": "Display",
       "type": "unsigned integer",
       "value": {
-        "default": 12
+        "default": 6
+      }
+    },
+    {
+      "name": "uDownloadBufferSize",
+      "section": "Bethesda.net",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -36930,6 +39774,22 @@
       }
     },
     {
+      "name": "uInitialReflectionProbesMeshletIndexBufferSize",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 3145728
+      }
+    },
+    {
+      "name": "uInitialReflectionProbesMeshletListSize",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 20000
+      }
+    },
+    {
       "name": "uInputTerrainClipmapLevel",
       "section": "NavMeshGen",
       "type": "unsigned integer",
@@ -37453,6 +40313,14 @@
       }
     },
     {
+      "name": "uMessageControllerButtonDefaultFontSize",
+      "section": "Interface",
+      "type": "unsigned integer",
+      "value": {
+        "default": 34
+      }
+    },
+    {
       "name": "uMinAliasedBufferAlignment",
       "section": "RenderGraph",
       "type": "unsigned integer",
@@ -37482,6 +40350,22 @@
       "type": "unsigned integer",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "uMinPostUpscaleMotionBlurQuality",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
+      }
+    },
+    {
+      "name": "uMinReflectionProbeFacesToRenderPerFrame",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
       }
     },
     {
@@ -37655,6 +40539,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 1000
+      }
+    },
+    {
+      "name": "uNumFramesBeforeImageRelease",
+      "section": "Bethesda.net",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
       }
     },
     {
@@ -37975,6 +40867,14 @@
       "ini": "StarfieldPrefs.ini"
     },
     {
+      "name": "uPhysicalTerrainClipmapLevel",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 4
+      }
+    },
+    {
       "name": "uPipboyTargetHeight",
       "section": "Display",
       "type": "unsigned integer",
@@ -38090,11 +40990,35 @@
       }
     },
     {
+      "name": "uProcGenInstancingScreenSizeCulling",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 10
+      }
+    },
+    {
+      "name": "uProcGenLODLevel",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uProcGenMaximumCellRequestsPerIteration",
       "section": "ProcGen",
       "type": "unsigned integer",
       "value": {
         "default": 150
+      }
+    },
+    {
+      "name": "uProcGenMinFootprint",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 1
       }
     },
     {
@@ -38190,6 +41114,14 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "uReflectionProbeMeshletCountLimit",
+      "section": "Display",
+      "type": "unsigned integer",
+      "value": {
+        "default": 393216
+      }
+    },
+    {
       "name": "uReflectionProbeMinFastUpdateFrames",
       "section": "Display",
       "type": "unsigned integer",
@@ -38281,6 +41213,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 1
+      }
+    },
+    {
+      "name": "uResourceClearValue",
+      "section": "Debug",
+      "type": "unsigned integer",
+      "value": {
+        "default": 4025479151
       }
     },
     {
@@ -38571,6 +41511,14 @@
       }
     },
     {
+      "name": "uShowDebugInfo",
+      "section": "VehicleData",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uShutdownCallbackTimeout",
       "section": "BIEvents",
       "type": "unsigned integer",
@@ -38584,6 +41532,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 2796202
+      }
+    },
+    {
+      "name": "uSkipStaticShadowsDeallocAfterUnpauseFrameCount",
+      "section": "Shadows",
+      "type": "unsigned integer",
+      "value": {
+        "default": 4
       }
     },
     {
@@ -38707,6 +41663,14 @@
       }
     },
     {
+      "name": "uStreamlineLogLevel",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uSubCellSize",
       "section": "NavMeshGen",
       "type": "unsigned integer",
@@ -38822,6 +41786,22 @@
       "alwaysPrint": true
     },
     {
+      "name": "uTerrainClipmapLevel",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 3
+      }
+    },
+    {
+      "name": "uTerrainPhysicsCellMarginSize",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
+      }
+    },
+    {
       "name": "uTerrainShadowClipmapMask",
       "section": "Terrain",
       "type": "unsigned integer",
@@ -38890,6 +41870,14 @@
       "ini": "Ultra.ini"
     },
     {
+      "name": "uTrackedDisabledRefID",
+      "section": "General",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
       "name": "uTransientBufferAllocatorSizeInBytes",
       "section": "Display",
       "type": "unsigned integer",
@@ -38917,6 +41905,14 @@
       "alwaysPrint": true
     },
     {
+      "name": "uTriangleCullingCachedViews",
+      "section": "Shadows",
+      "type": "unsigned integer",
+      "value": {
+        "default": 2
+      }
+    },
+    {
       "name": "uTwoBoneIKNodeMaxLOD",
       "section": "Animation",
       "type": "unsigned integer",
@@ -38929,7 +41925,7 @@
       "section": "Interface",
       "type": "unsigned integer",
       "value": {
-        "default": 20
+        "default": 2
       }
     },
     {
@@ -38938,6 +41934,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 125
+      }
+    },
+    {
+      "name": "uUploadBufferSize",
+      "section": "Bethesda.net",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
       }
     },
     {
@@ -39158,6 +42162,22 @@
       }
     },
     {
+      "name": "uiAntiAliasingPresetDLSS",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uiBalancedPresetDLSS",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 3
+      }
+    },
+    {
       "name": "uiConstantSubFrameRateFrequency",
       "section": "Actor",
       "type": "unsigned integer",
@@ -39171,6 +42191,14 @@
       "type": "unsigned integer",
       "value": {
         "default": 3
+      }
+    },
+    {
+      "name": "uiDefaultNumSearchResults",
+      "section": "Bethesda.net",
+      "type": "unsigned integer",
+      "value": {
+        "default": 98
       }
     },
     {
@@ -39291,6 +42319,22 @@
       "type": "unsigned integer",
       "value": {
         "default": 2
+      }
+    },
+    {
+      "name": "uiMaxPerformancePresetDLSS",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 3
+      }
+    },
+    {
+      "name": "uiMaxQualityPresetDLSS",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 3
       }
     },
     {
@@ -39483,6 +42527,30 @@
       "type": "unsigned integer",
       "value": {
         "default": 4194304
+      }
+    },
+    {
+      "name": "uiSurfaceMapDistantLODHighModelThreshold",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 800
+      }
+    },
+    {
+      "name": "uiSurfaceMapDistantLODLevel",
+      "section": "SurfaceMap",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
+      }
+    },
+    {
+      "name": "uiUltraPerformancePresetDLSS",
+      "section": "Streamline",
+      "type": "unsigned integer",
+      "value": {
+        "default": 0
       }
     },
     {
