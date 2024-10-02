@@ -182,23 +182,6 @@
             "tooltip": "Changes the resolution.",
             "type": "Dropdown"
           },
-          "Aspect Ratio": {
-            "choices": [ "4:3", "16:9", "16:10", "21:9", "32:9" ],
-            "customWidth": "18",
-            "settingChoices": {
-              "4:3": [ "1.3333", "2.4" ],
-              "16:9": [ "1.6", "2.3889" ],
-              "16:10": [ "1.6", "2.41" ],
-              "21:9": [ "1.7778", "2.42" ],
-              "32:9": [ "1.6", "3.5556" ]
-            },
-            "settings": [ "fNarrowAspectLimit", "fWideAspectLimit" ],
-            "targetINIs": [ "StarfieldCustom.ini", "StarfieldCustom.ini" ],
-            "targetSections": [ "Display", "Display" ],
-            "tooltip": "Sets the aspect ratio limits.",
-            "type": "Dropdown"
-          },
-
           "Display Mode": {
             "choices": [ "Fullscreen", "Borderless Windowed", "Windowed" ],
             "customWidth": "18",
