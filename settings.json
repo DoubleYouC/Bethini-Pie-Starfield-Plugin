@@ -3753,7 +3753,8 @@
         "Bethini Medium": 0,
         "Bethini High": 1,
         "Bethini Ultra": 1
-      }
+      },
+      "ini": "Ultra.ini"
     },
     {
       "name": "bDisableAllGore",
@@ -4153,7 +4154,8 @@
       "type": "boolean",
       "value": {
         "default": 0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "bDisplayExposureInfos",
@@ -7733,7 +7735,8 @@
       "type": "boolean",
       "value": {
         "default": 0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "bLayeredSkinnedContactShadows",
@@ -8103,7 +8106,8 @@
       "type": "boolean",
       "value": {
         "default": 1
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "bMouseMoveDeviceSwitchDisabled",
@@ -12846,7 +12850,8 @@
       "type": "boolean",
       "value": {
         "default": 1
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "bVolumetricLightingEnableDistantScattering",
@@ -34764,7 +34769,8 @@
       "type": "integer",
       "value": {
         "default": 1
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "iHeartbeatFrequencyMS",
@@ -34980,7 +34986,8 @@
       "type": "integer",
       "value": {
         "default": -8
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "iLocation Y",
@@ -34988,7 +34995,8 @@
       "type": "integer",
       "value": {
         "default": 0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "iMagicGuideHazardsPerUpdate",
@@ -38071,8 +38079,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Meshes.ba2, Starfield - MeshesExtra.ba2, Starfield - Materials.ba2, Starfield - Particles.ba2, Starfield - Sounds.ba2, Starfield - Voices.ba2,  Starfield - Animations.ba2, Starfield - Terrain.ba2",
-        "fixedDefault": "Starfield - Animations.ba2, Starfield - DensityMaps.ba2, Starfield - FaceAnimation01.ba2, Starfield - FaceAnimation02.ba2, Starfield - FaceAnimation03.ba2, Starfield - FaceAnimation04.ba2, Starfield - FaceAnimationPatch.ba2, Starfield - FaceMeshes.ba2, Starfield - GeneratedTextures.ba2, Starfield - LODMeshes.ba2, Starfield - LODMeshesPatch.ba2, Starfield - Materials.ba2, Starfield - Meshes01.ba2, Starfield - Meshes02.ba2, Starfield - MeshesPatch.ba2, Starfield - Misc.ba2, Starfield - Particles.ba2, Starfield - PlanetData.ba2, Starfield - Terrain01.ba2, Starfield - Terrain02.ba2, Starfield - Terrain03.ba2, Starfield - Terrain04.ba2, Starfield - TerrainPatch.ba2"
+        "original_default": "Starfield - Meshes.ba2, Starfield - MeshesExtra.ba2, Starfield - Materials.ba2, Starfield - Particles.ba2, Starfield - Sounds.ba2, Starfield - Voices.ba2,  Starfield - Animations.ba2, Starfield - Terrain.ba2",
+        "default": "Starfield - Animations.ba2, Starfield - DensityMaps.ba2, Starfield - FaceAnimation01.ba2, Starfield - FaceAnimation02.ba2, Starfield - FaceAnimation03.ba2, Starfield - FaceAnimation04.ba2, Starfield - FaceAnimationPatch.ba2, Starfield - FaceMeshes.ba2, Starfield - GeneratedTextures.ba2, Starfield - LODMeshes.ba2, Starfield - LODMeshesPatch.ba2, Starfield - Materials.ba2, Starfield - Meshes01.ba2, Starfield - Meshes02.ba2, Starfield - MeshesPatch.ba2, Starfield - Misc.ba2, Starfield - Particles.ba2, Starfield - PlanetData.ba2, Starfield - Terrain01.ba2, Starfield - Terrain02.ba2, Starfield - Terrain03.ba2, Starfield - Terrain04.ba2, Starfield - TerrainPatch.ba2"
       }
     },
     {
@@ -38080,8 +38088,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Shaders.ba2, Starfield - Interface.ba2, Starfield - Materials.ba2",
-        "fixedDefault": "Starfield - Interface.ba2, Starfield - Misc.ba2"
+        "original_default": "Starfield - Shaders.ba2, Starfield - Interface.ba2, Starfield - Materials.ba2",
+        "default": "Starfield - Interface.ba2, Starfield - Misc.ba2"
       }
     },
     {
@@ -38107,8 +38115,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Voices.ba2",
-        "fixedDefault": "Starfield - Voices01.ba2, Starfield - Voices02.ba2, Starfield - VoicesPatch.ba2"
+        "original_default": "Starfield - Voices.ba2",
+        "default": "Starfield - Voices01.ba2, Starfield - Voices02.ba2, Starfield - VoicesPatch.ba2"
       }
     },
     {
@@ -38116,8 +38124,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Textures1.ba2, Starfield - Textures2.ba2, Starfield - Textures3.ba2, Starfield - Textures4.ba2, Starfield - Textures5.ba2, Starfield - Textures6.ba2, Starfield - Textures7.ba2, Starfield - Textures8.ba2, Starfield - Textures9.ba2",
-        "fixedDefault": "Starfield - LODTextures01.ba2, Starfield - LODTextures02.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
+        "original_default": "Starfield - Textures1.ba2, Starfield - Textures2.ba2, Starfield - Textures3.ba2, Starfield - Textures4.ba2, Starfield - Textures5.ba2, Starfield - Textures6.ba2, Starfield - Textures7.ba2, Starfield - Textures8.ba2, Starfield - Textures9.ba2",
+        "default": "Starfield - LODTextures01.ba2, Starfield - LODTextures02.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
       }
     },
     {
@@ -38153,8 +38161,8 @@
       "section": "Archive",
       "type": "string",
       "value": {
-        "default": "Starfield - Startup.ba2, Starfield - Shaders.ba2, Starfield - Interface.ba2",
-        "fixedDefault": "Starfield - Interface.ba2, Starfield - Localization.ba2, Starfield - Shaders.ba2, Starfield - ShadersBeta.ba2, Starfield - WwiseSounds01.ba2, Starfield - WwiseSounds02.ba2, Starfield - WwiseSounds03.ba2, Starfield - WwiseSounds04.ba2, Starfield - WwiseSounds05.ba2, Starfield - WwiseSoundsPatch.ba2, BlueprintShips-Starfield - Localization.ba2"
+        "original_default": "Starfield - Startup.ba2, Starfield - Shaders.ba2, Starfield - Interface.ba2",
+        "default": "Starfield - Interface.ba2, Starfield - Localization.ba2, Starfield - Shaders.ba2, Starfield - ShadersBeta.ba2, Starfield - WwiseSounds01.ba2, Starfield - WwiseSounds02.ba2, Starfield - WwiseSounds03.ba2, Starfield - WwiseSounds04.ba2, Starfield - WwiseSounds05.ba2, Starfield - WwiseSoundsPatch.ba2, BlueprintShips-Starfield - Localization.ba2"
       }
     },
     {
@@ -39424,7 +39432,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 2432656971
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uDisplayMonitor",
@@ -40125,7 +40134,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 2
-      }
+      },
+      "ini": "Ultra.ini"
     },
     {
       "name": "uLODStreamingAdjacencyUnloadTolerance",
@@ -42489,7 +42499,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 2
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uiDefaultDegradeLevel",
@@ -42593,7 +42604,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 1
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uiLowFrameRateFrequency",
@@ -42609,7 +42621,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 4294967295
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uiMaxCoreDumps",
@@ -42729,7 +42742,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 1
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uiMinimumDecreasePerIterationScreenSize",
@@ -42865,7 +42879,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uiSurfaceMapDistantLODHighModelThreshold",
