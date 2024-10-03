@@ -38073,8 +38073,7 @@
       "value": {
         "default": "Starfield - Meshes.ba2, Starfield - MeshesExtra.ba2, Starfield - Materials.ba2, Starfield - Particles.ba2, Starfield - Sounds.ba2, Starfield - Voices.ba2,  Starfield - Animations.ba2, Starfield - Terrain.ba2",
         "fixedDefault": "Starfield - Animations.ba2, Starfield - DensityMaps.ba2, Starfield - FaceAnimation01.ba2, Starfield - FaceAnimation02.ba2, Starfield - FaceAnimation03.ba2, Starfield - FaceAnimation04.ba2, Starfield - FaceAnimationPatch.ba2, Starfield - FaceMeshes.ba2, Starfield - GeneratedTextures.ba2, Starfield - LODMeshes.ba2, Starfield - LODMeshesPatch.ba2, Starfield - Materials.ba2, Starfield - Meshes01.ba2, Starfield - Meshes02.ba2, Starfield - MeshesPatch.ba2, Starfield - Misc.ba2, Starfield - Particles.ba2, Starfield - PlanetData.ba2, Starfield - Terrain01.ba2, Starfield - Terrain02.ba2, Starfield - Terrain03.ba2, Starfield - Terrain04.ba2, Starfield - TerrainPatch.ba2"
-      },
-      "alwaysPrint": true
+      }
     },
     {
       "name": "sResourceArchiveMemoryCacheList",
@@ -38083,8 +38082,7 @@
       "value": {
         "default": "Starfield - Shaders.ba2, Starfield - Interface.ba2, Starfield - Materials.ba2",
         "fixedDefault": "Starfield - Interface.ba2, Starfield - Misc.ba2"
-      },
-      "alwaysPrint": true
+      }
     },
     {
       "name": "sResourceArchiveRetainFileNameList",
@@ -38111,8 +38109,7 @@
       "value": {
         "default": "Starfield - Voices.ba2",
         "fixedDefault": "Starfield - Voices01.ba2, Starfield - Voices02.ba2, Starfield - VoicesPatch.ba2"
-      },
-      "alwaysPrint": true
+      }
     },
     {
       "name": "sResourceIndexFileList",
@@ -38121,8 +38118,7 @@
       "value": {
         "default": "Starfield - Textures1.ba2, Starfield - Textures2.ba2, Starfield - Textures3.ba2, Starfield - Textures4.ba2, Starfield - Textures5.ba2, Starfield - Textures6.ba2, Starfield - Textures7.ba2, Starfield - Textures8.ba2, Starfield - Textures9.ba2",
         "fixedDefault": "Starfield - LODTextures01.ba2, Starfield - LODTextures02.ba2, Starfield - Textures01.ba2, Starfield - Textures02.ba2, Starfield - Textures03.ba2, Starfield - Textures04.ba2, Starfield - Textures05.ba2, Starfield - Textures06.ba2, Starfield - Textures07.ba2, Starfield - Textures08.ba2, Starfield - Textures09.ba2, Starfield - Textures10.ba2, Starfield - Textures11.ba2, Starfield - TexturesPatch.ba2"
-      },
-      "alwaysPrint": true
+      }
     },
     {
       "name": "sResourceLocaleVoiceList",
@@ -38134,8 +38130,7 @@
         "es": "Starfield - Voices_es01.ba2, Starfield - Voices_es02.ba2, Starfield - Voices_es_Patch.ba2",
         "fr": "Starfield - Voices_fr01.ba2, Starfield - Voices_fr02.ba2, Starfield - Voices_fr_Patch.ba2",
         "ja": "Starfield - Voices_ja01.ba2, Starfield - Voices_ja02.ba2, Starfield - Voices_ja_Patch.ba2"
-      },
-      "alwaysPrint": true
+      }
     },
     {
       "name": "sResourceMiscArchiveMemoryCacheList",
@@ -38160,8 +38155,7 @@
       "value": {
         "default": "Starfield - Startup.ba2, Starfield - Shaders.ba2, Starfield - Interface.ba2",
         "fixedDefault": "Starfield - Interface.ba2, Starfield - Localization.ba2, Starfield - Shaders.ba2, Starfield - ShadersBeta.ba2, Starfield - WwiseSounds01.ba2, Starfield - WwiseSounds02.ba2, Starfield - WwiseSounds03.ba2, Starfield - WwiseSounds04.ba2, Starfield - WwiseSounds05.ba2, Starfield - WwiseSoundsPatch.ba2, BlueprintShips-Starfield - Localization.ba2"
-      },
-      "alwaysPrint": true
+      }
     },
     {
       "name": "sRingModelFilename",
