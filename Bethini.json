@@ -187,7 +187,7 @@
             "customWidth": "18",
             "settingChoices": {
               "Fullscreen": [ "1", "0" ],
-              "Borderless Windowed": [ "0", "1" ],
+              "Borderless Windowed": [ "1", "1" ],
               "Windowed": [ "0", "0" ]
             },
             "settings": [ "bFull Screen", "bBorderless" ],
