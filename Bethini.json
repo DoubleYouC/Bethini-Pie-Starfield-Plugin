@@ -75,7 +75,7 @@
       "Paths": {
         "NumberOfVerticallyStackedSettings": "6",
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "Settings": {
@@ -106,7 +106,7 @@
       "Backups": {
         "NumberOfVerticallyStackedSettings": "6",
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "Settings": {
@@ -167,7 +167,7 @@
     "Basic": {
       "Display": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "6",
@@ -394,7 +394,7 @@
       },
       "Presets": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "2",
@@ -460,7 +460,7 @@
       },
       "NoLabelFrame": {
         "Pack": {
-          "Fill": "X",
+          "Fill": "x",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "2",
@@ -536,7 +536,7 @@
     "General": {
       "NoLabelFrame": {
         "Pack": {
-          "Fill": "X",
+          "Fill": "x",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "2",
@@ -613,8 +613,8 @@
       },
       "Saved Games": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "None",
+          "Side": "left",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "6",
@@ -732,8 +732,8 @@
       },
       "Gameplay": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "X",
+          "Side": "left",
+          "Fill": "x",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "8",
@@ -825,8 +825,8 @@
       },
       "Papyrus": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "None",
+          "Side": "left",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "7",
@@ -906,7 +906,7 @@
     "Interface": {
       "NoLabelFrame": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "2",
@@ -1010,7 +1010,7 @@
       },
       "Console": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "1",
@@ -1082,7 +1082,7 @@
       },
       "Mouse Settings": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "6",
@@ -1144,9 +1144,9 @@
     "Environment": {
       "Grass": {
         "Pack": {
-          "Side": "Left",
+          "Side": "left",
           "Expand": 0,
-          "Fill": "None"
+          "Fill": "none"
         },
         "NumberOfVerticallyStackedSettings": "9",
         "Settings": {
@@ -1247,9 +1247,9 @@
       },
       "Terrain": {
         "Pack": {
-          "Side": "Left",
+          "Side": "left",
           "Expand": 0,
-          "Fill": "None"
+          "Fill": "none"
         },
         "NumberOfVerticallyStackedSettings": "9",
         "Settings": {
@@ -1295,7 +1295,7 @@
       "Reflections": {
         "Pack": {
           "Expand": 0,
-          "Fill": "None"
+          "Fill": "none"
         },
         "NumberOfVerticallyStackedSettings": "9",
         "Settings": {
@@ -1341,7 +1341,7 @@
     "Shadows": {
       "NoLabelFrame2": {
         "Pack": {
-          "Side": "Left"
+          "Side": "left"
         },
         "NumberOfVerticallyStackedSettings": "12",
         "Settings": {
@@ -1601,7 +1601,7 @@
       },
       "NoLabelFrame3": {
         "Pack": {
-          "Side": "Left"
+          "Side": "left"
         },
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
@@ -1692,7 +1692,7 @@
     "Visuals": {
       "Ambient Occlusion": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "4",
@@ -1892,7 +1892,7 @@
       },
       "Decals": {
         "Pack": {
-          "Fill": "X"
+          "Fill": "x"
         },
         "NumberOfVerticallyStackedSettings": "3",
         "Settings": {
@@ -2065,8 +2065,8 @@
       },
       "Lighting": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "X"
+          "Side": "left",
+          "Fill": "x"
         },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
@@ -2169,7 +2169,7 @@
     "View Distance": {
       "Distant Details": {
         "Pack": {
-          "Fill": "None"
+          "Fill": "none"
         },
         "NumberOfVerticallyStackedSettings": "9",
         "Settings": {
