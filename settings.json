@@ -19825,7 +19825,8 @@
       "type": "float",
       "value": {
         "default": 2.4
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "fGeneticBlendFactorBodyMorphRegions",
@@ -42580,7 +42581,8 @@
       "type": "unsigned integer",
       "value": {
         "default": 0
-      }
+      },
+      "ini": "StarfieldPrefs.ini"
     },
     {
       "name": "uiHighFrameRateFrequency",

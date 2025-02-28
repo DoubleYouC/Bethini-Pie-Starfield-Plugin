@@ -170,24 +170,29 @@
           "Fill": "none",
           "Expand": 0
         },
-        "NumberOfVerticallyStackedSettings": "6",
+        "NumberOfVerticallyStackedSettings": "8",
         "Settings": {
-          "Resolution": {
+          "Window Resolution": {
             "choices": [ "FUNCCurrentResolution", "1280x720", "1366x768", "1440x900", "1600x900", "1680x1050", "1920x1200", "1920x1080", "2560x1080", "2560x1440", "2560x1600", "3440x1440", "3840x2160", "Manual..." ],
             "customWidth": "18",
             "delimiter": "x",
             "settings": [ "iSize W", "iSize H" ],
             "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
             "targetSections": [ "Display", "Display" ],
-            "tooltip": "Changes the resolution.",
-            "type": "Dropdown"
+            "tooltip": "Changes the resolution in windowed mode.",
+            "type": "Dropdown",
+            "dependentSettings": {
+              "Display Mode": {
+                "operator": "equal",
+                "value": "Windowed"
+              }
+            }
           },
           "Display Mode": {
-            "choices": [ "Fullscreen", "Borderless Windowed", "Windowed" ],
+            "choices": [ "Borderless Fullscreen", "Windowed" ],
             "customWidth": "18",
             "settingChoices": {
-              "Fullscreen": [ "1", "0" ],
-              "Borderless Windowed": [ "1", "1" ],
+              "Borderless Fullscreen": [ "1", "1" ],
               "Windowed": [ "0", "0" ]
             },
             "settings": [ "bFull Screen", "bBorderless" ],
@@ -205,7 +210,7 @@
               "FSR3": [ "8", "0" ],
               "FSR3 + Frame Generation": [ "16", "2" ],
               "DLSS": [ "4", "0" ],
-              "XESS": ["32", "0"]
+              "XESS": [ "32", "0" ]
             },
             "settings": [ "uiUpscalingTechnique", "uiFrameGenerationTech" ],
             "targetINIs": [ "StarfieldPrefs.ini", "StarfieldPrefs.ini" ],
@@ -228,33 +233,82 @@
             "tooltip": "Controls motion blur quality.",
             "type": "Dropdown"
           },
+          "VRS Variance Cutoff": {
+            "customWidth": "18",
+            "choices": [ "0.075", "0.1", "0.125", "0.15" ],
+            "settings": [ "fVariableRateShadingVarianceCutoff" ],
+            "targetINIs": [ "Ultra.ini" ],
+            "targetSections": [ "VariableRateShading" ],
+            "tooltip": "Sets the variable rate shading variance cutoff.",
+            "type": "Combobox",
+            "validate": "float",
+            "width": "8"
+          },
           "": "",
+          "EmptyLabel1": "",
+          "EmptyLabel2": "",
           "Render Resolution Scale": {
-            "customWidth": "25",
+            "customWidth": "28",
             "decimal places": "2",
             "from": "0.1",
             "increment": "0.01",
             "length": "100",
-            "settings": [ "fRenderResolutionScaleFactor", "fMinRenderResolutionScaleFactor" ],
-            "targetINIs": [ "StarfieldPrefs.ini", "StarfieldCustom.ini" ],
-            "targetSections": [ "Display", "Display" ],
+            "settings": [ "fRenderResolutionScaleFactor" ],
+            "targetINIs": [ "StarfieldPrefs.ini" ],
+            "targetSections": [ "Display" ],
             "to": "1",
             "tooltip": "Sets the internal render resolution scale that will then be upscaled to your resolution. This slider is bigger than the in-game slider, and will very much improve performance if set lower, at the expense of visuals.",
             "type": "Slider",
             "validate": "integer",
             "width": "7"
           },
-          "Dynamic Resolution Scale": {
-            "customWidth": "25",
+          "Min Render Resolution Scale": {
+            "customWidth": "28",
             "decimal places": "2",
             "from": "0.1",
             "increment": "0.01",
             "length": "100",
-            "settings": [ "fRenderResolutionSetting", "fMinDynamicResolutionScale" ],
-            "targetINIs": [ "Ultra.ini", "StarfieldCustom.ini" ],
-            "targetSections": [ "DynamicResolution", "Display" ],
+            "settings": [ "fMinRenderResolutionScaleFactor" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
             "to": "1",
-            "tooltip": "Sets the minimum dynamic render resolution scale, where the game automatically adjusts resolution in performance-heavy scenes.",
+            "tooltip": "Sets the minimum internal render resolution scale that will then be upscaled to your resolution. This allows you to adjust what the minimum amount you can set it to is.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Dynamic Resolution Scale": {
+            "customWidth": "28",
+            "decimal places": "2",
+            "from": "0.1",
+            "increment": "0.01",
+            "length": "100",
+            "settings": [ "fRenderResolutionSetting" ],
+            "targetINIs": [ "Ultra.ini"],
+            "targetSections": [ "DynamicResolution" ],
+            "to": "1",
+            "tooltip": "Sets the dynamic render resolution scale, where the game automatically adjusts resolution in performance-heavy scenes.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Dynamic Resolution": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Min Dynamic Resolution Scale": {
+            "customWidth": "28",
+            "decimal places": "2",
+            "from": "0.1",
+            "increment": "0.01",
+            "length": "100",
+            "settings": [ "fMinDynamicResolutionScale" ],
+            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "1",
+            "tooltip": "Sets the minimum dynamic render resolution scale. This allows you to adjust what the minimum amount you can set it to is.",
             "type": "Slider",
             "validate": "integer",
             "width": "7",
@@ -266,7 +320,7 @@
             }
           },
           "First Person FOV": {
-            "customWidth": "25",
+            "customWidth": "28",
             "decimal places": "0",
             "from": "40",
             "increment": "1",
@@ -281,7 +335,7 @@
             "width": "7"
           },
           "Third Person FOV": {
-            "customWidth": "25",
+            "customWidth": "28",
             "decimal places": "0",
             "from": "40",
             "increment": "1",
@@ -296,7 +350,7 @@
             "width": "7"
           },
           "Gamma": {
-            "customWidth": "25",
+            "customWidth": "28",
             "decimal places": "3",
             "from": "0",
             "increment": "0.01",
@@ -311,7 +365,7 @@
             "width": "7"
           },
           "Film Grain": {
-            "customWidth": "25",
+            "customWidth": "28",
             "decimal places": "2",
             "from": "0",
             "increment": "0.01",
@@ -378,17 +432,6 @@
             "targetSections": [ "Display" ],
             "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
             "type": "Checkbutton"
-          },
-          "VRS Variance Cutoff": {
-            "customWidth": "20",
-            "choices": [ "0.075", "0.1", "0.125", "0.15" ],
-            "settings": [ "fVariableRateShadingVarianceCutoff" ],
-            "targetINIs": [ "Ultra.ini" ],
-            "targetSections": [ "VariableRateShading" ],
-            "tooltip": "Sets the variable rate shading variance cutoff.",
-            "type": "Combobox",
-            "validate": "float",
-            "width": "8"
           }
         }
       },
