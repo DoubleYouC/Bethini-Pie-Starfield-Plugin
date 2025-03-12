@@ -998,7 +998,7 @@
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Max Buffer Size": {
-            "choices": [ "32768", "300000", "600000" ],
+            "choices": [ "32768", "65536", "131072", "327680", "655360" ],
             "decimal places": "0",
             "settings": [ "iConsoleBufferMaxDisplaySize" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
@@ -1009,9 +1009,9 @@
             "width": "8"
           },
           "Screen Percentage": {
-            "customWidth": "16",
             "decimal places": "0",
             "from": "0",
+            "increment": "1",
             "settings": [ "iConsoleSizeScreenPercent" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Menu" ],
@@ -1024,6 +1024,7 @@
           "Text Size": {
             "decimal places": "0",
             "from": "0",
+            "increment": "1",
             "settings": [ "iConsoleTextSize" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Menu" ],
@@ -1035,7 +1036,6 @@
           },
           "Text Input Color": {
             "colorValueType": "rgb",
-            "customWidth": "16",
             "settings": [ "rConsoleTextColor" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Menu" ],
@@ -1044,7 +1044,6 @@
           },
           "Text Output Color": {
             "colorValueType": "rgb",
-            "customWidth": "16",
             "settings": [ "rConsoleHistoryTextColor" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Menu" ],
@@ -1053,7 +1052,6 @@
           },
           "Selection Color": {
             "colorValueType": "rgba",
-            "customWidth": "16",
             "settings": [ "aConsoleSelectedRefColor" ],
             "targetINIs": [ "StarfieldCustom.ini" ],
             "targetSections": [ "Menu" ],
