@@ -49,7 +49,12 @@
     "Bethini.ini": "",
     "StarfieldCustom.ini": "sStarfieldINIPath",
     "StarfieldPrefs.ini": "sStarfieldINIPath",
-    "Ultra.ini": "sStarfieldPath"
+    "Ultra.ini": "sStarfieldPath",
+    "Starfield.ini": "sStarfieldPath"
+  },
+  "INI_pecking_order": {
+    "StarfieldCustom.ini": [ "Starfield.ini", "StarfieldCustom.ini" ],
+    "StarfieldPrefs.ini": [ "Starfield.ini", "StarfieldCustom.ini", "StarfieldPrefs.ini" ]
   },
   "customFunctions": {
     "FUNCCurrentResolution": "{}",
@@ -222,7 +227,7 @@
             "increment": "0.01",
             "length": "100",
             "settings": [ "fRenderResolutionSetting" ],
-            "targetINIs": [ "Ultra.ini"],
+            "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "DynamicResolution" ],
             "to": "1",
             "tooltip": "Sets the dynamic render resolution scale, where the game automatically adjusts resolution in performance-heavy scenes.",
