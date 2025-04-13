@@ -110,8 +110,7 @@
     "Basic": {
       "Display": {
         "Pack": {
-          "Fill": "none",
-          "Expand": 0
+          "Fill": "y"
         },
         "NumberOfVerticallyStackedSettings": "8",
         "Settings": {
@@ -380,19 +379,20 @@
       },
       "Presets": {
         "Pack": {
-          "Fill": "none",
-          "Expand": 0
+          "Fill": "y"
         },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Reset to Default": {
             "preset id": "Default",
+            "width": "27",
             "tooltip": "Resets your INI files to their default values.\n\nNote that not all settings will be set to their default values, as you probably don't want us to touch your screen resolution and mouse look sensitivity... that sorta thing ;)",
             "tooltip_wrap_length": 250,
             "type": "preset"
           },
           "Apply Recommended Tweaks": {
             "preset id": "recommended",
+            "width": "27",
             "tooltip": "This sets certain recommended tweaks for all users.",
             "type": "preset"
           },
@@ -405,6 +405,7 @@
           },
           "Poor": {
             "preset id": "Poor",
+            "width": "15",
             "tooltip": "Sets the Poor preset.",
             "type": "preset",
             "dependentSettings": {
@@ -421,34 +422,34 @@
           },
           "Low": {
             "preset id": "Low",
+            "width": "15",
             "tooltip": "Sets the Low preset.",
             "type": "preset"
           },
           "EmptyLabel6": "",
           "Medium": {
             "preset id": "Medium",
+            "width": "15",
             "tooltip": "Sets the Medium preset.",
             "type": "preset"
           },
           "EmptyLabel9": "",
           "High": {
             "preset id": "High",
+            "width": "15",
             "tooltip": "Sets the High preset.",
             "type": "preset"
           },
           "EmptyLabel11": "",
           "Ultra": {
             "preset id": "Ultra",
+            "width": "15",
             "tooltip": "Sets the Ultra preset.",
             "type": "preset"
           }
         }
       },
       "NoLabelFrame": {
-        "Pack": {
-          "Fill": "x",
-          "Expand": 0
-        },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Load Loose Files": {
