@@ -45,6 +45,7 @@
     "fFilmGrainIntensity"
   ],
   "Default": "",
+  "Remove Unknown Settings Default": "0",
   "INIs": {
     "Bethini.ini": "",
     "StarfieldCustom.ini": "sStarfieldINIPath",
@@ -70,22 +71,18 @@
         "NumberOfVerticallyStackedSettings": "6",
         "Settings": {
           "Notice": {
-            "Description": "Instructions for Mod Organizer 2 users:\n1. Add Bethini Pie as an executable and run through Mod Organizer 2.\n2. Leave the INI Path below at the default Documents\\My Games\\Starfield location. Do NOT redirect to your profile location.",
+            "Description": "Recommended usage for Mod Organizer users:\n1. Add Bethini Pie as an executable and run through Mod Organizer.\n2. Leave the INI Path below at the default Documents\\My Games\\Starfield location. This will ensure the Mod Organizer VFS redirects to the correct INI files for your current profile.",
             "type": "description"
           }
         }
       },
       "Paths": {
         "NumberOfVerticallyStackedSettings": "6",
-        "Pack": {
-          "Fill": "none",
-          "Expand": 0
-        },
         "Settings": {
           "Game Path": {
             "browse": [ "directory", "directory", "directory" ],
             "choices": [ "FUNCGamePath", "Browse...", "Manual..." ],
-            "customWidth": "18",
+            "customWidth": "10",
             "forceSelect": "1",
             "settings": [ "sStarfieldPath" ],
             "targetINIs": [ "Bethini.ini" ],
@@ -96,13 +93,27 @@
           "INI Path": {
             "browse": [ "directory", "StarfieldPrefs.ini", "file" ],
             "choices": "FUNCINIPath",
-            "customWidth": "18",
+            "customWidth": "10",
             "forceSelect": "1",
             "settings": [ "sStarfieldINIPath" ],
             "targetINIs": [ "Bethini.ini" ],
             "targetSections": [ "Directories" ],
             "tooltip": "Specifies the path to the INI files.",
             "type": "Dropdown"
+          }
+        }
+      },
+      "General": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Remove Unknown Settings": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bStarfieldRemoveUnknownSettings" ],
+            "targetINIs": [ "Bethini.ini" ],
+            "targetSections": [ "RemoveUnknown" ],
+            "tooltip": "Toggles whether or not unrecognized settings are removed from the INI files.",
+            "type": "Checkbutton"
           }
         }
       }
