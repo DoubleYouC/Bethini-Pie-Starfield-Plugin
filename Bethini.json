@@ -55,7 +55,8 @@
   },
   "INI_pecking_order": {
     "StarfieldCustom.ini": [ "Starfield.ini", "StarfieldCustom.ini" ],
-    "StarfieldPrefs.ini": [ "Starfield.ini", "StarfieldCustom.ini", "StarfieldPrefs.ini" ]
+    "StarfieldPrefs.ini": [ "Starfield.ini", "StarfieldCustom.ini", "StarfieldPrefs.ini" ],
+    "Ultra.ini": [ "Ultra.ini" ]
   },
   "customFunctions": {
     "FUNCCurrentResolution": "{}",
@@ -1632,7 +1633,7 @@
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bDirectionalShadowmapsUseLODFade" ],
-            "targetINIs": [ "StarfieldCustom.ini" ],
+            "targetINIs": [ "Ultra.ini" ],
             "targetSections": [ "Shadows" ],
             "tooltip": "Toggles LOD for directional shadows.",
             "type": "Checkbutton"
