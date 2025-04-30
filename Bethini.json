@@ -53,6 +53,7 @@
     "Ultra.ini": "sStarfieldPath",
     "Starfield.ini": "sStarfieldPath"
   },
+  "Allow Sorted INIs": [ "StarfieldCustom.ini", "StarfieldPrefs.ini", "Ultra.ini", "Starfield.ini" ],
   "INI_pecking_order": {
     "StarfieldCustom.ini": [ "Starfield.ini", "StarfieldCustom.ini" ],
     "StarfieldPrefs.ini": [ "Starfield.ini", "StarfieldCustom.ini", "StarfieldPrefs.ini" ],
@@ -176,7 +177,10 @@
             "customWidth": "18",
             "choices": [ "None", "Low", "Medium", "High" ],
             "settingChoices": {
-              "None": [ "0", "1" ],
+              "None": [
+                "0",
+                [ "1", "2", "3" ]
+              ],
               "Low": [ "1", "1" ],
               "Medium": [ "1", "2" ],
               "High": [ "1", "3" ]
@@ -213,7 +217,7 @@
             "to": "1",
             "tooltip": "Sets the internal render resolution scale that will then be upscaled to your resolution. This slider is bigger than the in-game slider, and will very much improve performance if set lower, at the expense of visuals.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "float",
             "width": "7"
           },
           "Min Render Resolution Scale": {
@@ -228,7 +232,7 @@
             "to": "1",
             "tooltip": "Sets the minimum internal render resolution scale that will then be upscaled to your resolution. This allows you to adjust what the minimum amount you can set it to is.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "float",
             "width": "7"
           },
           "Dynamic Resolution Scale": {
@@ -243,7 +247,7 @@
             "to": "1",
             "tooltip": "Sets the dynamic render resolution scale, where the game automatically adjusts resolution in performance-heavy scenes.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "float",
             "width": "7",
             "dependentSettings": {
               "Dynamic Resolution": {
@@ -264,7 +268,7 @@
             "to": "1",
             "tooltip": "Sets the minimum dynamic render resolution scale. This allows you to adjust what the minimum amount you can set it to is.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "float",
             "width": "7",
             "dependentSettings": {
               "Dynamic Resolution": {
@@ -285,7 +289,7 @@
             "to": "120",
             "tooltip": "Sets the field of view in first person mode.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "whole",
             "width": "7"
           },
           "Third Person FOV": {
@@ -300,7 +304,7 @@
             "to": "120",
             "tooltip": "Sets the field of view in third person mode.",
             "type": "Slider",
-            "validate": "integer",
+            "validate": "whole",
             "width": "7"
           },
           "Gamma": {
