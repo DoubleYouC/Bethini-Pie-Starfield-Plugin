@@ -856,7 +856,7 @@
             "width": "8"
           },
           "Max Allocated Memory": {
-            "choices": [ "153600", "300000", "500000" ],
+            "choices": [ "153600", "307200", "524288" ],
             "customWidth": "24",
             "decimal places": "0",
             "settings": [ "iMaxAllocatedMemoryBytes" ],
